@@ -1,0 +1,581 @@
+{
+  "version": 1,
+  "id": "chapter-07",
+  "title": "RNA and the Genetic Code",
+  "status": "implemented",
+  "scopeNote": "Original condensed MCAT biochemistry lessons covering the declared outline sections. This release is implemented, not independently scientifically verified; it is not exhaustive textbook coverage.",
+  "lessons": [
+    {
+      "id": "concept-7-1",
+      "title": "The Genetic Code",
+      "section": "7.1",
+      "asset": "bc07-01",
+      "steps": [
+        {
+          "text": "The genetic code maps mRNA triplets to amino acids or termination signals. Several codons can specify one amino acid, but a codon generally has one meaning within a code context.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "The reading frame defines successive nonoverlapping triplets. An insertion of one base in a coding sequence can change downstream codons unless offset by another event.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "AUG commonly serves as a start codon and codes for methionine. Stop codons are recognized by release factors rather than ordinary aminoacyl tRNAs.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "The code is nearly universal with important exceptions. Degeneracy does not mean every substitution is silent or that every reading frame produces a functional protein.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "7.1 · Organize: Codon",
+        "paragraphs": [
+          "The genetic code maps mRNA triplets to amino acids or termination signals. Several codons can specify one amino acid, but a codon generally has one meaning within a code context.",
+          "The reading frame defines successive nonoverlapping triplets. An insertion of one base in a coding sequence can change downstream codons unless offset by another event."
+        ]
+      },
+      "memoryCue": {
+        "title": "7.1 · Many codons can converge on one amino acid.",
+        "paragraphs": [
+          "Many codons can converge on one amino acid.",
+          "The reading frame defines successive nonoverlapping triplets. An insertion of one base in a coding sequence can change downstream codons unless offset by another event."
+        ]
+      },
+      "traps": {
+        "title": "7.1 · Check: Start signal",
+        "paragraphs": [
+          "AUG commonly serves as a start codon and codes for methionine. Stop codons are recognized by release factors rather than ordinary aminoacyl tRNAs.",
+          "The code is nearly universal with important exceptions. Degeneracy does not mean every substitution is silent or that every reading frame produces a functional protein."
+        ]
+      },
+      "application": {
+        "title": "7.1 · Apply: Stop signal",
+        "paragraphs": [
+          "The code is nearly universal with important exceptions. Degeneracy does not mean every substitution is silent or that every reading frame produces a functional protein.",
+          "The genetic code maps mRNA triplets to amino acids or termination signals. Several codons can specify one amino acid, but a codon generally has one meaning within a code context."
+        ]
+      }
+    },
+    {
+      "id": "concept-7-2",
+      "title": "Transcription",
+      "section": "7.2",
+      "asset": "bc07-02",
+      "steps": [
+        {
+          "text": "RNA polymerase synthesizes RNA 5′ to 3′ while reading the template DNA 3′ to 5′. Unlike DNA polymerase, it can initiate without a preexisting nucleic-acid primer.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "The RNA matches the coding DNA strand’s sequence apart from U replacing T, when both are written in the same direction. It is complementary to the template strand.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Many eukaryotic pre-mRNAs receive a 5′ cap, splicing and a 3′ poly(A) tail. Alternative splicing can produce different transcripts from one gene.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Promoters help recruit transcription machinery. A change in transcript abundance can reflect altered synthesis or altered RNA degradation.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "7.2 · Organize: DNA template",
+        "paragraphs": [
+          "RNA polymerase synthesizes RNA 5′ to 3′ while reading the template DNA 3′ to 5′. Unlike DNA polymerase, it can initiate without a preexisting nucleic-acid primer.",
+          "The RNA matches the coding DNA strand’s sequence apart from U replacing T, when both are written in the same direction. It is complementary to the template strand."
+        ]
+      },
+      "memoryCue": {
+        "title": "7.2 · RNA matches coding DNA with U for T, in the same direction.",
+        "paragraphs": [
+          "RNA matches coding DNA with U for T, in the same direction.",
+          "The RNA matches the coding DNA strand’s sequence apart from U replacing T, when both are written in the same direction. It is complementary to the template strand."
+        ]
+      },
+      "traps": {
+        "title": "7.2 · Check: RNA transcript",
+        "paragraphs": [
+          "Many eukaryotic pre-mRNAs receive a 5′ cap, splicing and a 3′ poly(A) tail. Alternative splicing can produce different transcripts from one gene.",
+          "Promoters help recruit transcription machinery. A change in transcript abundance can reflect altered synthesis or altered RNA degradation."
+        ]
+      },
+      "application": {
+        "title": "7.2 · Apply: Processing",
+        "paragraphs": [
+          "Promoters help recruit transcription machinery. A change in transcript abundance can reflect altered synthesis or altered RNA degradation.",
+          "RNA polymerase synthesizes RNA 5′ to 3′ while reading the template DNA 3′ to 5′. Unlike DNA polymerase, it can initiate without a preexisting nucleic-acid primer."
+        ]
+      }
+    },
+    {
+      "id": "concept-7-3",
+      "title": "Translation",
+      "section": "7.3",
+      "asset": "bc07-03",
+      "steps": [
+        {
+          "text": "Aminoacyl-tRNA synthetases attach appropriate amino acids to tRNAs using ATP. Anticodon pairing alone cannot correct every incorrectly charged tRNA.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "The ribosome reads mRNA 5′ to 3′ and synthesizes the polypeptide from N terminus to C terminus. Peptide-bond formation is catalyzed by ribosomal RNA.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "During elongation, tRNAs pass through A, P and E sites. Initiation uses a specialized initiator tRNA and differs from ordinary elongation entry.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "A stop codon recruits a release factor, leading to polypeptide release. Translation consumes energy for charging and elongation; it is not driven by codon pairing alone.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "7.3 · Organize: Aminoacyl tRNA",
+        "paragraphs": [
+          "Aminoacyl-tRNA synthetases attach appropriate amino acids to tRNAs using ATP. Anticodon pairing alone cannot correct every incorrectly charged tRNA.",
+          "The ribosome reads mRNA 5′ to 3′ and synthesizes the polypeptide from N terminus to C terminus. Peptide-bond formation is catalyzed by ribosomal RNA."
+        ]
+      },
+      "memoryCue": {
+        "title": "7.3 · Read mRNA 5′ to 3′; build protein N to C.",
+        "paragraphs": [
+          "Read mRNA 5′ to 3′; build protein N to C.",
+          "The ribosome reads mRNA 5′ to 3′ and synthesizes the polypeptide from N terminus to C terminus. Peptide-bond formation is catalyzed by ribosomal RNA."
+        ]
+      },
+      "traps": {
+        "title": "7.3 · Check: Growing chain",
+        "paragraphs": [
+          "During elongation, tRNAs pass through A, P and E sites. Initiation uses a specialized initiator tRNA and differs from ordinary elongation entry.",
+          "A stop codon recruits a release factor, leading to polypeptide release. Translation consumes energy for charging and elongation; it is not driven by codon pairing alone."
+        ]
+      },
+      "application": {
+        "title": "7.3 · Apply: Release factor",
+        "paragraphs": [
+          "A stop codon recruits a release factor, leading to polypeptide release. Translation consumes energy for charging and elongation; it is not driven by codon pairing alone.",
+          "Aminoacyl-tRNA synthetases attach appropriate amino acids to tRNAs using ATP. Anticodon pairing alone cannot correct every incorrectly charged tRNA."
+        ]
+      }
+    },
+    {
+      "id": "concept-7-4",
+      "title": "Control of Gene expression in Prokaryotes",
+      "section": "7.4",
+      "asset": "bc07-04",
+      "steps": [
+        {
+          "text": "A bacterial operon can place several genes under shared transcriptional control. Regulatory proteins interact with DNA sites to change transcription initiation.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "In the lac system, an inducer reduces repressor binding to the operator. Strong expression also depends on glucose-related cAMP–CAP regulation.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Low glucose favors cAMP–CAP activation in the standard lac model. Lactose availability and glucose availability contribute separate regulatory inputs.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Coupled transcription and translation is possible in bacteria. Do not transfer every bacterial regulatory mechanism unchanged to a eukaryotic nucleus.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "7.4 · Organize: Operator",
+        "paragraphs": [
+          "A bacterial operon can place several genes under shared transcriptional control. Regulatory proteins interact with DNA sites to change transcription initiation.",
+          "In the lac system, an inducer reduces repressor binding to the operator. Strong expression also depends on glucose-related cAMP–CAP regulation."
+        ]
+      },
+      "memoryCue": {
+        "title": "7.4 · Lactose lifts repression; low glucose supports activation.",
+        "paragraphs": [
+          "Lactose lifts repression; low glucose supports activation.",
+          "In the lac system, an inducer reduces repressor binding to the operator. Strong expression also depends on glucose-related cAMP–CAP regulation."
+        ]
+      },
+      "traps": {
+        "title": "7.4 · Check: Inducer",
+        "paragraphs": [
+          "Low glucose favors cAMP–CAP activation in the standard lac model. Lactose availability and glucose availability contribute separate regulatory inputs.",
+          "Coupled transcription and translation is possible in bacteria. Do not transfer every bacterial regulatory mechanism unchanged to a eukaryotic nucleus."
+        ]
+      },
+      "application": {
+        "title": "7.4 · Apply: RNA polymerase",
+        "paragraphs": [
+          "Coupled transcription and translation is possible in bacteria. Do not transfer every bacterial regulatory mechanism unchanged to a eukaryotic nucleus.",
+          "A bacterial operon can place several genes under shared transcriptional control. Regulatory proteins interact with DNA sites to change transcription initiation."
+        ]
+      }
+    },
+    {
+      "id": "concept-7-5",
+      "title": "Control of Gene Expression in Eukaryotes",
+      "section": "7.5",
+      "asset": "bc07-05",
+      "steps": [
+        {
+          "text": "Eukaryotic gene expression is regulated at chromatin, transcription, RNA processing, RNA stability, translation and protein-turnover steps.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "Enhancers can influence promoters through DNA looping and interacting proteins. Their action depends on cell-specific factors rather than proximity alone.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Small regulatory RNAs can reduce translation or promote degradation of complementary transcripts. Reduced protein output does not prove reduced transcription.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Compare DNA, RNA and protein measurements to locate regulation. An unchanged mRNA level with decreased protein can reflect translation or protein-stability effects.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "7.5 · Organize: Chromatin access",
+        "paragraphs": [
+          "Eukaryotic gene expression is regulated at chromatin, transcription, RNA processing, RNA stability, translation and protein-turnover steps.",
+          "Enhancers can influence promoters through DNA looping and interacting proteins. Their action depends on cell-specific factors rather than proximity alone."
+        ]
+      },
+      "memoryCue": {
+        "title": "7.5 · Stable RNA with falling protein points beyond transcription.",
+        "paragraphs": [
+          "Stable RNA with falling protein points beyond transcription.",
+          "Enhancers can influence promoters through DNA looping and interacting proteins. Their action depends on cell-specific factors rather than proximity alone."
+        ]
+      },
+      "traps": {
+        "title": "7.5 · Check: RNA stability",
+        "paragraphs": [
+          "Small regulatory RNAs can reduce translation or promote degradation of complementary transcripts. Reduced protein output does not prove reduced transcription.",
+          "Compare DNA, RNA and protein measurements to locate regulation. An unchanged mRNA level with decreased protein can reflect translation or protein-stability effects."
+        ]
+      },
+      "application": {
+        "title": "7.5 · Apply: Translation control",
+        "paragraphs": [
+          "Compare DNA, RNA and protein measurements to locate regulation. An unchanged mRNA level with decreased protein can reflect translation or protein-stability effects.",
+          "Eukaryotic gene expression is regulated at chromatin, transcription, RNA processing, RNA stability, translation and protein-turnover steps."
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "bc-07-01-workshop-v1",
+      "title": "The Genetic Code",
+      "asset": "bc07-01",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the signal normally recognized by a release factor.",
+          "answer": [
+            "part-3"
+          ],
+          "explanation": "The relevant schematic entity or entities are Stop signal. The code is nearly universal with important exceptions. Degeneracy does not mean every substitution is silent or that every reading frame produces a functional protein.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "The code is nearly universal with important exceptions. Degeneracy does not mean every substitution is silent or that every reading frame produces a functional protein."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "What does genetic-code degeneracy mean?",
+          "answer": 0,
+          "options": [
+            "Several codons may encode the same amino acid",
+            "Each codon always encodes several amino acids",
+            "Every mutation is silent",
+            "Codons have variable lengths in ordinary translation"
+          ],
+          "explanation": "Several codons may encode the same amino acid. The reading frame defines successive nonoverlapping triplets. An insertion of one base in a coding sequence can change downstream codons unless offset by another event.",
+          "hints": [
+            "The genetic code maps mRNA triplets to amino acids or termination signals. Several codons can specify one amino acid, but a codon generally has one meaning within a code context.",
+            "The reading frame defines successive nonoverlapping triplets. An insertion of one base in a coding sequence can change downstream codons unless offset by another event."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "A single-base insertion early in a coding sequence most directly risks what?",
+          "answer": 1,
+          "options": [
+            "No possible sequence change",
+            "A downstream frameshift",
+            "Automatic restoration of the original frame",
+            "A change in DNA strand polarity"
+          ],
+          "explanation": "A downstream frameshift. AUG commonly serves as a start codon and codes for methionine. Stop codons are recognized by release factors rather than ordinary aminoacyl tRNAs.",
+          "hints": [
+            "The reading frame defines successive nonoverlapping triplets. An insertion of one base in a coding sequence can change downstream codons unless offset by another event.",
+            "AUG commonly serves as a start codon and codes for methionine. Stop codons are recognized by release factors rather than ordinary aminoacyl tRNAs."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc-07-02-workshop-v1",
+      "title": "Transcription",
+      "asset": "bc07-02",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the enzyme that makes the RNA chain.",
+          "answer": [
+            "part-1"
+          ],
+          "explanation": "The relevant schematic entity or entities are RNA polymerase. The RNA matches the coding DNA strand’s sequence apart from U replacing T, when both are written in the same direction. It is complementary to the template strand.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "The RNA matches the coding DNA strand’s sequence apart from U replacing T, when both are written in the same direction. It is complementary to the template strand."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "Which DNA strand has the same sequence as the RNA apart from T/U?",
+          "answer": 1,
+          "options": [
+            "The template strand in the same direction",
+            "The coding strand",
+            "Both strands simultaneously",
+            "Neither strand under any conditions"
+          ],
+          "explanation": "The coding strand. The RNA matches the coding DNA strand’s sequence apart from U replacing T, when both are written in the same direction. It is complementary to the template strand.",
+          "hints": [
+            "RNA polymerase synthesizes RNA 5′ to 3′ while reading the template DNA 3′ to 5′. Unlike DNA polymerase, it can initiate without a preexisting nucleic-acid primer.",
+            "The RNA matches the coding DNA strand’s sequence apart from U replacing T, when both are written in the same direction. It is complementary to the template strand."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "Which event removes introns from many eukaryotic pre-mRNAs?",
+          "answer": 2,
+          "options": [
+            "DNA replication",
+            "Beta oxidation",
+            "Splicing",
+            "Peptide hydrolysis"
+          ],
+          "explanation": "Splicing. Many eukaryotic pre-mRNAs receive a 5′ cap, splicing and a 3′ poly(A) tail. Alternative splicing can produce different transcripts from one gene.",
+          "hints": [
+            "The RNA matches the coding DNA strand’s sequence apart from U replacing T, when both are written in the same direction. It is complementary to the template strand.",
+            "Many eukaryotic pre-mRNAs receive a 5′ cap, splicing and a 3′ poly(A) tail. Alternative splicing can produce different transcripts from one gene."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc-07-03-workshop-v1",
+      "title": "Translation",
+      "asset": "bc07-03",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the translation machinery component with catalytic rRNA.",
+          "answer": [
+            "part-1"
+          ],
+          "explanation": "The relevant schematic entity or entities are Ribosome. The ribosome reads mRNA 5′ to 3′ and synthesizes the polypeptide from N terminus to C terminus. Peptide-bond formation is catalyzed by ribosomal RNA.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "The ribosome reads mRNA 5′ to 3′ and synthesizes the polypeptide from N terminus to C terminus. Peptide-bond formation is catalyzed by ribosomal RNA."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "In which direction does a polypeptide grow?",
+          "answer": 2,
+          "options": [
+            "C terminus to N terminus",
+            "3′ to 5′",
+            "N terminus to C terminus",
+            "From both ends equally"
+          ],
+          "explanation": "N terminus to C terminus. The ribosome reads mRNA 5′ to 3′ and synthesizes the polypeptide from N terminus to C terminus. Peptide-bond formation is catalyzed by ribosomal RNA.",
+          "hints": [
+            "Aminoacyl-tRNA synthetases attach appropriate amino acids to tRNAs using ATP. Anticodon pairing alone cannot correct every incorrectly charged tRNA.",
+            "The ribosome reads mRNA 5′ to 3′ and synthesizes the polypeptide from N terminus to C terminus. Peptide-bond formation is catalyzed by ribosomal RNA."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "A tRNA has the correct anticodon but the wrong amino acid. Which step failed most directly?",
+          "answer": 3,
+          "options": [
+            "Promoter binding",
+            "DNA ligation",
+            "Chromatin condensation",
+            "Charging specificity"
+          ],
+          "explanation": "Charging specificity. During elongation, tRNAs pass through A, P and E sites. Initiation uses a specialized initiator tRNA and differs from ordinary elongation entry.",
+          "hints": [
+            "The ribosome reads mRNA 5′ to 3′ and synthesizes the polypeptide from N terminus to C terminus. Peptide-bond formation is catalyzed by ribosomal RNA.",
+            "During elongation, tRNAs pass through A, P and E sites. Initiation uses a specialized initiator tRNA and differs from ordinary elongation entry."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc-07-04-workshop-v1",
+      "title": "Control of Gene expression in Prokaryotes",
+      "asset": "bc07-04",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the DNA regulatory site bound by the lac repressor.",
+          "answer": [
+            "part-0"
+          ],
+          "explanation": "The relevant schematic entity or entities are Operator. A bacterial operon can place several genes under shared transcriptional control. Regulatory proteins interact with DNA sites to change transcription initiation.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "A bacterial operon can place several genes under shared transcriptional control. Regulatory proteins interact with DNA sites to change transcription initiation."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "In the standard lac model, which condition favors strong transcription?",
+          "answer": 3,
+          "options": [
+            "Lactose absent and glucose high",
+            "Lactose absent regardless of glucose",
+            "Glucose high with active repressor",
+            "Lactose present and glucose low"
+          ],
+          "explanation": "Lactose present and glucose low. In the lac system, an inducer reduces repressor binding to the operator. Strong expression also depends on glucose-related cAMP–CAP regulation.",
+          "hints": [
+            "A bacterial operon can place several genes under shared transcriptional control. Regulatory proteins interact with DNA sites to change transcription initiation.",
+            "In the lac system, an inducer reduces repressor binding to the operator. Strong expression also depends on glucose-related cAMP–CAP regulation."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "What does an inducer do in the standard lac repressor model?",
+          "answer": 0,
+          "options": [
+            "Reduces repressor occupancy of the operator",
+            "Directly synthesizes DNA",
+            "Permanently destroys every ribosome",
+            "Removes the promoter"
+          ],
+          "explanation": "Reduces repressor occupancy of the operator. Low glucose favors cAMP–CAP activation in the standard lac model. Lactose availability and glucose availability contribute separate regulatory inputs.",
+          "hints": [
+            "In the lac system, an inducer reduces repressor binding to the operator. Strong expression also depends on glucose-related cAMP–CAP regulation.",
+            "Low glucose favors cAMP–CAP activation in the standard lac model. Lactose availability and glucose availability contribute separate regulatory inputs."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc-07-05-workshop-v1",
+      "title": "Control of Gene Expression in Eukaryotes",
+      "asset": "bc07-05",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the control level that directly changes transcript lifetime.",
+          "answer": [
+            "part-2"
+          ],
+          "explanation": "The relevant schematic entity or entities are RNA stability. Small regulatory RNAs can reduce translation or promote degradation of complementary transcripts. Reduced protein output does not prove reduced transcription.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "Small regulatory RNAs can reduce translation or promote degradation of complementary transcripts. Reduced protein output does not prove reduced transcription."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "Protein decreases while mRNA stays constant. Which explanation remains plausible?",
+          "answer": 0,
+          "options": [
+            "Reduced translation or increased protein degradation",
+            "Only promoter deletion",
+            "RNA must have no cap",
+            "The genetic code changed globally"
+          ],
+          "explanation": "Reduced translation or increased protein degradation. Enhancers can influence promoters through DNA looping and interacting proteins. Their action depends on cell-specific factors rather than proximity alone.",
+          "hints": [
+            "Eukaryotic gene expression is regulated at chromatin, transcription, RNA processing, RNA stability, translation and protein-turnover steps.",
+            "Enhancers can influence promoters through DNA looping and interacting proteins. Their action depends on cell-specific factors rather than proximity alone."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "What allows one enhancer to act differently in different cell types?",
+          "answer": 1,
+          "options": [
+            "A universal identical factor pool",
+            "Different regulatory factors and chromatin context",
+            "Mandatory deletion of its DNA",
+            "Its conversion to a ribosome"
+          ],
+          "explanation": "Different regulatory factors and chromatin context. Small regulatory RNAs can reduce translation or promote degradation of complementary transcripts. Reduced protein output does not prove reduced transcription.",
+          "hints": [
+            "Enhancers can influence promoters through DNA looping and interacting proteins. Their action depends on cell-specific factors rather than proximity alone.",
+            "Small regulatory RNAs can reduce translation or promote degradation of complementary transcripts. Reduced protein output does not prove reduced transcription."
+          ]
+        }
+      ]
+    }
+  ]
+}
