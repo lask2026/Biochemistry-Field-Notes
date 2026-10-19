@@ -1,0 +1,467 @@
+{
+  "version": 1,
+  "id": "chapter-03",
+  "title": "Nonenzymatic Protein Function and Protein Analysis",
+  "status": "implemented",
+  "scopeNote": "Original condensed MCAT biochemistry lessons covering the declared outline sections. This release is implemented, not independently scientifically verified; it is not exhaustive textbook coverage.",
+  "lessons": [
+    {
+      "id": "concept-3-1",
+      "title": "Cellular Functions",
+      "section": "3.1",
+      "asset": "bc03-01",
+      "steps": [
+        {
+          "text": "Proteins provide structural support, transport cargo, generate force and bind signals as well as catalyze reactions. Function depends on conformation and context.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "Hemoglobin carries oxygen with cooperative subunit interactions. Myoglobin is a monomeric oxygen-binding protein whose binding curve is typically hyperbolic.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Actin and myosin participate in force generation. A motor converts chemical energy into directed mechanical work rather than producing energy from nothing.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Binding affinity and transport capacity are distinct. A change that shifts oxygen affinity need not change the number of available binding sites.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "3.1 · Organize: Mechanical support",
+        "paragraphs": [
+          "Proteins provide structural support, transport cargo, generate force and bind signals as well as catalyze reactions. Function depends on conformation and context.",
+          "Hemoglobin carries oxygen with cooperative subunit interactions. Myoglobin is a monomeric oxygen-binding protein whose binding curve is typically hyperbolic."
+        ]
+      },
+      "memoryCue": {
+        "title": "3.1 · Myoglobin binds alone; hemoglobin coordinates subunits.",
+        "paragraphs": [
+          "Myoglobin binds alone; hemoglobin coordinates subunits.",
+          "Hemoglobin carries oxygen with cooperative subunit interactions. Myoglobin is a monomeric oxygen-binding protein whose binding curve is typically hyperbolic."
+        ]
+      },
+      "traps": {
+        "title": "3.1 · Check: Motor activity",
+        "paragraphs": [
+          "Actin and myosin participate in force generation. A motor converts chemical energy into directed mechanical work rather than producing energy from nothing.",
+          "Binding affinity and transport capacity are distinct. A change that shifts oxygen affinity need not change the number of available binding sites."
+        ]
+      },
+      "application": {
+        "title": "3.1 · Apply: Ligand binding",
+        "paragraphs": [
+          "Binding affinity and transport capacity are distinct. A change that shifts oxygen affinity need not change the number of available binding sites.",
+          "Proteins provide structural support, transport cargo, generate force and bind signals as well as catalyze reactions. Function depends on conformation and context."
+        ]
+      }
+    },
+    {
+      "id": "concept-3-2",
+      "title": "Biosignaling",
+      "section": "3.2",
+      "asset": "bc03-02",
+      "steps": [
+        {
+          "text": "A signaling ligand binds a receptor, which changes downstream activity. Receptor occupancy and the magnitude of a cell response are related but not identical.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "A G-protein pathway can amplify signaling through second messengers. GTP hydrolysis helps switch a G protein off; amplification does not imply an unlimited response.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Receptor tyrosine kinases often signal through ligand-induced association and phosphorylation. Intracellular receptors can regulate transcription after binding permeant ligands.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Desensitization and feedback restrain responses. Distinguish a binding defect from a downstream relay defect by testing both ligand binding and cell output.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "3.2 · Organize: Ligand",
+        "paragraphs": [
+          "A signaling ligand binds a receptor, which changes downstream activity. Receptor occupancy and the magnitude of a cell response are related but not identical.",
+          "A G-protein pathway can amplify signaling through second messengers. GTP hydrolysis helps switch a G protein off; amplification does not imply an unlimited response."
+        ]
+      },
+      "memoryCue": {
+        "title": "3.2 · Reception, relay and response are separate checkpoints.",
+        "paragraphs": [
+          "Reception, relay and response are separate checkpoints.",
+          "A G-protein pathway can amplify signaling through second messengers. GTP hydrolysis helps switch a G protein off; amplification does not imply an unlimited response."
+        ]
+      },
+      "traps": {
+        "title": "3.2 · Check: Signal relay",
+        "paragraphs": [
+          "Receptor tyrosine kinases often signal through ligand-induced association and phosphorylation. Intracellular receptors can regulate transcription after binding permeant ligands.",
+          "Desensitization and feedback restrain responses. Distinguish a binding defect from a downstream relay defect by testing both ligand binding and cell output."
+        ]
+      },
+      "application": {
+        "title": "3.2 · Apply: Cell response",
+        "paragraphs": [
+          "Desensitization and feedback restrain responses. Distinguish a binding defect from a downstream relay defect by testing both ligand binding and cell output.",
+          "A signaling ligand binds a receptor, which changes downstream activity. Receptor occupancy and the magnitude of a cell response are related but not identical."
+        ]
+      }
+    },
+    {
+      "id": "concept-3-3",
+      "title": "Protein Isolation",
+      "section": "3.3",
+      "asset": "bc03-03",
+      "steps": [
+        {
+          "text": "Purification separates proteins using different properties. A crude mixture can be fractionated before a more selective step; yield and purity must be tracked separately.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "In size-exclusion chromatography, larger species generally elute earlier because they enter fewer pores. This ordering differs from migration through an SDS gel.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Ion exchange separates by charge at the chosen pH. A positively charged anion-exchange resin binds negatively charged analytes; salt or pH changes can elute them.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Affinity purification uses a specific binding interaction. Strong binding to a ligand does not establish catalytic activity; assay the fractions to locate active protein.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "3.3 · Organize: Size exclusion",
+        "paragraphs": [
+          "Purification separates proteins using different properties. A crude mixture can be fractionated before a more selective step; yield and purity must be tracked separately.",
+          "In size-exclusion chromatography, larger species generally elute earlier because they enter fewer pores. This ordering differs from migration through an SDS gel."
+        ]
+      },
+      "memoryCue": {
+        "title": "3.3 · Large exits size exclusion early; small runs SDS gels farther.",
+        "paragraphs": [
+          "Large exits size exclusion early; small runs SDS gels farther.",
+          "In size-exclusion chromatography, larger species generally elute earlier because they enter fewer pores. This ordering differs from migration through an SDS gel."
+        ]
+      },
+      "traps": {
+        "title": "3.3 · Check: Affinity column",
+        "paragraphs": [
+          "Ion exchange separates by charge at the chosen pH. A positively charged anion-exchange resin binds negatively charged analytes; salt or pH changes can elute them.",
+          "Affinity purification uses a specific binding interaction. Strong binding to a ligand does not establish catalytic activity; assay the fractions to locate active protein."
+        ]
+      },
+      "application": {
+        "title": "3.3 · Apply: Collected fractions",
+        "paragraphs": [
+          "Affinity purification uses a specific binding interaction. Strong binding to a ligand does not establish catalytic activity; assay the fractions to locate active protein.",
+          "Purification separates proteins using different properties. A crude mixture can be fractionated before a more selective step; yield and purity must be tracked separately."
+        ]
+      }
+    },
+    {
+      "id": "concept-3-4",
+      "title": "Protein Analysis",
+      "section": "3.4",
+      "asset": "bc03-04",
+      "steps": [
+        {
+          "text": "SDS-PAGE denatures proteins and gives a roughly uniform negative charge-to-mass ratio, so separation primarily reflects polypeptide size. Smaller chains usually migrate farther.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "Reducing SDS-PAGE can separate chains linked by disulfides. Nonreducing conditions preserve those disulfide links but still disrupt many noncovalent associations.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Isoelectric focusing separates proteins according to pI in a pH gradient. Native electrophoresis depends on charge, size and shape together.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "A band demonstrates staining of material, not necessarily biological function. Pair electrophoretic evidence with an activity assay when assessing active enzyme recovery.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "3.4 · Organize: SDS-PAGE",
+        "paragraphs": [
+          "SDS-PAGE denatures proteins and gives a roughly uniform negative charge-to-mass ratio, so separation primarily reflects polypeptide size. Smaller chains usually migrate farther.",
+          "Reducing SDS-PAGE can separate chains linked by disulfides. Nonreducing conditions preserve those disulfide links but still disrupt many noncovalent associations."
+        ]
+      },
+      "memoryCue": {
+        "title": "3.4 · A band shows material; an activity assay shows function.",
+        "paragraphs": [
+          "A band shows material; an activity assay shows function.",
+          "Reducing SDS-PAGE can separate chains linked by disulfides. Nonreducing conditions preserve those disulfide links but still disrupt many noncovalent associations."
+        ]
+      },
+      "traps": {
+        "title": "3.4 · Check: Isoelectric focusing",
+        "paragraphs": [
+          "Isoelectric focusing separates proteins according to pI in a pH gradient. Native electrophoresis depends on charge, size and shape together.",
+          "A band demonstrates staining of material, not necessarily biological function. Pair electrophoretic evidence with an activity assay when assessing active enzyme recovery."
+        ]
+      },
+      "application": {
+        "title": "3.4 · Apply: Activity assay",
+        "paragraphs": [
+          "A band demonstrates staining of material, not necessarily biological function. Pair electrophoretic evidence with an activity assay when assessing active enzyme recovery.",
+          "SDS-PAGE denatures proteins and gives a roughly uniform negative charge-to-mass ratio, so separation primarily reflects polypeptide size. Smaller chains usually migrate farther."
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "bc-03-01-workshop-v1",
+      "title": "Cellular Functions",
+      "asset": "bc03-01",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the function exemplified by myosin movement along actin.",
+          "answer": [
+            "part-2"
+          ],
+          "explanation": "The relevant schematic entity or entities are Motor activity. Actin and myosin participate in force generation. A motor converts chemical energy into directed mechanical work rather than producing energy from nothing.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "Actin and myosin participate in force generation. A motor converts chemical energy into directed mechanical work rather than producing energy from nothing."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "Which property helps explain hemoglobin’s sigmoidal oxygen-binding curve?",
+          "answer": 0,
+          "options": [
+            "Cooperative subunit interactions",
+            "A single binding site only",
+            "Peptide-bond cleavage during each binding event",
+            "Absence of quaternary structure"
+          ],
+          "explanation": "Cooperative subunit interactions. Hemoglobin carries oxygen with cooperative subunit interactions. Myoglobin is a monomeric oxygen-binding protein whose binding curve is typically hyperbolic.",
+          "hints": [
+            "Proteins provide structural support, transport cargo, generate force and bind signals as well as catalyze reactions. Function depends on conformation and context.",
+            "Hemoglobin carries oxygen with cooperative subunit interactions. Myoglobin is a monomeric oxygen-binding protein whose binding curve is typically hyperbolic."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "A motor uses ATP during movement. Which interpretation is appropriate?",
+          "answer": 1,
+          "options": [
+            "Energy is created",
+            "Chemical energy is coupled to mechanical work",
+            "ATP is a structural chromosome",
+            "Every protein is a motor"
+          ],
+          "explanation": "Chemical energy is coupled to mechanical work. Actin and myosin participate in force generation. A motor converts chemical energy into directed mechanical work rather than producing energy from nothing.",
+          "hints": [
+            "Hemoglobin carries oxygen with cooperative subunit interactions. Myoglobin is a monomeric oxygen-binding protein whose binding curve is typically hyperbolic.",
+            "Actin and myosin participate in force generation. A motor converts chemical energy into directed mechanical work rather than producing energy from nothing."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc-03-02-workshop-v1",
+      "title": "Biosignaling",
+      "asset": "bc03-02",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the component that receives the extracellular ligand directly.",
+          "answer": [
+            "part-1"
+          ],
+          "explanation": "The relevant schematic entity or entities are Receptor. A G-protein pathway can amplify signaling through second messengers. GTP hydrolysis helps switch a G protein off; amplification does not imply an unlimited response.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "A G-protein pathway can amplify signaling through second messengers. GTP hydrolysis helps switch a G protein off; amplification does not imply an unlimited response."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "A receptor binds ligand normally but its downstream kinase is inactive. What can occur?",
+          "answer": 1,
+          "options": [
+            "No ligand binding by definition",
+            "Binding without the normal response",
+            "Automatic maximal signaling",
+            "A change in the ligand’s gene sequence"
+          ],
+          "explanation": "Binding without the normal response. A G-protein pathway can amplify signaling through second messengers. GTP hydrolysis helps switch a G protein off; amplification does not imply an unlimited response.",
+          "hints": [
+            "A signaling ligand binds a receptor, which changes downstream activity. Receptor occupancy and the magnitude of a cell response are related but not identical.",
+            "A G-protein pathway can amplify signaling through second messengers. GTP hydrolysis helps switch a G protein off; amplification does not imply an unlimited response."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "What helps terminate activation of a typical heterotrimeric G protein?",
+          "answer": 2,
+          "options": [
+            "Permanent GDP phosphorylation on the receptor",
+            "Peptide hydrolysis of every subunit",
+            "GTP hydrolysis",
+            "DNA methylation of the ligand"
+          ],
+          "explanation": "GTP hydrolysis. Receptor tyrosine kinases often signal through ligand-induced association and phosphorylation. Intracellular receptors can regulate transcription after binding permeant ligands.",
+          "hints": [
+            "A G-protein pathway can amplify signaling through second messengers. GTP hydrolysis helps switch a G protein off; amplification does not imply an unlimited response.",
+            "Receptor tyrosine kinases often signal through ligand-induced association and phosphorylation. Intracellular receptors can regulate transcription after binding permeant ligands."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc-03-03-workshop-v1",
+      "title": "Protein Isolation",
+      "asset": "bc03-03",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the method based chiefly on a specific ligand interaction.",
+          "answer": [
+            "part-2"
+          ],
+          "explanation": "The relevant schematic entity or entities are Affinity column. Ion exchange separates by charge at the chosen pH. A positively charged anion-exchange resin binds negatively charged analytes; salt or pH changes can elute them.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "Ion exchange separates by charge at the chosen pH. A positively charged anion-exchange resin binds negatively charged analytes; salt or pH changes can elute them."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "Which protein generally elutes first from size exclusion, assuming no abnormal interactions?",
+          "answer": 2,
+          "options": [
+            "The smallest species",
+            "The most negative species regardless of size",
+            "A larger hydrodynamic species",
+            "Every species simultaneously"
+          ],
+          "explanation": "A larger hydrodynamic species. In size-exclusion chromatography, larger species generally elute earlier because they enter fewer pores. This ordering differs from migration through an SDS gel.",
+          "hints": [
+            "Purification separates proteins using different properties. A crude mixture can be fractionated before a more selective step; yield and purity must be tracked separately.",
+            "In size-exclusion chromatography, larger species generally elute earlier because they enter fewer pores. This ordering differs from migration through an SDS gel."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "A positive resin retains a protein. What charge is favored on that protein under the loading conditions?",
+          "answer": 3,
+          "options": [
+            "Positive only",
+            "Always zero",
+            "Charge cannot influence retention",
+            "Negative"
+          ],
+          "explanation": "Negative. Ion exchange separates by charge at the chosen pH. A positively charged anion-exchange resin binds negatively charged analytes; salt or pH changes can elute them.",
+          "hints": [
+            "In size-exclusion chromatography, larger species generally elute earlier because they enter fewer pores. This ordering differs from migration through an SDS gel.",
+            "Ion exchange separates by charge at the chosen pH. A positively charged anion-exchange resin binds negatively charged analytes; salt or pH changes can elute them."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc-03-04-workshop-v1",
+      "title": "Protein Analysis",
+      "asset": "bc03-04",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the measurement that most directly evaluates functional enzyme recovery.",
+          "answer": [
+            "part-3"
+          ],
+          "explanation": "The relevant schematic entity or entities are Activity assay. A band demonstrates staining of material, not necessarily biological function. Pair electrophoretic evidence with an activity assay when assessing active enzyme recovery.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "A band demonstrates staining of material, not necessarily biological function. Pair electrophoretic evidence with an activity assay when assessing active enzyme recovery."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "Which technique separates proteins according to pI?",
+          "answer": 3,
+          "options": [
+            "Reducing SDS-PAGE alone",
+            "Size exclusion alone",
+            "A catalytic activity assay alone",
+            "Isoelectric focusing"
+          ],
+          "explanation": "Isoelectric focusing. Reducing SDS-PAGE can separate chains linked by disulfides. Nonreducing conditions preserve those disulfide links but still disrupt many noncovalent associations.",
+          "hints": [
+            "SDS-PAGE denatures proteins and gives a roughly uniform negative charge-to-mass ratio, so separation primarily reflects polypeptide size. Smaller chains usually migrate farther.",
+            "Reducing SDS-PAGE can separate chains linked by disulfides. Nonreducing conditions preserve those disulfide links but still disrupt many noncovalent associations."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "A disulfide-linked dimer gives one smaller band after reduction. What was disrupted?",
+          "answer": 0,
+          "options": [
+            "Covalent links between polypeptide chains",
+            "Every backbone peptide bond",
+            "All side-chain carbon bonds",
+            "The amino-acid genetic code"
+          ],
+          "explanation": "Covalent links between polypeptide chains. Isoelectric focusing separates proteins according to pI in a pH gradient. Native electrophoresis depends on charge, size and shape together.",
+          "hints": [
+            "Reducing SDS-PAGE can separate chains linked by disulfides. Nonreducing conditions preserve those disulfide links but still disrupt many noncovalent associations.",
+            "Isoelectric focusing separates proteins according to pI in a pH gradient. Native electrophoresis depends on charge, size and shape together."
+          ]
+        }
+      ]
+    }
+  ]
+}

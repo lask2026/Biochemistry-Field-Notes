@@ -1,0 +1,1234 @@
+BIOCHEMISTRY chapter-03: Nonenzymatic Protein Function and Protein Analysis
+Text/content review only; browser execution is not established by this packet.
+PASS 1: Independently solve every supplied blind case. Record case ID, answer, reasoning, confidence and ambiguity. Do not skip stages.
+[
+  {
+    "id": "bc-03-01-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the function exemplified by myosin movement along actin.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Mechanical support",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Molecular transport",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Motor activity",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Ligand binding",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "protein"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Mechanical support</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 20 q12 -70 24 0 t24 0 t24 0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Molecular transport</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Motor activity</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"-20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Ligand binding</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-03-01-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "Which property helps explain hemoglobin’s sigmoidal oxygen-binding curve?",
+    "type": "choice",
+    "options": [
+      "Cooperative subunit interactions",
+      "A single binding site only",
+      "Peptide-bond cleavage during each binding event",
+      "Absence of quaternary structure"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Mechanical support",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Molecular transport",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Motor activity",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Ligand binding",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "protein"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Mechanical support</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 20 q12 -70 24 0 t24 0 t24 0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Molecular transport</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Motor activity</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"-20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Ligand binding</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-03-01-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "A motor uses ATP during movement. Which interpretation is appropriate?",
+    "type": "choice",
+    "options": [
+      "Energy is created",
+      "Chemical energy is coupled to mechanical work",
+      "ATP is a structural chromosome",
+      "Every protein is a motor"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Mechanical support",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Molecular transport",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Motor activity",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Ligand binding",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "protein"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Mechanical support</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 20 q12 -70 24 0 t24 0 t24 0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Molecular transport</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Motor activity</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"-20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Ligand binding</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-03-02-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the component that receives the extracellular ligand directly.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Ligand",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Receptor",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Signal relay",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Cell response",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "signal"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M235 295 Q320 295 405 295\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"18\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Ligand</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 15 H-12 V-10 H12 V15 H40\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-22\" r=\"10\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Receptor</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Signal relay</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Cell response</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-03-02-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "A receptor binds ligand normally but its downstream kinase is inactive. What can occur?",
+    "type": "choice",
+    "options": [
+      "No ligand binding by definition",
+      "Binding without the normal response",
+      "Automatic maximal signaling",
+      "A change in the ligand’s gene sequence"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Ligand",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Receptor",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Signal relay",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Cell response",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "signal"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M235 295 Q320 295 405 295\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"18\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Ligand</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 15 H-12 V-10 H12 V15 H40\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-22\" r=\"10\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Receptor</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Signal relay</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Cell response</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-03-02-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "What helps terminate activation of a typical heterotrimeric G protein?",
+    "type": "choice",
+    "options": [
+      "Permanent GDP phosphorylation on the receptor",
+      "Peptide hydrolysis of every subunit",
+      "GTP hydrolysis",
+      "DNA methylation of the ligand"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Ligand",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Receptor",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Signal relay",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Cell response",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "signal"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M235 295 Q320 295 405 295\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"18\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Ligand</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 15 H-12 V-10 H12 V15 H40\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-22\" r=\"10\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Receptor</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Signal relay</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Cell response</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-03-03-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the method based chiefly on a specific ligand interaction.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Size exclusion",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Ion exchange",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Affinity column",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Collected fractions",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "experiment"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-25 -35 H25 V15 Q0 45 -25 15Z M-25 -20 H25 M-20 -5 H20\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Size exclusion</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 -30 H40 V30 H-40Z M-25 -5 H-5 M5 12 H27 M-20 22 H0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Ion exchange</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-25 -35 H25 V15 Q0 45 -25 15Z M-25 -20 H25 M-20 -5 H20\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Affinity column</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-40 -30 H40 V30 H-40Z M-25 -5 H-5 M5 12 H27 M-20 22 H0\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Collected fractions</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-03-03-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "Which protein generally elutes first from size exclusion, assuming no abnormal interactions?",
+    "type": "choice",
+    "options": [
+      "The smallest species",
+      "The most negative species regardless of size",
+      "A larger hydrodynamic species",
+      "Every species simultaneously"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Size exclusion",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Ion exchange",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Affinity column",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Collected fractions",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "experiment"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-25 -35 H25 V15 Q0 45 -25 15Z M-25 -20 H25 M-20 -5 H20\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Size exclusion</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 -30 H40 V30 H-40Z M-25 -5 H-5 M5 12 H27 M-20 22 H0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Ion exchange</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-25 -35 H25 V15 Q0 45 -25 15Z M-25 -20 H25 M-20 -5 H20\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Affinity column</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-40 -30 H40 V30 H-40Z M-25 -5 H-5 M5 12 H27 M-20 22 H0\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Collected fractions</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-03-03-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "A positive resin retains a protein. What charge is favored on that protein under the loading conditions?",
+    "type": "choice",
+    "options": [
+      "Positive only",
+      "Always zero",
+      "Charge cannot influence retention",
+      "Negative"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Size exclusion",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Ion exchange",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Affinity column",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Collected fractions",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "experiment"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-25 -35 H25 V15 Q0 45 -25 15Z M-25 -20 H25 M-20 -5 H20\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Size exclusion</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 -30 H40 V30 H-40Z M-25 -5 H-5 M5 12 H27 M-20 22 H0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Ion exchange</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-25 -35 H25 V15 Q0 45 -25 15Z M-25 -20 H25 M-20 -5 H20\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Affinity column</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-40 -30 H40 V30 H-40Z M-25 -5 H-5 M5 12 H27 M-20 22 H0\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Collected fractions</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-03-04-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the measurement that most directly evaluates functional enzyme recovery.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "SDS-PAGE",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Native separation",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Isoelectric focusing",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Activity assay",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "experiment"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-25 -35 H25 V15 Q0 45 -25 15Z M-25 -20 H25 M-20 -5 H20\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">SDS-PAGE</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 -30 H40 V30 H-40Z M-25 -5 H-5 M5 12 H27 M-20 22 H0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Native separation</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-25 -35 H25 V15 Q0 45 -25 15Z M-25 -20 H25 M-20 -5 H20\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Isoelectric focusing</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-40 -30 H40 V30 H-40Z M-25 -5 H-5 M5 12 H27 M-20 22 H0\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Activity assay</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-03-04-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "Which technique separates proteins according to pI?",
+    "type": "choice",
+    "options": [
+      "Reducing SDS-PAGE alone",
+      "Size exclusion alone",
+      "A catalytic activity assay alone",
+      "Isoelectric focusing"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "SDS-PAGE",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Native separation",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Isoelectric focusing",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Activity assay",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "experiment"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-25 -35 H25 V15 Q0 45 -25 15Z M-25 -20 H25 M-20 -5 H20\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">SDS-PAGE</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 -30 H40 V30 H-40Z M-25 -5 H-5 M5 12 H27 M-20 22 H0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Native separation</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-25 -35 H25 V15 Q0 45 -25 15Z M-25 -20 H25 M-20 -5 H20\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Isoelectric focusing</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-40 -30 H40 V30 H-40Z M-25 -5 H-5 M5 12 H27 M-20 22 H0\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Activity assay</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-03-04-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "A disulfide-linked dimer gives one smaller band after reduction. What was disrupted?",
+    "type": "choice",
+    "options": [
+      "Covalent links between polypeptide chains",
+      "Every backbone peptide bond",
+      "All side-chain carbon bonds",
+      "The amino-acid genetic code"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "SDS-PAGE",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Native separation",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Isoelectric focusing",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Activity assay",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "experiment"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-25 -35 H25 V15 Q0 45 -25 15Z M-25 -20 H25 M-20 -5 H20\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">SDS-PAGE</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 -30 H40 V30 H-40Z M-25 -5 H-5 M5 12 H27 M-20 22 H0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Native separation</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-25 -35 H25 V15 Q0 45 -25 15Z M-25 -20 H25 M-20 -5 H20\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Isoelectric focusing</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-40 -30 H40 V30 H-40Z M-25 -5 H-5 M5 12 H27 M-20 22 H0\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Activity assay</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  }
+]
+PASS 2: Audit every lesson step, rule, cue, trap, application, diagram, prompt, option, key, hint and explanation below. Compare your independently recorded answers; do not assume the encoded key is correct.
+{
+  "chapter": {
+    "version": 1,
+    "id": "chapter-03",
+    "title": "Nonenzymatic Protein Function and Protein Analysis",
+    "status": "implemented",
+    "scopeNote": "Original condensed MCAT biochemistry lessons covering the declared outline sections. This release is implemented, not independently scientifically verified; it is not exhaustive textbook coverage.",
+    "lessons": [
+      {
+        "id": "concept-3-1",
+        "title": "Cellular Functions",
+        "section": "3.1",
+        "asset": "bc03-01",
+        "steps": [
+          {
+            "text": "Proteins provide structural support, transport cargo, generate force and bind signals as well as catalyze reactions. Function depends on conformation and context.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Hemoglobin carries oxygen with cooperative subunit interactions. Myoglobin is a monomeric oxygen-binding protein whose binding curve is typically hyperbolic.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Actin and myosin participate in force generation. A motor converts chemical energy into directed mechanical work rather than producing energy from nothing.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Binding affinity and transport capacity are distinct. A change that shifts oxygen affinity need not change the number of available binding sites.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "3.1 · Organize: Mechanical support",
+          "paragraphs": [
+            "Proteins provide structural support, transport cargo, generate force and bind signals as well as catalyze reactions. Function depends on conformation and context.",
+            "Hemoglobin carries oxygen with cooperative subunit interactions. Myoglobin is a monomeric oxygen-binding protein whose binding curve is typically hyperbolic."
+          ]
+        },
+        "memoryCue": {
+          "title": "3.1 · Myoglobin binds alone; hemoglobin coordinates subunits.",
+          "paragraphs": [
+            "Myoglobin binds alone; hemoglobin coordinates subunits.",
+            "Hemoglobin carries oxygen with cooperative subunit interactions. Myoglobin is a monomeric oxygen-binding protein whose binding curve is typically hyperbolic."
+          ]
+        },
+        "traps": {
+          "title": "3.1 · Check: Motor activity",
+          "paragraphs": [
+            "Actin and myosin participate in force generation. A motor converts chemical energy into directed mechanical work rather than producing energy from nothing.",
+            "Binding affinity and transport capacity are distinct. A change that shifts oxygen affinity need not change the number of available binding sites."
+          ]
+        },
+        "application": {
+          "title": "3.1 · Apply: Ligand binding",
+          "paragraphs": [
+            "Binding affinity and transport capacity are distinct. A change that shifts oxygen affinity need not change the number of available binding sites.",
+            "Proteins provide structural support, transport cargo, generate force and bind signals as well as catalyze reactions. Function depends on conformation and context."
+          ]
+        }
+      },
+      {
+        "id": "concept-3-2",
+        "title": "Biosignaling",
+        "section": "3.2",
+        "asset": "bc03-02",
+        "steps": [
+          {
+            "text": "A signaling ligand binds a receptor, which changes downstream activity. Receptor occupancy and the magnitude of a cell response are related but not identical.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "A G-protein pathway can amplify signaling through second messengers. GTP hydrolysis helps switch a G protein off; amplification does not imply an unlimited response.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Receptor tyrosine kinases often signal through ligand-induced association and phosphorylation. Intracellular receptors can regulate transcription after binding permeant ligands.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Desensitization and feedback restrain responses. Distinguish a binding defect from a downstream relay defect by testing both ligand binding and cell output.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "3.2 · Organize: Ligand",
+          "paragraphs": [
+            "A signaling ligand binds a receptor, which changes downstream activity. Receptor occupancy and the magnitude of a cell response are related but not identical.",
+            "A G-protein pathway can amplify signaling through second messengers. GTP hydrolysis helps switch a G protein off; amplification does not imply an unlimited response."
+          ]
+        },
+        "memoryCue": {
+          "title": "3.2 · Reception, relay and response are separate checkpoints.",
+          "paragraphs": [
+            "Reception, relay and response are separate checkpoints.",
+            "A G-protein pathway can amplify signaling through second messengers. GTP hydrolysis helps switch a G protein off; amplification does not imply an unlimited response."
+          ]
+        },
+        "traps": {
+          "title": "3.2 · Check: Signal relay",
+          "paragraphs": [
+            "Receptor tyrosine kinases often signal through ligand-induced association and phosphorylation. Intracellular receptors can regulate transcription after binding permeant ligands.",
+            "Desensitization and feedback restrain responses. Distinguish a binding defect from a downstream relay defect by testing both ligand binding and cell output."
+          ]
+        },
+        "application": {
+          "title": "3.2 · Apply: Cell response",
+          "paragraphs": [
+            "Desensitization and feedback restrain responses. Distinguish a binding defect from a downstream relay defect by testing both ligand binding and cell output.",
+            "A signaling ligand binds a receptor, which changes downstream activity. Receptor occupancy and the magnitude of a cell response are related but not identical."
+          ]
+        }
+      },
+      {
+        "id": "concept-3-3",
+        "title": "Protein Isolation",
+        "section": "3.3",
+        "asset": "bc03-03",
+        "steps": [
+          {
+            "text": "Purification separates proteins using different properties. A crude mixture can be fractionated before a more selective step; yield and purity must be tracked separately.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "In size-exclusion chromatography, larger species generally elute earlier because they enter fewer pores. This ordering differs from migration through an SDS gel.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Ion exchange separates by charge at the chosen pH. A positively charged anion-exchange resin binds negatively charged analytes; salt or pH changes can elute them.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Affinity purification uses a specific binding interaction. Strong binding to a ligand does not establish catalytic activity; assay the fractions to locate active protein.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "3.3 · Organize: Size exclusion",
+          "paragraphs": [
+            "Purification separates proteins using different properties. A crude mixture can be fractionated before a more selective step; yield and purity must be tracked separately.",
+            "In size-exclusion chromatography, larger species generally elute earlier because they enter fewer pores. This ordering differs from migration through an SDS gel."
+          ]
+        },
+        "memoryCue": {
+          "title": "3.3 · Large exits size exclusion early; small runs SDS gels farther.",
+          "paragraphs": [
+            "Large exits size exclusion early; small runs SDS gels farther.",
+            "In size-exclusion chromatography, larger species generally elute earlier because they enter fewer pores. This ordering differs from migration through an SDS gel."
+          ]
+        },
+        "traps": {
+          "title": "3.3 · Check: Affinity column",
+          "paragraphs": [
+            "Ion exchange separates by charge at the chosen pH. A positively charged anion-exchange resin binds negatively charged analytes; salt or pH changes can elute them.",
+            "Affinity purification uses a specific binding interaction. Strong binding to a ligand does not establish catalytic activity; assay the fractions to locate active protein."
+          ]
+        },
+        "application": {
+          "title": "3.3 · Apply: Collected fractions",
+          "paragraphs": [
+            "Affinity purification uses a specific binding interaction. Strong binding to a ligand does not establish catalytic activity; assay the fractions to locate active protein.",
+            "Purification separates proteins using different properties. A crude mixture can be fractionated before a more selective step; yield and purity must be tracked separately."
+          ]
+        }
+      },
+      {
+        "id": "concept-3-4",
+        "title": "Protein Analysis",
+        "section": "3.4",
+        "asset": "bc03-04",
+        "steps": [
+          {
+            "text": "SDS-PAGE denatures proteins and gives a roughly uniform negative charge-to-mass ratio, so separation primarily reflects polypeptide size. Smaller chains usually migrate farther.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Reducing SDS-PAGE can separate chains linked by disulfides. Nonreducing conditions preserve those disulfide links but still disrupt many noncovalent associations.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Isoelectric focusing separates proteins according to pI in a pH gradient. Native electrophoresis depends on charge, size and shape together.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "A band demonstrates staining of material, not necessarily biological function. Pair electrophoretic evidence with an activity assay when assessing active enzyme recovery.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "3.4 · Organize: SDS-PAGE",
+          "paragraphs": [
+            "SDS-PAGE denatures proteins and gives a roughly uniform negative charge-to-mass ratio, so separation primarily reflects polypeptide size. Smaller chains usually migrate farther.",
+            "Reducing SDS-PAGE can separate chains linked by disulfides. Nonreducing conditions preserve those disulfide links but still disrupt many noncovalent associations."
+          ]
+        },
+        "memoryCue": {
+          "title": "3.4 · A band shows material; an activity assay shows function.",
+          "paragraphs": [
+            "A band shows material; an activity assay shows function.",
+            "Reducing SDS-PAGE can separate chains linked by disulfides. Nonreducing conditions preserve those disulfide links but still disrupt many noncovalent associations."
+          ]
+        },
+        "traps": {
+          "title": "3.4 · Check: Isoelectric focusing",
+          "paragraphs": [
+            "Isoelectric focusing separates proteins according to pI in a pH gradient. Native electrophoresis depends on charge, size and shape together.",
+            "A band demonstrates staining of material, not necessarily biological function. Pair electrophoretic evidence with an activity assay when assessing active enzyme recovery."
+          ]
+        },
+        "application": {
+          "title": "3.4 · Apply: Activity assay",
+          "paragraphs": [
+            "A band demonstrates staining of material, not necessarily biological function. Pair electrophoretic evidence with an activity assay when assessing active enzyme recovery.",
+            "SDS-PAGE denatures proteins and gives a roughly uniform negative charge-to-mass ratio, so separation primarily reflects polypeptide size. Smaller chains usually migrate farther."
+          ]
+        }
+      }
+    ],
+    "exercises": [
+      {
+        "id": "bc-03-01-workshop-v1",
+        "title": "Cellular Functions",
+        "asset": "bc03-01",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the function exemplified by myosin movement along actin.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant schematic entity or entities are Motor activity. Actin and myosin participate in force generation. A motor converts chemical energy into directed mechanical work rather than producing energy from nothing.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Actin and myosin participate in force generation. A motor converts chemical energy into directed mechanical work rather than producing energy from nothing."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "Which property helps explain hemoglobin’s sigmoidal oxygen-binding curve?",
+            "answer": 0,
+            "options": [
+              "Cooperative subunit interactions",
+              "A single binding site only",
+              "Peptide-bond cleavage during each binding event",
+              "Absence of quaternary structure"
+            ],
+            "explanation": "Cooperative subunit interactions. Hemoglobin carries oxygen with cooperative subunit interactions. Myoglobin is a monomeric oxygen-binding protein whose binding curve is typically hyperbolic.",
+            "hints": [
+              "Proteins provide structural support, transport cargo, generate force and bind signals as well as catalyze reactions. Function depends on conformation and context.",
+              "Hemoglobin carries oxygen with cooperative subunit interactions. Myoglobin is a monomeric oxygen-binding protein whose binding curve is typically hyperbolic."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "A motor uses ATP during movement. Which interpretation is appropriate?",
+            "answer": 1,
+            "options": [
+              "Energy is created",
+              "Chemical energy is coupled to mechanical work",
+              "ATP is a structural chromosome",
+              "Every protein is a motor"
+            ],
+            "explanation": "Chemical energy is coupled to mechanical work. Actin and myosin participate in force generation. A motor converts chemical energy into directed mechanical work rather than producing energy from nothing.",
+            "hints": [
+              "Hemoglobin carries oxygen with cooperative subunit interactions. Myoglobin is a monomeric oxygen-binding protein whose binding curve is typically hyperbolic.",
+              "Actin and myosin participate in force generation. A motor converts chemical energy into directed mechanical work rather than producing energy from nothing."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-03-02-workshop-v1",
+        "title": "Biosignaling",
+        "asset": "bc03-02",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the component that receives the extracellular ligand directly.",
+            "answer": [
+              "part-1"
+            ],
+            "explanation": "The relevant schematic entity or entities are Receptor. A G-protein pathway can amplify signaling through second messengers. GTP hydrolysis helps switch a G protein off; amplification does not imply an unlimited response.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "A G-protein pathway can amplify signaling through second messengers. GTP hydrolysis helps switch a G protein off; amplification does not imply an unlimited response."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "A receptor binds ligand normally but its downstream kinase is inactive. What can occur?",
+            "answer": 1,
+            "options": [
+              "No ligand binding by definition",
+              "Binding without the normal response",
+              "Automatic maximal signaling",
+              "A change in the ligand’s gene sequence"
+            ],
+            "explanation": "Binding without the normal response. A G-protein pathway can amplify signaling through second messengers. GTP hydrolysis helps switch a G protein off; amplification does not imply an unlimited response.",
+            "hints": [
+              "A signaling ligand binds a receptor, which changes downstream activity. Receptor occupancy and the magnitude of a cell response are related but not identical.",
+              "A G-protein pathway can amplify signaling through second messengers. GTP hydrolysis helps switch a G protein off; amplification does not imply an unlimited response."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "What helps terminate activation of a typical heterotrimeric G protein?",
+            "answer": 2,
+            "options": [
+              "Permanent GDP phosphorylation on the receptor",
+              "Peptide hydrolysis of every subunit",
+              "GTP hydrolysis",
+              "DNA methylation of the ligand"
+            ],
+            "explanation": "GTP hydrolysis. Receptor tyrosine kinases often signal through ligand-induced association and phosphorylation. Intracellular receptors can regulate transcription after binding permeant ligands.",
+            "hints": [
+              "A G-protein pathway can amplify signaling through second messengers. GTP hydrolysis helps switch a G protein off; amplification does not imply an unlimited response.",
+              "Receptor tyrosine kinases often signal through ligand-induced association and phosphorylation. Intracellular receptors can regulate transcription after binding permeant ligands."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-03-03-workshop-v1",
+        "title": "Protein Isolation",
+        "asset": "bc03-03",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the method based chiefly on a specific ligand interaction.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant schematic entity or entities are Affinity column. Ion exchange separates by charge at the chosen pH. A positively charged anion-exchange resin binds negatively charged analytes; salt or pH changes can elute them.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Ion exchange separates by charge at the chosen pH. A positively charged anion-exchange resin binds negatively charged analytes; salt or pH changes can elute them."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "Which protein generally elutes first from size exclusion, assuming no abnormal interactions?",
+            "answer": 2,
+            "options": [
+              "The smallest species",
+              "The most negative species regardless of size",
+              "A larger hydrodynamic species",
+              "Every species simultaneously"
+            ],
+            "explanation": "A larger hydrodynamic species. In size-exclusion chromatography, larger species generally elute earlier because they enter fewer pores. This ordering differs from migration through an SDS gel.",
+            "hints": [
+              "Purification separates proteins using different properties. A crude mixture can be fractionated before a more selective step; yield and purity must be tracked separately.",
+              "In size-exclusion chromatography, larger species generally elute earlier because they enter fewer pores. This ordering differs from migration through an SDS gel."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "A positive resin retains a protein. What charge is favored on that protein under the loading conditions?",
+            "answer": 3,
+            "options": [
+              "Positive only",
+              "Always zero",
+              "Charge cannot influence retention",
+              "Negative"
+            ],
+            "explanation": "Negative. Ion exchange separates by charge at the chosen pH. A positively charged anion-exchange resin binds negatively charged analytes; salt or pH changes can elute them.",
+            "hints": [
+              "In size-exclusion chromatography, larger species generally elute earlier because they enter fewer pores. This ordering differs from migration through an SDS gel.",
+              "Ion exchange separates by charge at the chosen pH. A positively charged anion-exchange resin binds negatively charged analytes; salt or pH changes can elute them."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-03-04-workshop-v1",
+        "title": "Protein Analysis",
+        "asset": "bc03-04",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the measurement that most directly evaluates functional enzyme recovery.",
+            "answer": [
+              "part-3"
+            ],
+            "explanation": "The relevant schematic entity or entities are Activity assay. A band demonstrates staining of material, not necessarily biological function. Pair electrophoretic evidence with an activity assay when assessing active enzyme recovery.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "A band demonstrates staining of material, not necessarily biological function. Pair electrophoretic evidence with an activity assay when assessing active enzyme recovery."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "Which technique separates proteins according to pI?",
+            "answer": 3,
+            "options": [
+              "Reducing SDS-PAGE alone",
+              "Size exclusion alone",
+              "A catalytic activity assay alone",
+              "Isoelectric focusing"
+            ],
+            "explanation": "Isoelectric focusing. Reducing SDS-PAGE can separate chains linked by disulfides. Nonreducing conditions preserve those disulfide links but still disrupt many noncovalent associations.",
+            "hints": [
+              "SDS-PAGE denatures proteins and gives a roughly uniform negative charge-to-mass ratio, so separation primarily reflects polypeptide size. Smaller chains usually migrate farther.",
+              "Reducing SDS-PAGE can separate chains linked by disulfides. Nonreducing conditions preserve those disulfide links but still disrupt many noncovalent associations."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "A disulfide-linked dimer gives one smaller band after reduction. What was disrupted?",
+            "answer": 0,
+            "options": [
+              "Covalent links between polypeptide chains",
+              "Every backbone peptide bond",
+              "All side-chain carbon bonds",
+              "The amino-acid genetic code"
+            ],
+            "explanation": "Covalent links between polypeptide chains. Isoelectric focusing separates proteins according to pI in a pH gradient. Native electrophoresis depends on charge, size and shape together.",
+            "hints": [
+              "Reducing SDS-PAGE can separate chains linked by disulfides. Nonreducing conditions preserve those disulfide links but still disrupt many noncovalent associations.",
+              "Isoelectric focusing separates proteins according to pI in a pH gradient. Native electrophoresis depends on charge, size and shape together."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "version": 1,
+    "assets": [
+      {
+        "id": "bc03-01",
+        "kind": "concept-schematic",
+        "title": "Cellular Functions",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Mechanical support",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Molecular transport",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Motor activity",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Ligand binding",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "protein"
+        }
+      },
+      {
+        "id": "bc03-02",
+        "kind": "concept-schematic",
+        "title": "Biosignaling",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Ligand",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Receptor",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Signal relay",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Cell response",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [
+          {
+            "from": "part-0",
+            "to": "part-1"
+          },
+          {
+            "from": "part-1",
+            "to": "part-2"
+          },
+          {
+            "from": "part-2",
+            "to": "part-3"
+          }
+        ],
+        "visual": {
+          "type": "signal"
+        }
+      },
+      {
+        "id": "bc03-03",
+        "kind": "concept-schematic",
+        "title": "Protein Isolation",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Size exclusion",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Ion exchange",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Affinity column",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Collected fractions",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "experiment"
+        }
+      },
+      {
+        "id": "bc03-04",
+        "kind": "concept-schematic",
+        "title": "Protein Analysis",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "SDS-PAGE",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Native separation",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Isoelectric focusing",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Activity assay",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "experiment"
+        }
+      }
+    ]
+  }
+}
+REPORT BY CHAPTER: item ID, severity (critical/major/minor), exact claim, independent answer, encoded key, evidence, correction, uncertainty. Include coverage counts, unresolved questions and a verdict. Cite only inspected sources. Label any incomplete coverage PARTIAL with exact remaining IDs. Do not execute commands or modify curriculum. Model review is candidate evidence, not expert sign-off.
+For strictly blind evidence use a fresh conversation with blind.json only; freeze its response before supplying keyed-audit.json in a separate pass. This combined file contains keys and cannot guarantee blindness.
