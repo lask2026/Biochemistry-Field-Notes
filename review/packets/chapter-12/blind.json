@@ -1,0 +1,998 @@
+{
+  "chapter": "chapter-12",
+  "cases": [
+    {
+      "id": "bc-12-01-workshop-v1/map",
+      "subject": "biochemistry",
+      "prompt": "Select the composition-dependent term entering the free-energy equation.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Standard free energy",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Reaction quotient",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Actual free energy",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Equilibrium",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "energy"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 5 H-5 L10 20 H40\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Standard free energy</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 20 Q-5 -55 20 0 T42 15\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Reaction quotient</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 5 H-5 L10 20 H40\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Actual free energy</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 20 Q-5 -55 20 0 T42 15\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Equilibrium</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-12-01-workshop-v1/reason",
+      "subject": "biochemistry",
+      "prompt": "At equilibrium, what is the actual ΔG?",
+      "type": "choice",
+      "options": [
+        "Always highly negative",
+        "Zero",
+        "Always highly positive",
+        "Equal to activation energy"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Standard free energy",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Reaction quotient",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Actual free energy",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Equilibrium",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "energy"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 5 H-5 L10 20 H40\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Standard free energy</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 20 Q-5 -55 20 0 T42 15\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Reaction quotient</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 5 H-5 L10 20 H40\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Actual free energy</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 20 Q-5 -55 20 0 T42 15\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Equilibrium</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-12-01-workshop-v1/transfer",
+      "subject": "biochemistry",
+      "prompt": "Why can an actual reaction direction differ from a prediction using ΔG°′ alone?",
+      "type": "choice",
+      "options": [
+        "Enzymes change the equilibrium constant",
+        "Temperature never matters",
+        "Reactant and product activities alter Q",
+        "Every reaction is irreversible"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Standard free energy",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Reaction quotient",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Actual free energy",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Equilibrium",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "energy"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 5 H-5 L10 20 H40\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Standard free energy</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 20 Q-5 -55 20 0 T42 15\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Reaction quotient</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 5 H-5 L10 20 H40\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Actual free energy</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 20 Q-5 -55 20 0 T42 15\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Equilibrium</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-12-02-workshop-v1/map",
+      "subject": "biochemistry",
+      "prompt": "Select the process that links ATP chemistry to another transformation.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "ATP hydrolysis",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Coupled reaction",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Phosphoryl transfer",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Cellular work",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "energy"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 5 H-5 L10 20 H40\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">ATP hydrolysis</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 20 Q-5 -55 20 0 T42 15\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Coupled reaction</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 5 H-5 L10 20 H40\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Phosphoryl transfer</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 20 Q-5 -55 20 0 T42 15\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Cellular work</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-12-02-workshop-v1/reason",
+      "subject": "biochemistry",
+      "prompt": "Why is “energy is released simply by breaking an ATP bond” incomplete?",
+      "type": "choice",
+      "options": [
+        "All bond breaking releases energy",
+        "ATP contains no bonds",
+        "Bond breaking costs energy; the overall product balance matters",
+        "ATP hydrolysis never releases free energy"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "ATP hydrolysis",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Coupled reaction",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Phosphoryl transfer",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Cellular work",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "energy"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 5 H-5 L10 20 H40\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">ATP hydrolysis</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 20 Q-5 -55 20 0 T42 15\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Coupled reaction</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 5 H-5 L10 20 H40\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Phosphoryl transfer</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 20 Q-5 -55 20 0 T42 15\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Cellular work</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-12-02-workshop-v1/transfer",
+      "subject": "biochemistry",
+      "prompt": "For coupling to drive an unfavorable step, what is needed?",
+      "type": "choice",
+      "options": [
+        "Only coexistence in one flask",
+        "Identical enzyme names",
+        "A positive summed ΔG in the forward direction",
+        "A mechanistic link and favorable summed free energy"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "ATP hydrolysis",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Coupled reaction",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Phosphoryl transfer",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Cellular work",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "energy"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 5 H-5 L10 20 H40\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">ATP hydrolysis</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 20 Q-5 -55 20 0 T42 15\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Coupled reaction</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 5 H-5 L10 20 H40\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Phosphoryl transfer</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-40 -30 V30 H45\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-35 20 Q-5 -55 20 0 T42 15\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Cellular work</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-12-03-workshop-v1/map",
+      "subject": "biochemistry",
+      "prompt": "Select the reduced carrier most associated with anabolic reducing power.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Electron donor",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Electron acceptor",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "NADH pool",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "NADPH pool",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "balance"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Electron donor</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Electron acceptor</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">NADH pool</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">NADPH pool</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-12-03-workshop-v1/reason",
+      "subject": "biochemistry",
+      "prompt": "What happens to an oxidizing agent as it accepts electrons?",
+      "type": "choice",
+      "options": [
+        "It is oxidized",
+        "It disappears without products",
+        "It becomes ATP automatically",
+        "It is reduced"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Electron donor",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Electron acceptor",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "NADH pool",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "NADPH pool",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "balance"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Electron donor</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Electron acceptor</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">NADH pool</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">NADPH pool</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-12-03-workshop-v1/transfer",
+      "subject": "biochemistry",
+      "prompt": "For positive ΔE°′ and positive n, what is the sign of ΔG°′?",
+      "type": "choice",
+      "options": [
+        "Negative",
+        "Positive",
+        "Always zero",
+        "Unrelated by any equation"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Electron donor",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Electron acceptor",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "NADH pool",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "NADPH pool",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "balance"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Electron donor</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Electron acceptor</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">NADH pool</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">NADPH pool</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-12-04-workshop-v1/map",
+      "subject": "biochemistry",
+      "prompt": "Select the state most associated with postmeal storage.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Fed state",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Early fasting",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Long fasting",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Fuel adaptation",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "signal"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"18\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Fed state</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 15 H-12 V-10 H12 V15 H40\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-22\" r=\"10\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Early fasting</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Long fasting</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Fuel adaptation</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-12-04-workshop-v1/reason",
+      "subject": "biochemistry",
+      "prompt": "Which process tends to rise in liver as a fast progresses and glycogen falls?",
+      "type": "choice",
+      "options": [
+        "Gluconeogenesis",
+        "Net glycogen storage from a meal",
+        "Dietary chylomicron assembly in liver",
+        "Cellulose synthesis"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Fed state",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Early fasting",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Long fasting",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Fuel adaptation",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "signal"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"18\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Fed state</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 15 H-12 V-10 H12 V15 H40\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-22\" r=\"10\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Early fasting</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Long fasting</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Fuel adaptation</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-12-04-workshop-v1/transfer",
+      "subject": "biochemistry",
+      "prompt": "Which statement fits prolonged fasting?",
+      "type": "choice",
+      "options": [
+        "Red blood cells switch fully to fatty acids",
+        "Brain ketone use rises but glucose needs do not vanish",
+        "All tissues use identical fuels",
+        "Insulin rises without limit"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Fed state",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Early fasting",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Long fasting",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Fuel adaptation",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "signal"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"18\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Fed state</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 15 H-12 V-10 H12 V15 H40\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-22\" r=\"10\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Early fasting</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Long fasting</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Fuel adaptation</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-12-05-workshop-v1/map",
+      "subject": "biochemistry",
+      "prompt": "Select the hormone most associated with rapid muscle glycogen mobilization.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Insulin",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Glucagon",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Epinephrine",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Target enzymes",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "signal"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"18\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Insulin</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 15 H-12 V-10 H12 V15 H40\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-22\" r=\"10\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Glucagon</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Epinephrine</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Target enzymes</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-12-05-workshop-v1/reason",
+      "subject": "biochemistry",
+      "prompt": "Which hormone directly promotes a classic hepatic fasting response?",
+      "type": "choice",
+      "options": [
+        "Insulin in every context",
+        "Glucagon",
+        "Melatonin only",
+        "Thyroxine as the sole acute signal"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Insulin",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Glucagon",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Epinephrine",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Target enzymes",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "signal"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"18\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Insulin</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 15 H-12 V-10 H12 V15 H40\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-22\" r=\"10\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Glucagon</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Epinephrine</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Target enzymes</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-12-05-workshop-v1/transfer",
+      "subject": "biochemistry",
+      "prompt": "A kinase phosphorylates two different metabolic enzymes. What can be concluded about both activities?",
+      "type": "choice",
+      "options": [
+        "Both must activate",
+        "Both must be degraded",
+        "Effects must be determined for each enzyme",
+        "Both must lose phosphate immediately"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Insulin",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Glucagon",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Epinephrine",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Target enzymes",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "signal"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"18\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Insulin</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 15 H-12 V-10 H12 V15 H40\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-22\" r=\"10\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Glucagon</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Epinephrine</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Target enzymes</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-12-06-workshop-v1/map",
+      "subject": "biochemistry",
+      "prompt": "Select the cell type restricted to glycolytic ATP production.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Liver",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Skeletal muscle",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Brain",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Red blood cell",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "transport"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Liver</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Skeletal muscle</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Brain</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Red blood cell</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-12-06-workshop-v1/reason",
+      "subject": "biochemistry",
+      "prompt": "Which tissue can release glucose from glycogen for blood-glucose support?",
+      "type": "choice",
+      "options": [
+        "Skeletal muscle through abundant glucose-6-phosphatase",
+        "Mature red blood cells",
+        "Liver",
+        "All tissues identically"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Liver",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Skeletal muscle",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Brain",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Red blood cell",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "transport"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Liver</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Skeletal muscle</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Brain</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Red blood cell</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-12-06-workshop-v1/transfer",
+      "subject": "biochemistry",
+      "prompt": "Why do mature red blood cells produce lactate despite oxygen exposure?",
+      "type": "choice",
+      "options": [
+        "Oxygen is absent from all blood",
+        "They have no glycolytic enzymes",
+        "They perform ketogenesis instead",
+        "They lack mitochondria for oxidative metabolism"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Liver",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Skeletal muscle",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Brain",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Red blood cell",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "transport"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Liver</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Skeletal muscle</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Brain</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Red blood cell</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-12-07-workshop-v1/map",
+      "subject": "biochemistry",
+      "prompt": "Select both sides of the carbon exchange emphasized by the Cori cycle.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Muscle lactate",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Liver glucose",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Adipose fatty acids",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Whole-body balance",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [
+          {
+            "from": "part-0",
+            "to": "part-1"
+          },
+          {
+            "from": "part-1",
+            "to": "part-0"
+          }
+        ],
+        "visual": {
+          "type": "cycle"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M405 105 Q345 130 235 105\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-30 -15 Q0 -45 30 -15 Q50 10 20 30 Q-10 45 -30 15 Q-45 0 -30 -15\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"7\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Muscle lactate</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -15 Q0 -45 30 -15 Q50 10 20 30 Q-10 45 -30 15 Q-45 0 -30 -15\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"7\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Liver glucose</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -15 Q0 -45 30 -15 Q50 10 20 30 Q-10 45 -30 15 Q-45 0 -30 -15\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"7\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Adipose fatty acids</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -15 Q0 -45 30 -15 Q50 10 20 30 Q-10 45 -30 15 Q-45 0 -30 -15\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"7\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Whole-body balance</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-12-07-workshop-v1/reason",
+      "subject": "biochemistry",
+      "prompt": "What is a key whole-body feature of the Cori cycle?",
+      "type": "choice",
+      "options": [
+        "It generates ATP without fuel oxidation",
+        "Muscle exports glucose through glucose-6-phosphatase",
+        "It converts nitrogen directly into glucose carbon",
+        "Hepatic energy expenditure supports peripheral glucose regeneration"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Muscle lactate",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Liver glucose",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Adipose fatty acids",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Whole-body balance",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [
+          {
+            "from": "part-0",
+            "to": "part-1"
+          },
+          {
+            "from": "part-1",
+            "to": "part-0"
+          }
+        ],
+        "visual": {
+          "type": "cycle"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M405 105 Q345 130 235 105\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-30 -15 Q0 -45 30 -15 Q50 10 20 30 Q-10 45 -30 15 Q-45 0 -30 -15\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"7\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Muscle lactate</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -15 Q0 -45 30 -15 Q50 10 20 30 Q-10 45 -30 15 Q-45 0 -30 -15\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"7\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Liver glucose</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -15 Q0 -45 30 -15 Q50 10 20 30 Q-10 45 -30 15 Q-45 0 -30 -15\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"7\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Adipose fatty acids</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -15 Q0 -45 30 -15 Q50 10 20 30 Q-10 45 -30 15 Q-45 0 -30 -15\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"7\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Whole-body balance</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-12-07-workshop-v1/transfer",
+      "subject": "biochemistry",
+      "prompt": "Which carrier participates in moving muscle nitrogen as well as carbon toward liver?",
+      "type": "choice",
+      "options": [
+        "Alanine",
+        "Oxygen",
+        "Cholesterol",
+        "Cellulose"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Muscle lactate",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Liver glucose",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Adipose fatty acids",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Whole-body balance",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [
+          {
+            "from": "part-0",
+            "to": "part-1"
+          },
+          {
+            "from": "part-1",
+            "to": "part-0"
+          }
+        ],
+        "visual": {
+          "type": "cycle"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M405 105 Q345 130 235 105\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-30 -15 Q0 -45 30 -15 Q50 10 20 30 Q-10 45 -30 15 Q-45 0 -30 -15\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"7\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Muscle lactate</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -15 Q0 -45 30 -15 Q50 10 20 30 Q-10 45 -30 15 Q-45 0 -30 -15\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"7\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Liver glucose</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -15 Q0 -45 30 -15 Q50 10 20 30 Q-10 45 -30 15 Q-45 0 -30 -15\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"7\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Adipose fatty acids</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -15 Q0 -45 30 -15 Q50 10 20 30 Q-10 45 -30 15 Q-45 0 -30 -15\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"7\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Whole-body balance</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    }
+  ]
+}
