@@ -1,0 +1,2232 @@
+BIOCHEMISTRY chapter-11: Lipid and Amino Acid Metabolism
+Text/content review only; browser execution is not established by this packet.
+PASS 1: Independently solve every supplied blind case. Record case ID, answer, reasoning, confidence and ambiguity. Do not skip stages.
+[
+  {
+    "id": "bc-11-01-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the entity supplying lipid-digesting enzymatic activity.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Bile-assisted dispersion",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Lipase action",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Mixed micelle",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Chylomicron export",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "lipid"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M235 295 Q320 295 405 295\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"32\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Bile-assisted dispersion</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Lipase action</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Mixed micelle</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Chylomicron export</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-11-01-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "What is a principal role of bile salts in lipid digestion?",
+    "type": "choice",
+    "options": [
+      "Dispersion and micellar solubilization",
+      "Peptide-bond hydrolysis",
+      "Direct ATP synthesis",
+      "DNA replication"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Bile-assisted dispersion",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Lipase action",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Mixed micelle",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Chylomicron export",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "lipid"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M235 295 Q320 295 405 295\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"32\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Bile-assisted dispersion</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Lipase action</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Mixed micelle</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Chylomicron export</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-11-01-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "Where do many long-chain dietary lipids initially travel after chylomicron export?",
+    "type": "choice",
+    "options": [
+      "Directly inside red blood cells",
+      "Lymph",
+      "The nucleus",
+      "Only the gastric lumen"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Bile-assisted dispersion",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Lipase action",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Mixed micelle",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Chylomicron export",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "lipid"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M235 295 Q320 295 405 295\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"32\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Bile-assisted dispersion</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Lipase action</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Mixed micelle</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Chylomicron export</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-11-02-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the circulating carrier for the released nonesterified fatty acids.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Adipose droplet",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Lipase cascade",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Albumin carrier",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Tissue uptake",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "lipid"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M235 295 Q320 295 405 295\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"32\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Adipose droplet</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Lipase cascade</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Albumin carrier</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Tissue uptake</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-11-02-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "How do mobilized nonesterified fatty acids mainly travel in plasma?",
+    "type": "choice",
+    "options": [
+      "Freely dissolved as a large hydrophobic pool",
+      "Bound to albumin",
+      "Inside DNA",
+      "Only as glycogen"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Adipose droplet",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Lipase cascade",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Albumin carrier",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Tissue uptake",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "lipid"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M235 295 Q320 295 405 295\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"32\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Adipose droplet</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Lipase cascade</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Albumin carrier</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Tissue uptake</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-11-02-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "Which fed-state signal generally suppresses adipose lipolysis?",
+    "type": "choice",
+    "options": [
+      "A universal rise in every catecholamine",
+      "A lack of all receptors",
+      "Insulin",
+      "Oxygen as a hormone"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Adipose droplet",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Lipase cascade",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Albumin carrier",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Tissue uptake",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "lipid"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M235 295 Q320 295 405 295\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"32\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Adipose droplet</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Lipase cascade</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Albumin carrier</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Tissue uptake</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-11-03-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the particle initially associated with intestinal dietary lipid export.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Chylomicron",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "VLDL",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "LDL",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "HDL",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "lipid"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"32\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Chylomicron</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">VLDL</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">LDL</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">HDL</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-11-03-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "Which particle class mainly exports liver-derived triacylglycerol?",
+    "type": "choice",
+    "options": [
+      "Chylomicrons",
+      "Free albumin alone",
+      "VLDL",
+      "Hemoglobin"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Chylomicron",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "VLDL",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "LDL",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "HDL",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "lipid"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"32\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Chylomicron</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">VLDL</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">LDL</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">HDL</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-11-03-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "Which uptake mechanism is central to cellular LDL handling?",
+    "type": "choice",
+    "options": [
+      "Free diffusion of whole particles through lipid",
+      "Ribosomal translation",
+      "PCR amplification",
+      "Receptor-mediated endocytosis"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Chylomicron",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "VLDL",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "LDL",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "HDL",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "lipid"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"32\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Chylomicron</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">VLDL</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">LDL</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">HDL</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-11-04-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the pool that supplies steroid-hormone precursors.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "HMG-CoA reductase",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Cholesterol pool",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Bile acids",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Steroid products",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "lipid"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"32\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">HMG-CoA reductase</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Cholesterol pool</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Bile acids</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Steroid products</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-11-04-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "Which enzyme is an important regulated target in cholesterol synthesis?",
+    "type": "choice",
+    "options": [
+      "PFK-1",
+      "DNA ligase",
+      "Pyruvate carboxylase",
+      "HMG-CoA reductase"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "HMG-CoA reductase",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Cholesterol pool",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Bile acids",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Steroid products",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "lipid"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"32\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">HMG-CoA reductase</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Cholesterol pool</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Bile acids</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Steroid products</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-11-04-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "Which product class can derive from cholesterol?",
+    "type": "choice",
+    "options": [
+      "Bile acids",
+      "Glycogen directly",
+      "Ribosomal RNA directly",
+      "Lactose directly"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "HMG-CoA reductase",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Cholesterol pool",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Bile acids",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Steroid products",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "lipid"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"32\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">HMG-CoA reductase</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Cholesterol pool</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Bile acids</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Steroid products</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-11-05-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the pathway using NADPH for net chain construction.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Fatty-acid synthesis",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Carnitine shuttle",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Beta oxidation",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Malonyl-CoA signal",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "lipid"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"32\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Fatty-acid synthesis</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Carnitine shuttle</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Beta oxidation</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Malonyl-CoA signal</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-11-05-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "How many beta-oxidation cycles shorten a saturated C16 chain to acetyl-CoA units?",
+    "type": "number",
+    "unit": "cycles",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Fatty-acid synthesis",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Carnitine shuttle",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Beta oxidation",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Malonyl-CoA signal",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "lipid"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"32\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Fatty-acid synthesis</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Carnitine shuttle</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Beta oxidation</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Malonyl-CoA signal</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-11-05-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "What is an important action of malonyl-CoA?",
+    "type": "choice",
+    "options": [
+      "Direct activation of every respiratory complex",
+      "Inhibition of CPT I",
+      "Cleavage of DNA",
+      "Replacement of all NADPH"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Fatty-acid synthesis",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Carnitine shuttle",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Beta oxidation",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Malonyl-CoA signal",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "lipid"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"32\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Fatty-acid synthesis</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Carnitine shuttle</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Beta oxidation</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Malonyl-CoA signal</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-11-06-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the organ-associated process generating exported ketones.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Hepatic ketogenesis",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Ketone export",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Extrahepatic use",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Acetyl-CoA recovery",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "lipid"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M235 295 Q320 295 405 295\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"32\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Hepatic ketogenesis</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Ketone export</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Extrahepatic use</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Acetyl-CoA recovery</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-11-06-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "Why does liver export rather than substantially consume its own ketones through the usual pathway?",
+    "type": "choice",
+    "options": [
+      "It has no mitochondria",
+      "It lacks the usual SCOT step",
+      "Ketones contain no carbon",
+      "Its cells cannot use acetyl-CoA"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Hepatic ketogenesis",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Ketone export",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Extrahepatic use",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Acetyl-CoA recovery",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "lipid"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M235 295 Q320 295 405 295\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"32\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Hepatic ketogenesis</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Ketone export</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Extrahepatic use</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Acetyl-CoA recovery</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-11-06-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "Which cells cannot oxidize ketones in mitochondria?",
+    "type": "choice",
+    "options": [
+      "Skeletal muscle fibers",
+      "Cardiac muscle cells",
+      "Mature human red blood cells",
+      "Brain cells under all conditions"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Hepatic ketogenesis",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Ketone export",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Extrahepatic use",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Acetyl-CoA recovery",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "lipid"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M235 295 Q320 295 405 295\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"32\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Hepatic ketogenesis</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Ketone export</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Extrahepatic use</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Acetyl-CoA recovery</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-11-07-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the pathway that packages nitrogen for excretion.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Transamination",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Nitrogen collection",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Urea synthesis",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Carbon skeleton",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        }
+      ],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Transamination</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Nitrogen collection</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Urea synthesis</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Carbon skeleton</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-11-07-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "Which coenzyme is central to many aminotransferases?",
+    "type": "choice",
+    "options": [
+      "Coenzyme Q only",
+      "Biotin in every case",
+      "PLP",
+      "Retinal"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Transamination",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Nitrogen collection",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Urea synthesis",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Carbon skeleton",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        }
+      ],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Transamination</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Nitrogen collection</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Urea synthesis</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Carbon skeleton</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-11-07-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "Which pair is exclusively ketogenic in the standard human classification?",
+    "type": "choice",
+    "options": [
+      "Alanine and glycine",
+      "Aspartate and glutamate",
+      "Serine and cysteine",
+      "Leucine and lysine"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Transamination",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Nitrogen collection",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Urea synthesis",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Carbon skeleton",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        }
+      ],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Transamination</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Nitrogen collection</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Urea synthesis</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Carbon skeleton</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  }
+]
+PASS 2: Audit every lesson step, rule, cue, trap, application, diagram, prompt, option, key, hint and explanation below. Compare your independently recorded answers; do not assume the encoded key is correct.
+{
+  "chapter": {
+    "version": 1,
+    "id": "chapter-11",
+    "title": "Lipid and Amino Acid Metabolism",
+    "status": "implemented",
+    "scopeNote": "Original condensed MCAT biochemistry lessons covering the declared outline sections. This release is implemented, not independently scientifically verified; it is not exhaustive textbook coverage.",
+    "lessons": [
+      {
+        "id": "concept-11-1",
+        "title": "Lipid Digestion and Absorption",
+        "section": "11.1",
+        "asset": "bc11-01",
+        "steps": [
+          {
+            "text": "Bile salts help disperse dietary lipid and support mixed micelles. They assist access and solubilization; they are not the enzymes that hydrolyze ester bonds.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Pancreatic lipase helps hydrolyze dietary triacylglycerol. Products enter enterocytes, where many long-chain fatty acids are reesterified.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Long-chain dietary lipids leave enterocytes largely in chylomicrons through lymph before reaching blood. Micelles deliver material to the cell but do not become circulating chylomicrons intact.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Shorter-chain fatty acids have different transport behavior and can reach portal blood more directly. Specify chain length before applying one route universally.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "11.1 · Organize: Bile-assisted dispersion",
+          "paragraphs": [
+            "Bile salts help disperse dietary lipid and support mixed micelles. They assist access and solubilization; they are not the enzymes that hydrolyze ester bonds.",
+            "Pancreatic lipase helps hydrolyze dietary triacylglycerol. Products enter enterocytes, where many long-chain fatty acids are reesterified."
+          ]
+        },
+        "memoryCue": {
+          "title": "11.1 · Micelles deliver to enterocytes; chylomicrons leave through lymph.",
+          "paragraphs": [
+            "Micelles deliver to enterocytes; chylomicrons leave through lymph.",
+            "Pancreatic lipase helps hydrolyze dietary triacylglycerol. Products enter enterocytes, where many long-chain fatty acids are reesterified."
+          ]
+        },
+        "traps": {
+          "title": "11.1 · Check: Mixed micelle",
+          "paragraphs": [
+            "Long-chain dietary lipids leave enterocytes largely in chylomicrons through lymph before reaching blood. Micelles deliver material to the cell but do not become circulating chylomicrons intact.",
+            "Shorter-chain fatty acids have different transport behavior and can reach portal blood more directly. Specify chain length before applying one route universally."
+          ]
+        },
+        "application": {
+          "title": "11.1 · Apply: Chylomicron export",
+          "paragraphs": [
+            "Shorter-chain fatty acids have different transport behavior and can reach portal blood more directly. Specify chain length before applying one route universally.",
+            "Bile salts help disperse dietary lipid and support mixed micelles. They assist access and solubilization; they are not the enzymes that hydrolyze ester bonds."
+          ]
+        }
+      },
+      {
+        "id": "concept-11-2",
+        "title": "Lipid Mobilization",
+        "section": "11.2",
+        "asset": "bc11-02",
+        "steps": [
+          {
+            "text": "Stored triacylglycerol is mobilized through a lipase sequence that releases fatty acids and glycerol. Several enzymes participate; no single lipase completes every step alone.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Catecholamine signaling can promote adipose lipolysis, while insulin suppresses mobilization in the fed state. Human adipose regulation should not be reduced to a universal direct glucagon switch.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Nonesterified fatty acids circulate largely bound to albumin. Glycerol is water-soluble and can be used especially by liver for metabolic pathways.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Lipolysis releases fuel but does not itself oxidize every fatty acid to CO2. Uptake, activation and mitochondrial entry are separate control points.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "11.2 · Organize: Adipose droplet",
+          "paragraphs": [
+            "Stored triacylglycerol is mobilized through a lipase sequence that releases fatty acids and glycerol. Several enzymes participate; no single lipase completes every step alone.",
+            "Catecholamine signaling can promote adipose lipolysis, while insulin suppresses mobilization in the fed state. Human adipose regulation should not be reduced to a universal direct glucagon switch."
+          ]
+        },
+        "memoryCue": {
+          "title": "11.2 · Release is lipolysis; energy extraction is later oxidation.",
+          "paragraphs": [
+            "Release is lipolysis; energy extraction is later oxidation.",
+            "Catecholamine signaling can promote adipose lipolysis, while insulin suppresses mobilization in the fed state. Human adipose regulation should not be reduced to a universal direct glucagon switch."
+          ]
+        },
+        "traps": {
+          "title": "11.2 · Check: Albumin carrier",
+          "paragraphs": [
+            "Nonesterified fatty acids circulate largely bound to albumin. Glycerol is water-soluble and can be used especially by liver for metabolic pathways.",
+            "Lipolysis releases fuel but does not itself oxidize every fatty acid to CO2. Uptake, activation and mitochondrial entry are separate control points."
+          ]
+        },
+        "application": {
+          "title": "11.2 · Apply: Tissue uptake",
+          "paragraphs": [
+            "Lipolysis releases fuel but does not itself oxidize every fatty acid to CO2. Uptake, activation and mitochondrial entry are separate control points.",
+            "Stored triacylglycerol is mobilized through a lipase sequence that releases fatty acids and glycerol. Several enzymes participate; no single lipase completes every step alone."
+          ]
+        }
+      },
+      {
+        "id": "concept-11-3",
+        "title": "Lipid Transport",
+        "section": "11.3",
+        "asset": "bc11-03",
+        "steps": [
+          {
+            "text": "Lipoproteins package hydrophobic lipids within particles having a water-compatible surface. Their density depends on composition, including relative lipid and protein content.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Chylomicrons carry much dietary triacylglycerol; VLDL exports much liver-derived triacylglycerol. Lipoprotein lipase helps tissues access fatty acids from circulating triacylglycerol.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "LDL supplies cholesterol to cells through receptor-mediated uptake. HDL participates in cholesterol transport and exchange, including reverse transport pathways.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Particle roles are transport functions, not moral labels or a complete clinical risk model. Distinguish dietary lipid delivery from hepatic export and cholesterol retrieval.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "11.3 · Organize: Chylomicron",
+          "paragraphs": [
+            "Lipoproteins package hydrophobic lipids within particles having a water-compatible surface. Their density depends on composition, including relative lipid and protein content.",
+            "Chylomicrons carry much dietary triacylglycerol; VLDL exports much liver-derived triacylglycerol. Lipoprotein lipase helps tissues access fatty acids from circulating triacylglycerol."
+          ]
+        },
+        "memoryCue": {
+          "title": "11.3 · Chylomicrons carry diet; VLDL exports liver triacylglycerol.",
+          "paragraphs": [
+            "Chylomicrons carry diet; VLDL exports liver triacylglycerol.",
+            "Chylomicrons carry much dietary triacylglycerol; VLDL exports much liver-derived triacylglycerol. Lipoprotein lipase helps tissues access fatty acids from circulating triacylglycerol."
+          ]
+        },
+        "traps": {
+          "title": "11.3 · Check: LDL",
+          "paragraphs": [
+            "LDL supplies cholesterol to cells through receptor-mediated uptake. HDL participates in cholesterol transport and exchange, including reverse transport pathways.",
+            "Particle roles are transport functions, not moral labels or a complete clinical risk model. Distinguish dietary lipid delivery from hepatic export and cholesterol retrieval."
+          ]
+        },
+        "application": {
+          "title": "11.3 · Apply: HDL",
+          "paragraphs": [
+            "Particle roles are transport functions, not moral labels or a complete clinical risk model. Distinguish dietary lipid delivery from hepatic export and cholesterol retrieval.",
+            "Lipoproteins package hydrophobic lipids within particles having a water-compatible surface. Their density depends on composition, including relative lipid and protein content."
+          ]
+        }
+      },
+      {
+        "id": "concept-11-4",
+        "title": "Cholesterol Metabolism",
+        "section": "11.4",
+        "asset": "bc11-04",
+        "steps": [
+          {
+            "text": "Cholesterol is synthesized from acetyl-derived carbon through a multistep pathway. HMG-CoA reductase is an important regulated step in the mevalonate pathway.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Cholesterol supports membranes and is a precursor for steroid hormones and bile acids. Cholesterol synthesis and mitochondrial ketogenesis use different compartmental pathways despite sharing an HMG-CoA intermediate name.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Feedback and enzyme regulation restrain synthesis when sterol supply is high. Uptake, synthesis, storage and disposal all contribute to the cellular cholesterol pool.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Human cholesterol carbon is not simply oxidized to CO2 as a major fuel route. Conversion to bile acids and biliary secretion contribute to elimination.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "11.4 · Organize: HMG-CoA reductase",
+          "paragraphs": [
+            "Cholesterol is synthesized from acetyl-derived carbon through a multistep pathway. HMG-CoA reductase is an important regulated step in the mevalonate pathway.",
+            "Cholesterol supports membranes and is a precursor for steroid hormones and bile acids. Cholesterol synthesis and mitochondrial ketogenesis use different compartmental pathways despite sharing an HMG-CoA intermediate name."
+          ]
+        },
+        "memoryCue": {
+          "title": "11.4 · Cholesterol feeds membranes, steroids and bile acids.",
+          "paragraphs": [
+            "Cholesterol feeds membranes, steroids and bile acids.",
+            "Cholesterol supports membranes and is a precursor for steroid hormones and bile acids. Cholesterol synthesis and mitochondrial ketogenesis use different compartmental pathways despite sharing an HMG-CoA intermediate name."
+          ]
+        },
+        "traps": {
+          "title": "11.4 · Check: Bile acids",
+          "paragraphs": [
+            "Feedback and enzyme regulation restrain synthesis when sterol supply is high. Uptake, synthesis, storage and disposal all contribute to the cellular cholesterol pool.",
+            "Human cholesterol carbon is not simply oxidized to CO2 as a major fuel route. Conversion to bile acids and biliary secretion contribute to elimination."
+          ]
+        },
+        "application": {
+          "title": "11.4 · Apply: Steroid products",
+          "paragraphs": [
+            "Human cholesterol carbon is not simply oxidized to CO2 as a major fuel route. Conversion to bile acids and biliary secretion contribute to elimination.",
+            "Cholesterol is synthesized from acetyl-derived carbon through a multistep pathway. HMG-CoA reductase is an important regulated step in the mevalonate pathway."
+          ]
+        }
+      },
+      {
+        "id": "concept-11-5",
+        "title": "Fatty Acids and Triacylglycerols",
+        "section": "11.5",
+        "asset": "bc11-05",
+        "steps": [
+          {
+            "text": "Fatty-acid synthesis uses cytosolic acetyl-derived units and NADPH, with malonyl-CoA serving as a two-carbon donor after decarboxylation. Synthesis is not reverse beta oxidation.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Long-chain fatty-acyl groups use the carnitine shuttle for mitochondrial entry. Malonyl-CoA inhibits CPT I, helping restrain simultaneous synthesis and mitochondrial entry.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Beta oxidation repeatedly removes two-carbon acetyl-CoA units and generates reducing equivalents. An even saturated C16 chain undergoes seven cycles to yield eight acetyl-CoA.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Odd-chain oxidation ends with propionyl-CoA, which can enter metabolism through succinyl-CoA. Unsaturated chains require modified processing and have different energy accounting.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "11.5 · Organize: Fatty-acid synthesis",
+          "paragraphs": [
+            "Fatty-acid synthesis uses cytosolic acetyl-derived units and NADPH, with malonyl-CoA serving as a two-carbon donor after decarboxylation. Synthesis is not reverse beta oxidation.",
+            "Long-chain fatty-acyl groups use the carnitine shuttle for mitochondrial entry. Malonyl-CoA inhibits CPT I, helping restrain simultaneous synthesis and mitochondrial entry."
+          ]
+        },
+        "memoryCue": {
+          "title": "11.5 · For even saturated chains: acetyl units equal carbons/2; cycles are one fewer.",
+          "paragraphs": [
+            "For even saturated chains: acetyl units equal carbons/2; cycles are one fewer.",
+            "Long-chain fatty-acyl groups use the carnitine shuttle for mitochondrial entry. Malonyl-CoA inhibits CPT I, helping restrain simultaneous synthesis and mitochondrial entry."
+          ]
+        },
+        "traps": {
+          "title": "11.5 · Check: Beta oxidation",
+          "paragraphs": [
+            "Beta oxidation repeatedly removes two-carbon acetyl-CoA units and generates reducing equivalents. An even saturated C16 chain undergoes seven cycles to yield eight acetyl-CoA.",
+            "Odd-chain oxidation ends with propionyl-CoA, which can enter metabolism through succinyl-CoA. Unsaturated chains require modified processing and have different energy accounting."
+          ]
+        },
+        "application": {
+          "title": "11.5 · Apply: Malonyl-CoA signal",
+          "paragraphs": [
+            "Odd-chain oxidation ends with propionyl-CoA, which can enter metabolism through succinyl-CoA. Unsaturated chains require modified processing and have different energy accounting.",
+            "Fatty-acid synthesis uses cytosolic acetyl-derived units and NADPH, with malonyl-CoA serving as a two-carbon donor after decarboxylation. Synthesis is not reverse beta oxidation."
+          ]
+        }
+      },
+      {
+        "id": "concept-11-6",
+        "title": "Ketone Bodies",
+        "section": "11.6",
+        "asset": "bc11-06",
+        "steps": [
+          {
+            "text": "Liver mitochondria make ketone bodies from acetyl-CoA, especially when fatty-acid supply is high and carbohydrate availability is low. Ketones are exported as water-soluble fuels.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Extrahepatic tissues with appropriate mitochondrial enzymes can use ketones. Liver lacks the usual SCOT-mediated route for consuming the ketones it produces.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "The brain can increase ketone use during prolonged fasting. Mature red blood cells cannot use ketones for mitochondrial ATP production because they lack mitochondria.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Ketone production is not inherently equivalent to a pathological acid-base disturbance. The magnitude of production, utilization and acid-base compensation matters.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "11.6 · Organize: Hepatic ketogenesis",
+          "paragraphs": [
+            "Liver mitochondria make ketone bodies from acetyl-CoA, especially when fatty-acid supply is high and carbohydrate availability is low. Ketones are exported as water-soluble fuels.",
+            "Extrahepatic tissues with appropriate mitochondrial enzymes can use ketones. Liver lacks the usual SCOT-mediated route for consuming the ketones it produces."
+          ]
+        },
+        "memoryCue": {
+          "title": "11.6 · Liver makes ketones; other suitable mitochondria use them.",
+          "paragraphs": [
+            "Liver makes ketones; other suitable mitochondria use them.",
+            "Extrahepatic tissues with appropriate mitochondrial enzymes can use ketones. Liver lacks the usual SCOT-mediated route for consuming the ketones it produces."
+          ]
+        },
+        "traps": {
+          "title": "11.6 · Check: Extrahepatic use",
+          "paragraphs": [
+            "The brain can increase ketone use during prolonged fasting. Mature red blood cells cannot use ketones for mitochondrial ATP production because they lack mitochondria.",
+            "Ketone production is not inherently equivalent to a pathological acid-base disturbance. The magnitude of production, utilization and acid-base compensation matters."
+          ]
+        },
+        "application": {
+          "title": "11.6 · Apply: Acetyl-CoA recovery",
+          "paragraphs": [
+            "Ketone production is not inherently equivalent to a pathological acid-base disturbance. The magnitude of production, utilization and acid-base compensation matters.",
+            "Liver mitochondria make ketone bodies from acetyl-CoA, especially when fatty-acid supply is high and carbohydrate availability is low. Ketones are exported as water-soluble fuels."
+          ]
+        }
+      },
+      {
+        "id": "concept-11-7",
+        "title": "Protein Catabolism",
+        "section": "11.7",
+        "asset": "bc11-07",
+        "steps": [
+          {
+            "text": "Amino-acid catabolism separates nitrogen handling from carbon-skeleton metabolism. Transamination commonly transfers an amino group to an alpha-keto acid using PLP-dependent enzymes.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Glutamate and glutamine play major nitrogen-collection and transport roles. Free ammonia must be controlled because excess is toxic.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "The hepatic urea cycle disposes of nitrogen using mitochondrial and cytosolic steps. Its nitrogen atoms arise from ammonia and aspartate, and it consumes high-energy phosphate bonds.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Glucogenic skeletons can support net glucose synthesis; ketogenic skeletons supply acetyl-CoA or related products. Leucine and lysine are exclusively ketogenic in the standard classification.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "11.7 · Organize: Transamination",
+          "paragraphs": [
+            "Amino-acid catabolism separates nitrogen handling from carbon-skeleton metabolism. Transamination commonly transfers an amino group to an alpha-keto acid using PLP-dependent enzymes.",
+            "Glutamate and glutamine play major nitrogen-collection and transport roles. Free ammonia must be controlled because excess is toxic."
+          ]
+        },
+        "memoryCue": {
+          "title": "11.7 · Track nitrogen disposal separately from carbon-skeleton fate.",
+          "paragraphs": [
+            "Track nitrogen disposal separately from carbon-skeleton fate.",
+            "Glutamate and glutamine play major nitrogen-collection and transport roles. Free ammonia must be controlled because excess is toxic."
+          ]
+        },
+        "traps": {
+          "title": "11.7 · Check: Urea synthesis",
+          "paragraphs": [
+            "The hepatic urea cycle disposes of nitrogen using mitochondrial and cytosolic steps. Its nitrogen atoms arise from ammonia and aspartate, and it consumes high-energy phosphate bonds.",
+            "Glucogenic skeletons can support net glucose synthesis; ketogenic skeletons supply acetyl-CoA or related products. Leucine and lysine are exclusively ketogenic in the standard classification."
+          ]
+        },
+        "application": {
+          "title": "11.7 · Apply: Carbon skeleton",
+          "paragraphs": [
+            "Glucogenic skeletons can support net glucose synthesis; ketogenic skeletons supply acetyl-CoA or related products. Leucine and lysine are exclusively ketogenic in the standard classification.",
+            "Amino-acid catabolism separates nitrogen handling from carbon-skeleton metabolism. Transamination commonly transfers an amino group to an alpha-keto acid using PLP-dependent enzymes."
+          ]
+        }
+      }
+    ],
+    "exercises": [
+      {
+        "id": "bc-11-01-workshop-v1",
+        "title": "Lipid Digestion and Absorption",
+        "asset": "bc11-01",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the entity supplying lipid-digesting enzymatic activity.",
+            "answer": [
+              "part-1"
+            ],
+            "explanation": "The relevant schematic entity or entities are Lipase action. Pancreatic lipase helps hydrolyze dietary triacylglycerol. Products enter enterocytes, where many long-chain fatty acids are reesterified.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Pancreatic lipase helps hydrolyze dietary triacylglycerol. Products enter enterocytes, where many long-chain fatty acids are reesterified."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "What is a principal role of bile salts in lipid digestion?",
+            "answer": 0,
+            "options": [
+              "Dispersion and micellar solubilization",
+              "Peptide-bond hydrolysis",
+              "Direct ATP synthesis",
+              "DNA replication"
+            ],
+            "explanation": "Dispersion and micellar solubilization. Pancreatic lipase helps hydrolyze dietary triacylglycerol. Products enter enterocytes, where many long-chain fatty acids are reesterified.",
+            "hints": [
+              "Bile salts help disperse dietary lipid and support mixed micelles. They assist access and solubilization; they are not the enzymes that hydrolyze ester bonds.",
+              "Pancreatic lipase helps hydrolyze dietary triacylglycerol. Products enter enterocytes, where many long-chain fatty acids are reesterified."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "Where do many long-chain dietary lipids initially travel after chylomicron export?",
+            "answer": 1,
+            "options": [
+              "Directly inside red blood cells",
+              "Lymph",
+              "The nucleus",
+              "Only the gastric lumen"
+            ],
+            "explanation": "Lymph. Long-chain dietary lipids leave enterocytes largely in chylomicrons through lymph before reaching blood. Micelles deliver material to the cell but do not become circulating chylomicrons intact.",
+            "hints": [
+              "Pancreatic lipase helps hydrolyze dietary triacylglycerol. Products enter enterocytes, where many long-chain fatty acids are reesterified.",
+              "Long-chain dietary lipids leave enterocytes largely in chylomicrons through lymph before reaching blood. Micelles deliver material to the cell but do not become circulating chylomicrons intact."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-11-02-workshop-v1",
+        "title": "Lipid Mobilization",
+        "asset": "bc11-02",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the circulating carrier for the released nonesterified fatty acids.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant schematic entity or entities are Albumin carrier. Nonesterified fatty acids circulate largely bound to albumin. Glycerol is water-soluble and can be used especially by liver for metabolic pathways.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Nonesterified fatty acids circulate largely bound to albumin. Glycerol is water-soluble and can be used especially by liver for metabolic pathways."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "How do mobilized nonesterified fatty acids mainly travel in plasma?",
+            "answer": 1,
+            "options": [
+              "Freely dissolved as a large hydrophobic pool",
+              "Bound to albumin",
+              "Inside DNA",
+              "Only as glycogen"
+            ],
+            "explanation": "Bound to albumin. Catecholamine signaling can promote adipose lipolysis, while insulin suppresses mobilization in the fed state. Human adipose regulation should not be reduced to a universal direct glucagon switch.",
+            "hints": [
+              "Stored triacylglycerol is mobilized through a lipase sequence that releases fatty acids and glycerol. Several enzymes participate; no single lipase completes every step alone.",
+              "Catecholamine signaling can promote adipose lipolysis, while insulin suppresses mobilization in the fed state. Human adipose regulation should not be reduced to a universal direct glucagon switch."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "Which fed-state signal generally suppresses adipose lipolysis?",
+            "answer": 2,
+            "options": [
+              "A universal rise in every catecholamine",
+              "A lack of all receptors",
+              "Insulin",
+              "Oxygen as a hormone"
+            ],
+            "explanation": "Insulin. Nonesterified fatty acids circulate largely bound to albumin. Glycerol is water-soluble and can be used especially by liver for metabolic pathways.",
+            "hints": [
+              "Catecholamine signaling can promote adipose lipolysis, while insulin suppresses mobilization in the fed state. Human adipose regulation should not be reduced to a universal direct glucagon switch.",
+              "Nonesterified fatty acids circulate largely bound to albumin. Glycerol is water-soluble and can be used especially by liver for metabolic pathways."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-11-03-workshop-v1",
+        "title": "Lipid Transport",
+        "asset": "bc11-03",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the particle initially associated with intestinal dietary lipid export.",
+            "answer": [
+              "part-0"
+            ],
+            "explanation": "The relevant schematic entity or entities are Chylomicron. Lipoproteins package hydrophobic lipids within particles having a water-compatible surface. Their density depends on composition, including relative lipid and protein content.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Lipoproteins package hydrophobic lipids within particles having a water-compatible surface. Their density depends on composition, including relative lipid and protein content."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "Which particle class mainly exports liver-derived triacylglycerol?",
+            "answer": 2,
+            "options": [
+              "Chylomicrons",
+              "Free albumin alone",
+              "VLDL",
+              "Hemoglobin"
+            ],
+            "explanation": "VLDL. Chylomicrons carry much dietary triacylglycerol; VLDL exports much liver-derived triacylglycerol. Lipoprotein lipase helps tissues access fatty acids from circulating triacylglycerol.",
+            "hints": [
+              "Lipoproteins package hydrophobic lipids within particles having a water-compatible surface. Their density depends on composition, including relative lipid and protein content.",
+              "Chylomicrons carry much dietary triacylglycerol; VLDL exports much liver-derived triacylglycerol. Lipoprotein lipase helps tissues access fatty acids from circulating triacylglycerol."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "Which uptake mechanism is central to cellular LDL handling?",
+            "answer": 3,
+            "options": [
+              "Free diffusion of whole particles through lipid",
+              "Ribosomal translation",
+              "PCR amplification",
+              "Receptor-mediated endocytosis"
+            ],
+            "explanation": "Receptor-mediated endocytosis. LDL supplies cholesterol to cells through receptor-mediated uptake. HDL participates in cholesterol transport and exchange, including reverse transport pathways.",
+            "hints": [
+              "Chylomicrons carry much dietary triacylglycerol; VLDL exports much liver-derived triacylglycerol. Lipoprotein lipase helps tissues access fatty acids from circulating triacylglycerol.",
+              "LDL supplies cholesterol to cells through receptor-mediated uptake. HDL participates in cholesterol transport and exchange, including reverse transport pathways."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-11-04-workshop-v1",
+        "title": "Cholesterol Metabolism",
+        "asset": "bc11-04",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the pool that supplies steroid-hormone precursors.",
+            "answer": [
+              "part-1"
+            ],
+            "explanation": "The relevant schematic entity or entities are Cholesterol pool. Cholesterol supports membranes and is a precursor for steroid hormones and bile acids. Cholesterol synthesis and mitochondrial ketogenesis use different compartmental pathways despite sharing an HMG-CoA intermediate name.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Cholesterol supports membranes and is a precursor for steroid hormones and bile acids. Cholesterol synthesis and mitochondrial ketogenesis use different compartmental pathways despite sharing an HMG-CoA intermediate name."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "Which enzyme is an important regulated target in cholesterol synthesis?",
+            "answer": 3,
+            "options": [
+              "PFK-1",
+              "DNA ligase",
+              "Pyruvate carboxylase",
+              "HMG-CoA reductase"
+            ],
+            "explanation": "HMG-CoA reductase. Cholesterol supports membranes and is a precursor for steroid hormones and bile acids. Cholesterol synthesis and mitochondrial ketogenesis use different compartmental pathways despite sharing an HMG-CoA intermediate name.",
+            "hints": [
+              "Cholesterol is synthesized from acetyl-derived carbon through a multistep pathway. HMG-CoA reductase is an important regulated step in the mevalonate pathway.",
+              "Cholesterol supports membranes and is a precursor for steroid hormones and bile acids. Cholesterol synthesis and mitochondrial ketogenesis use different compartmental pathways despite sharing an HMG-CoA intermediate name."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "Which product class can derive from cholesterol?",
+            "answer": 0,
+            "options": [
+              "Bile acids",
+              "Glycogen directly",
+              "Ribosomal RNA directly",
+              "Lactose directly"
+            ],
+            "explanation": "Bile acids. Feedback and enzyme regulation restrain synthesis when sterol supply is high. Uptake, synthesis, storage and disposal all contribute to the cellular cholesterol pool.",
+            "hints": [
+              "Cholesterol supports membranes and is a precursor for steroid hormones and bile acids. Cholesterol synthesis and mitochondrial ketogenesis use different compartmental pathways despite sharing an HMG-CoA intermediate name.",
+              "Feedback and enzyme regulation restrain synthesis when sterol supply is high. Uptake, synthesis, storage and disposal all contribute to the cellular cholesterol pool."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-11-05-workshop-v1",
+        "title": "Fatty Acids and Triacylglycerols",
+        "asset": "bc11-05",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the pathway using NADPH for net chain construction.",
+            "answer": [
+              "part-0"
+            ],
+            "explanation": "The relevant schematic entity or entities are Fatty-acid synthesis. Fatty-acid synthesis uses cytosolic acetyl-derived units and NADPH, with malonyl-CoA serving as a two-carbon donor after decarboxylation. Synthesis is not reverse beta oxidation.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Fatty-acid synthesis uses cytosolic acetyl-derived units and NADPH, with malonyl-CoA serving as a two-carbon donor after decarboxylation. Synthesis is not reverse beta oxidation."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "number",
+            "prompt": "How many beta-oxidation cycles shorten a saturated C16 chain to acetyl-CoA units?",
+            "answer": 7,
+            "explanation": "7. Long-chain fatty-acyl groups use the carnitine shuttle for mitochondrial entry. Malonyl-CoA inhibits CPT I, helping restrain simultaneous synthesis and mitochondrial entry.",
+            "hints": [
+              "Fatty-acid synthesis uses cytosolic acetyl-derived units and NADPH, with malonyl-CoA serving as a two-carbon donor after decarboxylation. Synthesis is not reverse beta oxidation.",
+              "Long-chain fatty-acyl groups use the carnitine shuttle for mitochondrial entry. Malonyl-CoA inhibits CPT I, helping restrain simultaneous synthesis and mitochondrial entry."
+            ],
+            "unit": "cycles",
+            "tolerance": 0
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "What is an important action of malonyl-CoA?",
+            "answer": 1,
+            "options": [
+              "Direct activation of every respiratory complex",
+              "Inhibition of CPT I",
+              "Cleavage of DNA",
+              "Replacement of all NADPH"
+            ],
+            "explanation": "Inhibition of CPT I. Beta oxidation repeatedly removes two-carbon acetyl-CoA units and generates reducing equivalents. An even saturated C16 chain undergoes seven cycles to yield eight acetyl-CoA.",
+            "hints": [
+              "Long-chain fatty-acyl groups use the carnitine shuttle for mitochondrial entry. Malonyl-CoA inhibits CPT I, helping restrain simultaneous synthesis and mitochondrial entry.",
+              "Beta oxidation repeatedly removes two-carbon acetyl-CoA units and generates reducing equivalents. An even saturated C16 chain undergoes seven cycles to yield eight acetyl-CoA."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-11-06-workshop-v1",
+        "title": "Ketone Bodies",
+        "asset": "bc11-06",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the organ-associated process generating exported ketones.",
+            "answer": [
+              "part-0"
+            ],
+            "explanation": "The relevant schematic entity or entities are Hepatic ketogenesis. Liver mitochondria make ketone bodies from acetyl-CoA, especially when fatty-acid supply is high and carbohydrate availability is low. Ketones are exported as water-soluble fuels.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Liver mitochondria make ketone bodies from acetyl-CoA, especially when fatty-acid supply is high and carbohydrate availability is low. Ketones are exported as water-soluble fuels."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "Why does liver export rather than substantially consume its own ketones through the usual pathway?",
+            "answer": 1,
+            "options": [
+              "It has no mitochondria",
+              "It lacks the usual SCOT step",
+              "Ketones contain no carbon",
+              "Its cells cannot use acetyl-CoA"
+            ],
+            "explanation": "It lacks the usual SCOT step. Extrahepatic tissues with appropriate mitochondrial enzymes can use ketones. Liver lacks the usual SCOT-mediated route for consuming the ketones it produces.",
+            "hints": [
+              "Liver mitochondria make ketone bodies from acetyl-CoA, especially when fatty-acid supply is high and carbohydrate availability is low. Ketones are exported as water-soluble fuels.",
+              "Extrahepatic tissues with appropriate mitochondrial enzymes can use ketones. Liver lacks the usual SCOT-mediated route for consuming the ketones it produces."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "Which cells cannot oxidize ketones in mitochondria?",
+            "answer": 2,
+            "options": [
+              "Skeletal muscle fibers",
+              "Cardiac muscle cells",
+              "Mature human red blood cells",
+              "Brain cells under all conditions"
+            ],
+            "explanation": "Mature human red blood cells. The brain can increase ketone use during prolonged fasting. Mature red blood cells cannot use ketones for mitochondrial ATP production because they lack mitochondria.",
+            "hints": [
+              "Extrahepatic tissues with appropriate mitochondrial enzymes can use ketones. Liver lacks the usual SCOT-mediated route for consuming the ketones it produces.",
+              "The brain can increase ketone use during prolonged fasting. Mature red blood cells cannot use ketones for mitochondrial ATP production because they lack mitochondria."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-11-07-workshop-v1",
+        "title": "Protein Catabolism",
+        "asset": "bc11-07",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the pathway that packages nitrogen for excretion.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant schematic entity or entities are Urea synthesis. The hepatic urea cycle disposes of nitrogen using mitochondrial and cytosolic steps. Its nitrogen atoms arise from ammonia and aspartate, and it consumes high-energy phosphate bonds.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "The hepatic urea cycle disposes of nitrogen using mitochondrial and cytosolic steps. Its nitrogen atoms arise from ammonia and aspartate, and it consumes high-energy phosphate bonds."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "Which coenzyme is central to many aminotransferases?",
+            "answer": 2,
+            "options": [
+              "Coenzyme Q only",
+              "Biotin in every case",
+              "PLP",
+              "Retinal"
+            ],
+            "explanation": "PLP. Glutamate and glutamine play major nitrogen-collection and transport roles. Free ammonia must be controlled because excess is toxic.",
+            "hints": [
+              "Amino-acid catabolism separates nitrogen handling from carbon-skeleton metabolism. Transamination commonly transfers an amino group to an alpha-keto acid using PLP-dependent enzymes.",
+              "Glutamate and glutamine play major nitrogen-collection and transport roles. Free ammonia must be controlled because excess is toxic."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "Which pair is exclusively ketogenic in the standard human classification?",
+            "answer": 3,
+            "options": [
+              "Alanine and glycine",
+              "Aspartate and glutamate",
+              "Serine and cysteine",
+              "Leucine and lysine"
+            ],
+            "explanation": "Leucine and lysine. The hepatic urea cycle disposes of nitrogen using mitochondrial and cytosolic steps. Its nitrogen atoms arise from ammonia and aspartate, and it consumes high-energy phosphate bonds.",
+            "hints": [
+              "Glutamate and glutamine play major nitrogen-collection and transport roles. Free ammonia must be controlled because excess is toxic.",
+              "The hepatic urea cycle disposes of nitrogen using mitochondrial and cytosolic steps. Its nitrogen atoms arise from ammonia and aspartate, and it consumes high-energy phosphate bonds."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "version": 1,
+    "assets": [
+      {
+        "id": "bc11-01",
+        "kind": "concept-schematic",
+        "title": "Lipid Digestion and Absorption",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Bile-assisted dispersion",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Lipase action",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Mixed micelle",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Chylomicron export",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [
+          {
+            "from": "part-0",
+            "to": "part-1"
+          },
+          {
+            "from": "part-1",
+            "to": "part-2"
+          },
+          {
+            "from": "part-2",
+            "to": "part-3"
+          }
+        ],
+        "visual": {
+          "type": "lipid"
+        }
+      },
+      {
+        "id": "bc11-02",
+        "kind": "concept-schematic",
+        "title": "Lipid Mobilization",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Adipose droplet",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Lipase cascade",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Albumin carrier",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Tissue uptake",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [
+          {
+            "from": "part-0",
+            "to": "part-1"
+          },
+          {
+            "from": "part-1",
+            "to": "part-2"
+          },
+          {
+            "from": "part-2",
+            "to": "part-3"
+          }
+        ],
+        "visual": {
+          "type": "lipid"
+        }
+      },
+      {
+        "id": "bc11-03",
+        "kind": "concept-schematic",
+        "title": "Lipid Transport",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Chylomicron",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "VLDL",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "LDL",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "HDL",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "lipid"
+        }
+      },
+      {
+        "id": "bc11-04",
+        "kind": "concept-schematic",
+        "title": "Cholesterol Metabolism",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "HMG-CoA reductase",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Cholesterol pool",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Bile acids",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Steroid products",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "lipid"
+        }
+      },
+      {
+        "id": "bc11-05",
+        "kind": "concept-schematic",
+        "title": "Fatty Acids and Triacylglycerols",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Fatty-acid synthesis",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Carnitine shuttle",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Beta oxidation",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Malonyl-CoA signal",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "lipid"
+        }
+      },
+      {
+        "id": "bc11-06",
+        "kind": "concept-schematic",
+        "title": "Ketone Bodies",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Hepatic ketogenesis",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Ketone export",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Extrahepatic use",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Acetyl-CoA recovery",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [
+          {
+            "from": "part-0",
+            "to": "part-1"
+          },
+          {
+            "from": "part-1",
+            "to": "part-2"
+          },
+          {
+            "from": "part-2",
+            "to": "part-3"
+          }
+        ],
+        "visual": {
+          "type": "lipid"
+        }
+      },
+      {
+        "id": "bc11-07",
+        "kind": "concept-schematic",
+        "title": "Protein Catabolism",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Transamination",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Nitrogen collection",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Urea synthesis",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Carbon skeleton",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [
+          {
+            "from": "part-0",
+            "to": "part-1"
+          },
+          {
+            "from": "part-1",
+            "to": "part-2"
+          }
+        ],
+        "visual": {
+          "type": "pathway"
+        }
+      }
+    ]
+  }
+}
+REPORT BY CHAPTER: item ID, severity (critical/major/minor), exact claim, independent answer, encoded key, evidence, correction, uncertainty. Include coverage counts, unresolved questions and a verdict. Cite only inspected sources. Label any incomplete coverage PARTIAL with exact remaining IDs. Do not execute commands or modify curriculum. Model review is candidate evidence, not expert sign-off.
+For strictly blind evidence use a fresh conversation with blind.json only; freeze its response before supplying keyed-audit.json in a separate pass. This combined file contains keys and cannot guarantee blindness.
