@@ -1,0 +1,1482 @@
+BIOCHEMISTRY chapter-06: DNA and Biotechnology
+Text/content review only; browser execution is not established by this packet.
+PASS 1: Independently solve every supplied blind case. Record case ID, answer, reasoning, confidence and ambiguity. Do not skip stages.
+[
+  {
+    "id": "bc-06-01-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the organization describing opposite strand directions.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Antiparallel strands",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Base pairs",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Sugar-phosphate chain",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Complementarity",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "dna"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Antiparallel strands</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"24\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Base pairs</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Sugar-phosphate chain</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Complementarity</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-06-01-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "What is the reverse complement of 5′-AGTC-3′, written 5′ to 3′?",
+    "type": "choice",
+    "options": [
+      "TCAG",
+      "AGTC",
+      "CTGA",
+      "GACT"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Antiparallel strands",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Base pairs",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Sugar-phosphate chain",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Complementarity",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "dna"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Antiparallel strands</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"24\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Base pairs</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Sugar-phosphate chain</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Complementarity</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-06-01-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "What usually occurs during duplex melting?",
+    "type": "choice",
+    "options": [
+      "Base-paired strands separate",
+      "Every phosphodiester bond is cleaved",
+      "DNA becomes protein",
+      "All bases become uracil"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Antiparallel strands",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Base pairs",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Sugar-phosphate chain",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Complementarity",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "dna"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Antiparallel strands</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"24\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Base pairs</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Sugar-phosphate chain</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Complementarity</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-06-02-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the region generally associated with greater transcriptional accessibility.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Histone core",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Nucleosome",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Accessible region",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Condensed region",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "dna"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Histone core</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"24\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Nucleosome</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Accessible region</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Condensed region</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-06-02-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "What is DNA wrapped around a histone core called?",
+    "type": "choice",
+    "options": [
+      "A nucleosome",
+      "A ribosome",
+      "A codon",
+      "An amino acid"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Histone core",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Nucleosome",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Accessible region",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Condensed region",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "dna"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Histone core</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"24\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Nucleosome</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Accessible region</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Condensed region</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-06-02-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "Transcription changes while DNA sequence stays constant. Which mechanism is plausible?",
+    "type": "choice",
+    "options": [
+      "A required base substitution",
+      "Altered chromatin accessibility",
+      "Peptide-bond formation in DNA",
+      "Conversion of all histones to RNA"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Histone core",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Nucleosome",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Accessible region",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Condensed region",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "dna"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Histone core</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"24\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Nucleosome</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Accessible region</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Condensed region</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-06-03-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the strand produced as Okazaki fragments.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Replication fork",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Leading strand",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Lagging strand",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Primer",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "dna"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Replication fork</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"24\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Leading strand</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Lagging strand</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Primer</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-06-03-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "In which direction is a new DNA strand extended?",
+    "type": "choice",
+    "options": [
+      "3′ to 5′",
+      "5′ to 3′",
+      "Both directions from the same 3′ end",
+      "Without a template in every case"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Replication fork",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Leading strand",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Lagging strand",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Primer",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "dna"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Replication fork</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"24\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Leading strand</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Lagging strand</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Primer</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-06-03-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "Which activity seals a nick after fragment processing?",
+    "type": "choice",
+    "options": [
+      "Helicase alone",
+      "A ribosomal peptidyl transferase",
+      "DNA ligase",
+      "A transcription factor"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Replication fork",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Leading strand",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Lagging strand",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Primer",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "dna"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Replication fork</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"24\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Leading strand</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Lagging strand</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Primer</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-06-04-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the step that restores missing DNA after excision.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Mismatch",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Damaged base",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Bulky lesion",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Repair synthesis",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "dna"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Mismatch</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"24\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Damaged base</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Bulky lesion</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Repair synthesis</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-06-04-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "Which repair class commonly removes a bulky UV-associated lesion as an oligonucleotide segment?",
+    "type": "choice",
+    "options": [
+      "Translation",
+      "Glycolysis",
+      "Nucleotide-excision repair",
+      "Simple ligand binding"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Mismatch",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Damaged base",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Bulky lesion",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Repair synthesis",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "dna"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Mismatch</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"24\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Damaged base</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Bulky lesion</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Repair synthesis</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-06-04-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "A replication mismatch remains after polymerase proofreading. Which system may still correct it?",
+    "type": "choice",
+    "options": [
+      "A ribosomal release factor",
+      "ATP synthase",
+      "Glycogen synthase",
+      "Mismatch repair"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Mismatch",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Damaged base",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Bulky lesion",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Repair synthesis",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "dna"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Mismatch</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"24\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Damaged base</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Bulky lesion</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-45 -25 Q0 55 45 -25 M-45 25 Q0 -55 45 25\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M-15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M0 22 V-22\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M15 18.15738352801292 V-18.15738352801292\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path class=\"outline\" d=\"M30 7.97187059848682 V-7.97187059848682\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Repair synthesis</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-06-05-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the procedure that joins compatible DNA ends.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "PCR amplification",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Restriction digest",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "DNA ligation",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Sequence readout",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-1",
+          "to": "part-2"
+        }
+      ],
+      "visual": {
+        "type": "experiment"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-25 -35 H25 V15 Q0 45 -25 15Z M-25 -20 H25 M-20 -5 H20\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">PCR amplification</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 -30 H40 V30 H-40Z M-25 -5 H-5 M5 12 H27 M-20 22 H0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Restriction digest</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-25 -35 H25 V15 Q0 45 -25 15Z M-25 -20 H25 M-20 -5 H20\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">DNA ligation</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-40 -30 H40 V30 H-40Z M-25 -5 H-5 M5 12 H27 M-20 22 H0\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Sequence readout</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-06-05-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "Starting with one ideal double-stranded target, how many copies follow four perfect PCR cycles?",
+    "type": "number",
+    "unit": "copies",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "PCR amplification",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Restriction digest",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "DNA ligation",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Sequence readout",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-1",
+          "to": "part-2"
+        }
+      ],
+      "visual": {
+        "type": "experiment"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-25 -35 H25 V15 Q0 45 -25 15Z M-25 -20 H25 M-20 -5 H20\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">PCR amplification</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 -30 H40 V30 H-40Z M-25 -5 H-5 M5 12 H27 M-20 22 H0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Restriction digest</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-25 -35 H25 V15 Q0 45 -25 15Z M-25 -20 H25 M-20 -5 H20\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">DNA ligation</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-40 -30 H40 V30 H-40Z M-25 -5 H-5 M5 12 H27 M-20 22 H0\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Sequence readout</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-06-05-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "A PCR product has the expected gel length. What remains unproven?",
+    "type": "choice",
+    "options": [
+      "Its exact base sequence",
+      "That material entered the gel",
+      "That a band was detected",
+      "That primers were used in the stated PCR"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "PCR amplification",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Restriction digest",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "DNA ligation",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Sequence readout",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-1",
+          "to": "part-2"
+        }
+      ],
+      "visual": {
+        "type": "experiment"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-25 -35 H25 V15 Q0 45 -25 15Z M-25 -20 H25 M-20 -5 H20\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">PCR amplification</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 -30 H40 V30 H-40Z M-25 -5 H-5 M5 12 H27 M-20 22 H0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Restriction digest</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-25 -35 H25 V15 Q0 45 -25 15Z M-25 -20 H25 M-20 -5 H20\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">DNA ligation</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-40 -30 H40 V30 H-40Z M-25 -5 H-5 M5 12 H27 M-20 22 H0\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Sequence readout</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  }
+]
+PASS 2: Audit every lesson step, rule, cue, trap, application, diagram, prompt, option, key, hint and explanation below. Compare your independently recorded answers; do not assume the encoded key is correct.
+{
+  "chapter": {
+    "version": 1,
+    "id": "chapter-06",
+    "title": "DNA and Biotechnology",
+    "status": "implemented",
+    "scopeNote": "Original condensed MCAT biochemistry lessons covering the declared outline sections. This release is implemented, not independently scientifically verified; it is not exhaustive textbook coverage.",
+    "lessons": [
+      {
+        "id": "concept-6-1",
+        "title": "DNA Structure",
+        "section": "6.1",
+        "asset": "bc06-01",
+        "steps": [
+          {
+            "text": "DNA contains deoxyribonucleotides linked by 3′–5′ phosphodiester bonds. The two strands of a typical duplex run in opposite directions.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "A pairs with T and G with C in canonical DNA base pairing. Hydrogen bonding and base stacking contribute to duplex stability; sequence and conditions both matter.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "A strand written 5′-AGTC-3′ pairs with 3′-TCAG-5′. When both are written 5′ to 3′, the complementary sequence is the reverse complement, 5′-GACT-3′.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Denaturation separates paired strands without necessarily hydrolyzing the covalent backbone. GC content influences melting behavior, but salt and length also matter.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "6.1 · Organize: Antiparallel strands",
+          "paragraphs": [
+            "DNA contains deoxyribonucleotides linked by 3′–5′ phosphodiester bonds. The two strands of a typical duplex run in opposite directions.",
+            "A pairs with T and G with C in canonical DNA base pairing. Hydrogen bonding and base stacking contribute to duplex stability; sequence and conditions both matter."
+          ]
+        },
+        "memoryCue": {
+          "title": "6.1 · Complement, then reverse when both strands read 5′ to 3′.",
+          "paragraphs": [
+            "Complement, then reverse when both strands read 5′ to 3′.",
+            "A pairs with T and G with C in canonical DNA base pairing. Hydrogen bonding and base stacking contribute to duplex stability; sequence and conditions both matter."
+          ]
+        },
+        "traps": {
+          "title": "6.1 · Check: Sugar-phosphate chain",
+          "paragraphs": [
+            "A strand written 5′-AGTC-3′ pairs with 3′-TCAG-5′. When both are written 5′ to 3′, the complementary sequence is the reverse complement, 5′-GACT-3′.",
+            "Denaturation separates paired strands without necessarily hydrolyzing the covalent backbone. GC content influences melting behavior, but salt and length also matter."
+          ]
+        },
+        "application": {
+          "title": "6.1 · Apply: Complementarity",
+          "paragraphs": [
+            "Denaturation separates paired strands without necessarily hydrolyzing the covalent backbone. GC content influences melting behavior, but salt and length also matter.",
+            "DNA contains deoxyribonucleotides linked by 3′–5′ phosphodiester bonds. The two strands of a typical duplex run in opposite directions."
+          ]
+        }
+      },
+      {
+        "id": "concept-6-2",
+        "title": "Eukaryotic Chromosome Organization",
+        "section": "6.2",
+        "asset": "bc06-02",
+        "steps": [
+          {
+            "text": "Eukaryotic DNA wraps around histone proteins to form nucleosomes. Packaging compacts DNA while allowing regulated access for replication, repair and transcription.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Histone tails can receive chemical modifications that influence binding partners and accessibility. The effect depends on the specific modification and genomic context.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Euchromatin is generally more accessible than heterochromatin. This comparison is not a rule that every gene in one region is always on or always off.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Chromatin state is part of gene regulation. A change in transcription can reflect altered access even without changing the underlying DNA sequence.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "6.2 · Organize: Histone core",
+          "paragraphs": [
+            "Eukaryotic DNA wraps around histone proteins to form nucleosomes. Packaging compacts DNA while allowing regulated access for replication, repair and transcription.",
+            "Histone tails can receive chemical modifications that influence binding partners and accessibility. The effect depends on the specific modification and genomic context."
+          ]
+        },
+        "memoryCue": {
+          "title": "6.2 · Packaging controls access without changing base sequence.",
+          "paragraphs": [
+            "Packaging controls access without changing base sequence.",
+            "Histone tails can receive chemical modifications that influence binding partners and accessibility. The effect depends on the specific modification and genomic context."
+          ]
+        },
+        "traps": {
+          "title": "6.2 · Check: Accessible region",
+          "paragraphs": [
+            "Euchromatin is generally more accessible than heterochromatin. This comparison is not a rule that every gene in one region is always on or always off.",
+            "Chromatin state is part of gene regulation. A change in transcription can reflect altered access even without changing the underlying DNA sequence."
+          ]
+        },
+        "application": {
+          "title": "6.2 · Apply: Condensed region",
+          "paragraphs": [
+            "Chromatin state is part of gene regulation. A change in transcription can reflect altered access even without changing the underlying DNA sequence.",
+            "Eukaryotic DNA wraps around histone proteins to form nucleosomes. Packaging compacts DNA while allowing regulated access for replication, repair and transcription."
+          ]
+        }
+      },
+      {
+        "id": "concept-6-3",
+        "title": "DNA Replication",
+        "section": "6.3",
+        "asset": "bc06-03",
+        "steps": [
+          {
+            "text": "DNA polymerases extend a preexisting strand by adding to its 3′ hydroxyl. New DNA synthesis proceeds 5′ to 3′ while the template is read 3′ to 5′.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "At a replication fork, the leading strand is synthesized more continuously toward fork movement. The lagging strand is assembled as Okazaki fragments.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Primase supplies primers; primer removal, gap filling and ligation complete the daughter strand. Ligase seals a nick rather than synthesizing an entire fragment.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Semiconservative replication gives each daughter duplex one parental strand and one newly synthesized strand. Leading and lagging describe local fork geometry.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "6.3 · Organize: Replication fork",
+          "paragraphs": [
+            "DNA polymerases extend a preexisting strand by adding to its 3′ hydroxyl. New DNA synthesis proceeds 5′ to 3′ while the template is read 3′ to 5′.",
+            "At a replication fork, the leading strand is synthesized more continuously toward fork movement. The lagging strand is assembled as Okazaki fragments."
+          ]
+        },
+        "memoryCue": {
+          "title": "6.3 · Polymerase extends the 3′ end, so synthesis runs 5′ to 3′.",
+          "paragraphs": [
+            "Polymerase extends the 3′ end, so synthesis runs 5′ to 3′.",
+            "At a replication fork, the leading strand is synthesized more continuously toward fork movement. The lagging strand is assembled as Okazaki fragments."
+          ]
+        },
+        "traps": {
+          "title": "6.3 · Check: Lagging strand",
+          "paragraphs": [
+            "Primase supplies primers; primer removal, gap filling and ligation complete the daughter strand. Ligase seals a nick rather than synthesizing an entire fragment.",
+            "Semiconservative replication gives each daughter duplex one parental strand and one newly synthesized strand. Leading and lagging describe local fork geometry."
+          ]
+        },
+        "application": {
+          "title": "6.3 · Apply: Primer",
+          "paragraphs": [
+            "Semiconservative replication gives each daughter duplex one parental strand and one newly synthesized strand. Leading and lagging describe local fork geometry.",
+            "DNA polymerases extend a preexisting strand by adding to its 3′ hydroxyl. New DNA synthesis proceeds 5′ to 3′ while the template is read 3′ to 5′."
+          ]
+        }
+      },
+      {
+        "id": "concept-6-4",
+        "title": "DNA Repair",
+        "section": "6.4",
+        "asset": "bc06-04",
+        "steps": [
+          {
+            "text": "Replication proofreading and postreplicative repair improve fidelity through different steps. A mismatch is not the same lesion as a chemically damaged base.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Base-excision repair removes selected damaged bases before processing the backbone and filling the gap. Nucleotide-excision repair removes a segment containing a bulky lesion.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Mismatch repair corrects some replication errors that escaped proofreading. Accurate repair requires an appropriate template or strand discrimination mechanism.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Double-strand breaks can be processed by homologous recombination or end joining. These mechanisms differ in template use and error risk; repair is not always error-free.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "6.4 · Organize: Mismatch",
+          "paragraphs": [
+            "Replication proofreading and postreplicative repair improve fidelity through different steps. A mismatch is not the same lesion as a chemically damaged base.",
+            "Base-excision repair removes selected damaged bases before processing the backbone and filling the gap. Nucleotide-excision repair removes a segment containing a bulky lesion."
+          ]
+        },
+        "memoryCue": {
+          "title": "6.4 · Name the lesion before naming its repair route.",
+          "paragraphs": [
+            "Name the lesion before naming its repair route.",
+            "Base-excision repair removes selected damaged bases before processing the backbone and filling the gap. Nucleotide-excision repair removes a segment containing a bulky lesion."
+          ]
+        },
+        "traps": {
+          "title": "6.4 · Check: Bulky lesion",
+          "paragraphs": [
+            "Mismatch repair corrects some replication errors that escaped proofreading. Accurate repair requires an appropriate template or strand discrimination mechanism.",
+            "Double-strand breaks can be processed by homologous recombination or end joining. These mechanisms differ in template use and error risk; repair is not always error-free."
+          ]
+        },
+        "application": {
+          "title": "6.4 · Apply: Repair synthesis",
+          "paragraphs": [
+            "Double-strand breaks can be processed by homologous recombination or end joining. These mechanisms differ in template use and error risk; repair is not always error-free.",
+            "Replication proofreading and postreplicative repair improve fidelity through different steps. A mismatch is not the same lesion as a chemically damaged base."
+          ]
+        }
+      },
+      {
+        "id": "concept-6-5",
+        "title": "Recombinant Biotechnology",
+        "section": "6.5",
+        "asset": "bc06-05",
+        "steps": [
+          {
+            "text": "PCR amplifies a bounded DNA region using primers, thermal strand separation and a thermostable polymerase. Primers define the region and supply extendable 3′ ends.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Restriction enzymes recognize particular sequences and cleave DNA. Compatible ends can be joined by ligase, but successful insertion does not guarantee correct orientation or expression.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "In ideal PCR, copies double each cycle, giving N0 times 2 to the cycle number. Real reactions eventually depart from ideal doubling as reagents and efficiency change.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Sequence confirmation tests the construct directly. A band of the expected size supports an amplicon’s length but does not prove every base is correct.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "6.5 · Organize: PCR amplification",
+          "paragraphs": [
+            "PCR amplifies a bounded DNA region using primers, thermal strand separation and a thermostable polymerase. Primers define the region and supply extendable 3′ ends.",
+            "Restriction enzymes recognize particular sequences and cleave DNA. Compatible ends can be joined by ligase, but successful insertion does not guarantee correct orientation or expression."
+          ]
+        },
+        "memoryCue": {
+          "title": "6.5 · Ideal PCR doubles; a correct-size band still needs sequence checking.",
+          "paragraphs": [
+            "Ideal PCR doubles; a correct-size band still needs sequence checking.",
+            "Restriction enzymes recognize particular sequences and cleave DNA. Compatible ends can be joined by ligase, but successful insertion does not guarantee correct orientation or expression."
+          ]
+        },
+        "traps": {
+          "title": "6.5 · Check: DNA ligation",
+          "paragraphs": [
+            "In ideal PCR, copies double each cycle, giving N0 times 2 to the cycle number. Real reactions eventually depart from ideal doubling as reagents and efficiency change.",
+            "Sequence confirmation tests the construct directly. A band of the expected size supports an amplicon’s length but does not prove every base is correct."
+          ]
+        },
+        "application": {
+          "title": "6.5 · Apply: Sequence readout",
+          "paragraphs": [
+            "Sequence confirmation tests the construct directly. A band of the expected size supports an amplicon’s length but does not prove every base is correct.",
+            "PCR amplifies a bounded DNA region using primers, thermal strand separation and a thermostable polymerase. Primers define the region and supply extendable 3′ ends."
+          ]
+        }
+      }
+    ],
+    "exercises": [
+      {
+        "id": "bc-06-01-workshop-v1",
+        "title": "DNA Structure",
+        "asset": "bc06-01",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the organization describing opposite strand directions.",
+            "answer": [
+              "part-0"
+            ],
+            "explanation": "The relevant schematic entity or entities are Antiparallel strands. DNA contains deoxyribonucleotides linked by 3′–5′ phosphodiester bonds. The two strands of a typical duplex run in opposite directions.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "DNA contains deoxyribonucleotides linked by 3′–5′ phosphodiester bonds. The two strands of a typical duplex run in opposite directions."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "What is the reverse complement of 5′-AGTC-3′, written 5′ to 3′?",
+            "answer": 3,
+            "options": [
+              "TCAG",
+              "AGTC",
+              "CTGA",
+              "GACT"
+            ],
+            "explanation": "GACT. A pairs with T and G with C in canonical DNA base pairing. Hydrogen bonding and base stacking contribute to duplex stability; sequence and conditions both matter.",
+            "hints": [
+              "DNA contains deoxyribonucleotides linked by 3′–5′ phosphodiester bonds. The two strands of a typical duplex run in opposite directions.",
+              "A pairs with T and G with C in canonical DNA base pairing. Hydrogen bonding and base stacking contribute to duplex stability; sequence and conditions both matter."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "What usually occurs during duplex melting?",
+            "answer": 0,
+            "options": [
+              "Base-paired strands separate",
+              "Every phosphodiester bond is cleaved",
+              "DNA becomes protein",
+              "All bases become uracil"
+            ],
+            "explanation": "Base-paired strands separate. A strand written 5′-AGTC-3′ pairs with 3′-TCAG-5′. When both are written 5′ to 3′, the complementary sequence is the reverse complement, 5′-GACT-3′.",
+            "hints": [
+              "A pairs with T and G with C in canonical DNA base pairing. Hydrogen bonding and base stacking contribute to duplex stability; sequence and conditions both matter.",
+              "A strand written 5′-AGTC-3′ pairs with 3′-TCAG-5′. When both are written 5′ to 3′, the complementary sequence is the reverse complement, 5′-GACT-3′."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-06-02-workshop-v1",
+        "title": "Eukaryotic Chromosome Organization",
+        "asset": "bc06-02",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the region generally associated with greater transcriptional accessibility.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant schematic entity or entities are Accessible region. Euchromatin is generally more accessible than heterochromatin. This comparison is not a rule that every gene in one region is always on or always off.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Euchromatin is generally more accessible than heterochromatin. This comparison is not a rule that every gene in one region is always on or always off."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "What is DNA wrapped around a histone core called?",
+            "answer": 0,
+            "options": [
+              "A nucleosome",
+              "A ribosome",
+              "A codon",
+              "An amino acid"
+            ],
+            "explanation": "A nucleosome. Histone tails can receive chemical modifications that influence binding partners and accessibility. The effect depends on the specific modification and genomic context.",
+            "hints": [
+              "Eukaryotic DNA wraps around histone proteins to form nucleosomes. Packaging compacts DNA while allowing regulated access for replication, repair and transcription.",
+              "Histone tails can receive chemical modifications that influence binding partners and accessibility. The effect depends on the specific modification and genomic context."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "Transcription changes while DNA sequence stays constant. Which mechanism is plausible?",
+            "answer": 1,
+            "options": [
+              "A required base substitution",
+              "Altered chromatin accessibility",
+              "Peptide-bond formation in DNA",
+              "Conversion of all histones to RNA"
+            ],
+            "explanation": "Altered chromatin accessibility. Euchromatin is generally more accessible than heterochromatin. This comparison is not a rule that every gene in one region is always on or always off.",
+            "hints": [
+              "Histone tails can receive chemical modifications that influence binding partners and accessibility. The effect depends on the specific modification and genomic context.",
+              "Euchromatin is generally more accessible than heterochromatin. This comparison is not a rule that every gene in one region is always on or always off."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-06-03-workshop-v1",
+        "title": "DNA Replication",
+        "asset": "bc06-03",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the strand produced as Okazaki fragments.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant schematic entity or entities are Lagging strand. Primase supplies primers; primer removal, gap filling and ligation complete the daughter strand. Ligase seals a nick rather than synthesizing an entire fragment.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Primase supplies primers; primer removal, gap filling and ligation complete the daughter strand. Ligase seals a nick rather than synthesizing an entire fragment."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "In which direction is a new DNA strand extended?",
+            "answer": 1,
+            "options": [
+              "3′ to 5′",
+              "5′ to 3′",
+              "Both directions from the same 3′ end",
+              "Without a template in every case"
+            ],
+            "explanation": "5′ to 3′. At a replication fork, the leading strand is synthesized more continuously toward fork movement. The lagging strand is assembled as Okazaki fragments.",
+            "hints": [
+              "DNA polymerases extend a preexisting strand by adding to its 3′ hydroxyl. New DNA synthesis proceeds 5′ to 3′ while the template is read 3′ to 5′.",
+              "At a replication fork, the leading strand is synthesized more continuously toward fork movement. The lagging strand is assembled as Okazaki fragments."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "Which activity seals a nick after fragment processing?",
+            "answer": 2,
+            "options": [
+              "Helicase alone",
+              "A ribosomal peptidyl transferase",
+              "DNA ligase",
+              "A transcription factor"
+            ],
+            "explanation": "DNA ligase. Primase supplies primers; primer removal, gap filling and ligation complete the daughter strand. Ligase seals a nick rather than synthesizing an entire fragment.",
+            "hints": [
+              "At a replication fork, the leading strand is synthesized more continuously toward fork movement. The lagging strand is assembled as Okazaki fragments.",
+              "Primase supplies primers; primer removal, gap filling and ligation complete the daughter strand. Ligase seals a nick rather than synthesizing an entire fragment."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-06-04-workshop-v1",
+        "title": "DNA Repair",
+        "asset": "bc06-04",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the step that restores missing DNA after excision.",
+            "answer": [
+              "part-3"
+            ],
+            "explanation": "The relevant schematic entity or entities are Repair synthesis. Double-strand breaks can be processed by homologous recombination or end joining. These mechanisms differ in template use and error risk; repair is not always error-free.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Double-strand breaks can be processed by homologous recombination or end joining. These mechanisms differ in template use and error risk; repair is not always error-free."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "Which repair class commonly removes a bulky UV-associated lesion as an oligonucleotide segment?",
+            "answer": 2,
+            "options": [
+              "Translation",
+              "Glycolysis",
+              "Nucleotide-excision repair",
+              "Simple ligand binding"
+            ],
+            "explanation": "Nucleotide-excision repair. Base-excision repair removes selected damaged bases before processing the backbone and filling the gap. Nucleotide-excision repair removes a segment containing a bulky lesion.",
+            "hints": [
+              "Replication proofreading and postreplicative repair improve fidelity through different steps. A mismatch is not the same lesion as a chemically damaged base.",
+              "Base-excision repair removes selected damaged bases before processing the backbone and filling the gap. Nucleotide-excision repair removes a segment containing a bulky lesion."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "A replication mismatch remains after polymerase proofreading. Which system may still correct it?",
+            "answer": 3,
+            "options": [
+              "A ribosomal release factor",
+              "ATP synthase",
+              "Glycogen synthase",
+              "Mismatch repair"
+            ],
+            "explanation": "Mismatch repair. Mismatch repair corrects some replication errors that escaped proofreading. Accurate repair requires an appropriate template or strand discrimination mechanism.",
+            "hints": [
+              "Base-excision repair removes selected damaged bases before processing the backbone and filling the gap. Nucleotide-excision repair removes a segment containing a bulky lesion.",
+              "Mismatch repair corrects some replication errors that escaped proofreading. Accurate repair requires an appropriate template or strand discrimination mechanism."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-06-05-workshop-v1",
+        "title": "Recombinant Biotechnology",
+        "asset": "bc06-05",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the procedure that joins compatible DNA ends.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant schematic entity or entities are DNA ligation. In ideal PCR, copies double each cycle, giving N0 times 2 to the cycle number. Real reactions eventually depart from ideal doubling as reagents and efficiency change.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "In ideal PCR, copies double each cycle, giving N0 times 2 to the cycle number. Real reactions eventually depart from ideal doubling as reagents and efficiency change."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "number",
+            "prompt": "Starting with one ideal double-stranded target, how many copies follow four perfect PCR cycles?",
+            "answer": 16,
+            "explanation": "16. Restriction enzymes recognize particular sequences and cleave DNA. Compatible ends can be joined by ligase, but successful insertion does not guarantee correct orientation or expression.",
+            "hints": [
+              "PCR amplifies a bounded DNA region using primers, thermal strand separation and a thermostable polymerase. Primers define the region and supply extendable 3′ ends.",
+              "Restriction enzymes recognize particular sequences and cleave DNA. Compatible ends can be joined by ligase, but successful insertion does not guarantee correct orientation or expression."
+            ],
+            "unit": "copies",
+            "tolerance": 0
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "A PCR product has the expected gel length. What remains unproven?",
+            "answer": 0,
+            "options": [
+              "Its exact base sequence",
+              "That material entered the gel",
+              "That a band was detected",
+              "That primers were used in the stated PCR"
+            ],
+            "explanation": "Its exact base sequence. In ideal PCR, copies double each cycle, giving N0 times 2 to the cycle number. Real reactions eventually depart from ideal doubling as reagents and efficiency change.",
+            "hints": [
+              "Restriction enzymes recognize particular sequences and cleave DNA. Compatible ends can be joined by ligase, but successful insertion does not guarantee correct orientation or expression.",
+              "In ideal PCR, copies double each cycle, giving N0 times 2 to the cycle number. Real reactions eventually depart from ideal doubling as reagents and efficiency change."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "version": 1,
+    "assets": [
+      {
+        "id": "bc06-01",
+        "kind": "concept-schematic",
+        "title": "DNA Structure",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Antiparallel strands",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Base pairs",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Sugar-phosphate chain",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Complementarity",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "dna"
+        }
+      },
+      {
+        "id": "bc06-02",
+        "kind": "concept-schematic",
+        "title": "Eukaryotic Chromosome Organization",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Histone core",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Nucleosome",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Accessible region",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Condensed region",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "dna"
+        }
+      },
+      {
+        "id": "bc06-03",
+        "kind": "concept-schematic",
+        "title": "DNA Replication",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Replication fork",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Leading strand",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Lagging strand",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Primer",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "dna"
+        }
+      },
+      {
+        "id": "bc06-04",
+        "kind": "concept-schematic",
+        "title": "DNA Repair",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Mismatch",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Damaged base",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Bulky lesion",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Repair synthesis",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "dna"
+        }
+      },
+      {
+        "id": "bc06-05",
+        "kind": "concept-schematic",
+        "title": "Recombinant Biotechnology",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "PCR amplification",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Restriction digest",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "DNA ligation",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Sequence readout",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [
+          {
+            "from": "part-1",
+            "to": "part-2"
+          }
+        ],
+        "visual": {
+          "type": "experiment"
+        }
+      }
+    ]
+  }
+}
+REPORT BY CHAPTER: item ID, severity (critical/major/minor), exact claim, independent answer, encoded key, evidence, correction, uncertainty. Include coverage counts, unresolved questions and a verdict. Cite only inspected sources. Label any incomplete coverage PARTIAL with exact remaining IDs. Do not execute commands or modify curriculum. Model review is candidate evidence, not expert sign-off.
+For strictly blind evidence use a fresh conversation with blind.json only; freeze its response before supplying keyed-audit.json in a separate pass. This combined file contains keys and cannot guarantee blindness.

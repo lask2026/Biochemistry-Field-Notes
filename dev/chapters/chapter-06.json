@@ -1,0 +1,577 @@
+{
+  "version": 1,
+  "id": "chapter-06",
+  "title": "DNA and Biotechnology",
+  "status": "implemented",
+  "scopeNote": "Original condensed MCAT biochemistry lessons covering the declared outline sections. This release is implemented, not independently scientifically verified; it is not exhaustive textbook coverage.",
+  "lessons": [
+    {
+      "id": "concept-6-1",
+      "title": "DNA Structure",
+      "section": "6.1",
+      "asset": "bc06-01",
+      "steps": [
+        {
+          "text": "DNA contains deoxyribonucleotides linked by 3′–5′ phosphodiester bonds. The two strands of a typical duplex run in opposite directions.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "A pairs with T and G with C in canonical DNA base pairing. Hydrogen bonding and base stacking contribute to duplex stability; sequence and conditions both matter.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "A strand written 5′-AGTC-3′ pairs with 3′-TCAG-5′. When both are written 5′ to 3′, the complementary sequence is the reverse complement, 5′-GACT-3′.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Denaturation separates paired strands without necessarily hydrolyzing the covalent backbone. GC content influences melting behavior, but salt and length also matter.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "6.1 · Organize: Antiparallel strands",
+        "paragraphs": [
+          "DNA contains deoxyribonucleotides linked by 3′–5′ phosphodiester bonds. The two strands of a typical duplex run in opposite directions.",
+          "A pairs with T and G with C in canonical DNA base pairing. Hydrogen bonding and base stacking contribute to duplex stability; sequence and conditions both matter."
+        ]
+      },
+      "memoryCue": {
+        "title": "6.1 · Complement, then reverse when both strands read 5′ to 3′.",
+        "paragraphs": [
+          "Complement, then reverse when both strands read 5′ to 3′.",
+          "A pairs with T and G with C in canonical DNA base pairing. Hydrogen bonding and base stacking contribute to duplex stability; sequence and conditions both matter."
+        ]
+      },
+      "traps": {
+        "title": "6.1 · Check: Sugar-phosphate chain",
+        "paragraphs": [
+          "A strand written 5′-AGTC-3′ pairs with 3′-TCAG-5′. When both are written 5′ to 3′, the complementary sequence is the reverse complement, 5′-GACT-3′.",
+          "Denaturation separates paired strands without necessarily hydrolyzing the covalent backbone. GC content influences melting behavior, but salt and length also matter."
+        ]
+      },
+      "application": {
+        "title": "6.1 · Apply: Complementarity",
+        "paragraphs": [
+          "Denaturation separates paired strands without necessarily hydrolyzing the covalent backbone. GC content influences melting behavior, but salt and length also matter.",
+          "DNA contains deoxyribonucleotides linked by 3′–5′ phosphodiester bonds. The two strands of a typical duplex run in opposite directions."
+        ]
+      }
+    },
+    {
+      "id": "concept-6-2",
+      "title": "Eukaryotic Chromosome Organization",
+      "section": "6.2",
+      "asset": "bc06-02",
+      "steps": [
+        {
+          "text": "Eukaryotic DNA wraps around histone proteins to form nucleosomes. Packaging compacts DNA while allowing regulated access for replication, repair and transcription.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "Histone tails can receive chemical modifications that influence binding partners and accessibility. The effect depends on the specific modification and genomic context.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Euchromatin is generally more accessible than heterochromatin. This comparison is not a rule that every gene in one region is always on or always off.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Chromatin state is part of gene regulation. A change in transcription can reflect altered access even without changing the underlying DNA sequence.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "6.2 · Organize: Histone core",
+        "paragraphs": [
+          "Eukaryotic DNA wraps around histone proteins to form nucleosomes. Packaging compacts DNA while allowing regulated access for replication, repair and transcription.",
+          "Histone tails can receive chemical modifications that influence binding partners and accessibility. The effect depends on the specific modification and genomic context."
+        ]
+      },
+      "memoryCue": {
+        "title": "6.2 · Packaging controls access without changing base sequence.",
+        "paragraphs": [
+          "Packaging controls access without changing base sequence.",
+          "Histone tails can receive chemical modifications that influence binding partners and accessibility. The effect depends on the specific modification and genomic context."
+        ]
+      },
+      "traps": {
+        "title": "6.2 · Check: Accessible region",
+        "paragraphs": [
+          "Euchromatin is generally more accessible than heterochromatin. This comparison is not a rule that every gene in one region is always on or always off.",
+          "Chromatin state is part of gene regulation. A change in transcription can reflect altered access even without changing the underlying DNA sequence."
+        ]
+      },
+      "application": {
+        "title": "6.2 · Apply: Condensed region",
+        "paragraphs": [
+          "Chromatin state is part of gene regulation. A change in transcription can reflect altered access even without changing the underlying DNA sequence.",
+          "Eukaryotic DNA wraps around histone proteins to form nucleosomes. Packaging compacts DNA while allowing regulated access for replication, repair and transcription."
+        ]
+      }
+    },
+    {
+      "id": "concept-6-3",
+      "title": "DNA Replication",
+      "section": "6.3",
+      "asset": "bc06-03",
+      "steps": [
+        {
+          "text": "DNA polymerases extend a preexisting strand by adding to its 3′ hydroxyl. New DNA synthesis proceeds 5′ to 3′ while the template is read 3′ to 5′.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "At a replication fork, the leading strand is synthesized more continuously toward fork movement. The lagging strand is assembled as Okazaki fragments.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Primase supplies primers; primer removal, gap filling and ligation complete the daughter strand. Ligase seals a nick rather than synthesizing an entire fragment.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Semiconservative replication gives each daughter duplex one parental strand and one newly synthesized strand. Leading and lagging describe local fork geometry.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "6.3 · Organize: Replication fork",
+        "paragraphs": [
+          "DNA polymerases extend a preexisting strand by adding to its 3′ hydroxyl. New DNA synthesis proceeds 5′ to 3′ while the template is read 3′ to 5′.",
+          "At a replication fork, the leading strand is synthesized more continuously toward fork movement. The lagging strand is assembled as Okazaki fragments."
+        ]
+      },
+      "memoryCue": {
+        "title": "6.3 · Polymerase extends the 3′ end, so synthesis runs 5′ to 3′.",
+        "paragraphs": [
+          "Polymerase extends the 3′ end, so synthesis runs 5′ to 3′.",
+          "At a replication fork, the leading strand is synthesized more continuously toward fork movement. The lagging strand is assembled as Okazaki fragments."
+        ]
+      },
+      "traps": {
+        "title": "6.3 · Check: Lagging strand",
+        "paragraphs": [
+          "Primase supplies primers; primer removal, gap filling and ligation complete the daughter strand. Ligase seals a nick rather than synthesizing an entire fragment.",
+          "Semiconservative replication gives each daughter duplex one parental strand and one newly synthesized strand. Leading and lagging describe local fork geometry."
+        ]
+      },
+      "application": {
+        "title": "6.3 · Apply: Primer",
+        "paragraphs": [
+          "Semiconservative replication gives each daughter duplex one parental strand and one newly synthesized strand. Leading and lagging describe local fork geometry.",
+          "DNA polymerases extend a preexisting strand by adding to its 3′ hydroxyl. New DNA synthesis proceeds 5′ to 3′ while the template is read 3′ to 5′."
+        ]
+      }
+    },
+    {
+      "id": "concept-6-4",
+      "title": "DNA Repair",
+      "section": "6.4",
+      "asset": "bc06-04",
+      "steps": [
+        {
+          "text": "Replication proofreading and postreplicative repair improve fidelity through different steps. A mismatch is not the same lesion as a chemically damaged base.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "Base-excision repair removes selected damaged bases before processing the backbone and filling the gap. Nucleotide-excision repair removes a segment containing a bulky lesion.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Mismatch repair corrects some replication errors that escaped proofreading. Accurate repair requires an appropriate template or strand discrimination mechanism.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Double-strand breaks can be processed by homologous recombination or end joining. These mechanisms differ in template use and error risk; repair is not always error-free.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "6.4 · Organize: Mismatch",
+        "paragraphs": [
+          "Replication proofreading and postreplicative repair improve fidelity through different steps. A mismatch is not the same lesion as a chemically damaged base.",
+          "Base-excision repair removes selected damaged bases before processing the backbone and filling the gap. Nucleotide-excision repair removes a segment containing a bulky lesion."
+        ]
+      },
+      "memoryCue": {
+        "title": "6.4 · Name the lesion before naming its repair route.",
+        "paragraphs": [
+          "Name the lesion before naming its repair route.",
+          "Base-excision repair removes selected damaged bases before processing the backbone and filling the gap. Nucleotide-excision repair removes a segment containing a bulky lesion."
+        ]
+      },
+      "traps": {
+        "title": "6.4 · Check: Bulky lesion",
+        "paragraphs": [
+          "Mismatch repair corrects some replication errors that escaped proofreading. Accurate repair requires an appropriate template or strand discrimination mechanism.",
+          "Double-strand breaks can be processed by homologous recombination or end joining. These mechanisms differ in template use and error risk; repair is not always error-free."
+        ]
+      },
+      "application": {
+        "title": "6.4 · Apply: Repair synthesis",
+        "paragraphs": [
+          "Double-strand breaks can be processed by homologous recombination or end joining. These mechanisms differ in template use and error risk; repair is not always error-free.",
+          "Replication proofreading and postreplicative repair improve fidelity through different steps. A mismatch is not the same lesion as a chemically damaged base."
+        ]
+      }
+    },
+    {
+      "id": "concept-6-5",
+      "title": "Recombinant Biotechnology",
+      "section": "6.5",
+      "asset": "bc06-05",
+      "steps": [
+        {
+          "text": "PCR amplifies a bounded DNA region using primers, thermal strand separation and a thermostable polymerase. Primers define the region and supply extendable 3′ ends.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "Restriction enzymes recognize particular sequences and cleave DNA. Compatible ends can be joined by ligase, but successful insertion does not guarantee correct orientation or expression.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "In ideal PCR, copies double each cycle, giving N0 times 2 to the cycle number. Real reactions eventually depart from ideal doubling as reagents and efficiency change.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Sequence confirmation tests the construct directly. A band of the expected size supports an amplicon’s length but does not prove every base is correct.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "6.5 · Organize: PCR amplification",
+        "paragraphs": [
+          "PCR amplifies a bounded DNA region using primers, thermal strand separation and a thermostable polymerase. Primers define the region and supply extendable 3′ ends.",
+          "Restriction enzymes recognize particular sequences and cleave DNA. Compatible ends can be joined by ligase, but successful insertion does not guarantee correct orientation or expression."
+        ]
+      },
+      "memoryCue": {
+        "title": "6.5 · Ideal PCR doubles; a correct-size band still needs sequence checking.",
+        "paragraphs": [
+          "Ideal PCR doubles; a correct-size band still needs sequence checking.",
+          "Restriction enzymes recognize particular sequences and cleave DNA. Compatible ends can be joined by ligase, but successful insertion does not guarantee correct orientation or expression."
+        ]
+      },
+      "traps": {
+        "title": "6.5 · Check: DNA ligation",
+        "paragraphs": [
+          "In ideal PCR, copies double each cycle, giving N0 times 2 to the cycle number. Real reactions eventually depart from ideal doubling as reagents and efficiency change.",
+          "Sequence confirmation tests the construct directly. A band of the expected size supports an amplicon’s length but does not prove every base is correct."
+        ]
+      },
+      "application": {
+        "title": "6.5 · Apply: Sequence readout",
+        "paragraphs": [
+          "Sequence confirmation tests the construct directly. A band of the expected size supports an amplicon’s length but does not prove every base is correct.",
+          "PCR amplifies a bounded DNA region using primers, thermal strand separation and a thermostable polymerase. Primers define the region and supply extendable 3′ ends."
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "bc-06-01-workshop-v1",
+      "title": "DNA Structure",
+      "asset": "bc06-01",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the organization describing opposite strand directions.",
+          "answer": [
+            "part-0"
+          ],
+          "explanation": "The relevant schematic entity or entities are Antiparallel strands. DNA contains deoxyribonucleotides linked by 3′–5′ phosphodiester bonds. The two strands of a typical duplex run in opposite directions.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "DNA contains deoxyribonucleotides linked by 3′–5′ phosphodiester bonds. The two strands of a typical duplex run in opposite directions."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "What is the reverse complement of 5′-AGTC-3′, written 5′ to 3′?",
+          "answer": 3,
+          "options": [
+            "TCAG",
+            "AGTC",
+            "CTGA",
+            "GACT"
+          ],
+          "explanation": "GACT. A pairs with T and G with C in canonical DNA base pairing. Hydrogen bonding and base stacking contribute to duplex stability; sequence and conditions both matter.",
+          "hints": [
+            "DNA contains deoxyribonucleotides linked by 3′–5′ phosphodiester bonds. The two strands of a typical duplex run in opposite directions.",
+            "A pairs with T and G with C in canonical DNA base pairing. Hydrogen bonding and base stacking contribute to duplex stability; sequence and conditions both matter."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "What usually occurs during duplex melting?",
+          "answer": 0,
+          "options": [
+            "Base-paired strands separate",
+            "Every phosphodiester bond is cleaved",
+            "DNA becomes protein",
+            "All bases become uracil"
+          ],
+          "explanation": "Base-paired strands separate. A strand written 5′-AGTC-3′ pairs with 3′-TCAG-5′. When both are written 5′ to 3′, the complementary sequence is the reverse complement, 5′-GACT-3′.",
+          "hints": [
+            "A pairs with T and G with C in canonical DNA base pairing. Hydrogen bonding and base stacking contribute to duplex stability; sequence and conditions both matter.",
+            "A strand written 5′-AGTC-3′ pairs with 3′-TCAG-5′. When both are written 5′ to 3′, the complementary sequence is the reverse complement, 5′-GACT-3′."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc-06-02-workshop-v1",
+      "title": "Eukaryotic Chromosome Organization",
+      "asset": "bc06-02",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the region generally associated with greater transcriptional accessibility.",
+          "answer": [
+            "part-2"
+          ],
+          "explanation": "The relevant schematic entity or entities are Accessible region. Euchromatin is generally more accessible than heterochromatin. This comparison is not a rule that every gene in one region is always on or always off.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "Euchromatin is generally more accessible than heterochromatin. This comparison is not a rule that every gene in one region is always on or always off."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "What is DNA wrapped around a histone core called?",
+          "answer": 0,
+          "options": [
+            "A nucleosome",
+            "A ribosome",
+            "A codon",
+            "An amino acid"
+          ],
+          "explanation": "A nucleosome. Histone tails can receive chemical modifications that influence binding partners and accessibility. The effect depends on the specific modification and genomic context.",
+          "hints": [
+            "Eukaryotic DNA wraps around histone proteins to form nucleosomes. Packaging compacts DNA while allowing regulated access for replication, repair and transcription.",
+            "Histone tails can receive chemical modifications that influence binding partners and accessibility. The effect depends on the specific modification and genomic context."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "Transcription changes while DNA sequence stays constant. Which mechanism is plausible?",
+          "answer": 1,
+          "options": [
+            "A required base substitution",
+            "Altered chromatin accessibility",
+            "Peptide-bond formation in DNA",
+            "Conversion of all histones to RNA"
+          ],
+          "explanation": "Altered chromatin accessibility. Euchromatin is generally more accessible than heterochromatin. This comparison is not a rule that every gene in one region is always on or always off.",
+          "hints": [
+            "Histone tails can receive chemical modifications that influence binding partners and accessibility. The effect depends on the specific modification and genomic context.",
+            "Euchromatin is generally more accessible than heterochromatin. This comparison is not a rule that every gene in one region is always on or always off."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc-06-03-workshop-v1",
+      "title": "DNA Replication",
+      "asset": "bc06-03",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the strand produced as Okazaki fragments.",
+          "answer": [
+            "part-2"
+          ],
+          "explanation": "The relevant schematic entity or entities are Lagging strand. Primase supplies primers; primer removal, gap filling and ligation complete the daughter strand. Ligase seals a nick rather than synthesizing an entire fragment.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "Primase supplies primers; primer removal, gap filling and ligation complete the daughter strand. Ligase seals a nick rather than synthesizing an entire fragment."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "In which direction is a new DNA strand extended?",
+          "answer": 1,
+          "options": [
+            "3′ to 5′",
+            "5′ to 3′",
+            "Both directions from the same 3′ end",
+            "Without a template in every case"
+          ],
+          "explanation": "5′ to 3′. At a replication fork, the leading strand is synthesized more continuously toward fork movement. The lagging strand is assembled as Okazaki fragments.",
+          "hints": [
+            "DNA polymerases extend a preexisting strand by adding to its 3′ hydroxyl. New DNA synthesis proceeds 5′ to 3′ while the template is read 3′ to 5′.",
+            "At a replication fork, the leading strand is synthesized more continuously toward fork movement. The lagging strand is assembled as Okazaki fragments."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "Which activity seals a nick after fragment processing?",
+          "answer": 2,
+          "options": [
+            "Helicase alone",
+            "A ribosomal peptidyl transferase",
+            "DNA ligase",
+            "A transcription factor"
+          ],
+          "explanation": "DNA ligase. Primase supplies primers; primer removal, gap filling and ligation complete the daughter strand. Ligase seals a nick rather than synthesizing an entire fragment.",
+          "hints": [
+            "At a replication fork, the leading strand is synthesized more continuously toward fork movement. The lagging strand is assembled as Okazaki fragments.",
+            "Primase supplies primers; primer removal, gap filling and ligation complete the daughter strand. Ligase seals a nick rather than synthesizing an entire fragment."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc-06-04-workshop-v1",
+      "title": "DNA Repair",
+      "asset": "bc06-04",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the step that restores missing DNA after excision.",
+          "answer": [
+            "part-3"
+          ],
+          "explanation": "The relevant schematic entity or entities are Repair synthesis. Double-strand breaks can be processed by homologous recombination or end joining. These mechanisms differ in template use and error risk; repair is not always error-free.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "Double-strand breaks can be processed by homologous recombination or end joining. These mechanisms differ in template use and error risk; repair is not always error-free."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "Which repair class commonly removes a bulky UV-associated lesion as an oligonucleotide segment?",
+          "answer": 2,
+          "options": [
+            "Translation",
+            "Glycolysis",
+            "Nucleotide-excision repair",
+            "Simple ligand binding"
+          ],
+          "explanation": "Nucleotide-excision repair. Base-excision repair removes selected damaged bases before processing the backbone and filling the gap. Nucleotide-excision repair removes a segment containing a bulky lesion.",
+          "hints": [
+            "Replication proofreading and postreplicative repair improve fidelity through different steps. A mismatch is not the same lesion as a chemically damaged base.",
+            "Base-excision repair removes selected damaged bases before processing the backbone and filling the gap. Nucleotide-excision repair removes a segment containing a bulky lesion."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "A replication mismatch remains after polymerase proofreading. Which system may still correct it?",
+          "answer": 3,
+          "options": [
+            "A ribosomal release factor",
+            "ATP synthase",
+            "Glycogen synthase",
+            "Mismatch repair"
+          ],
+          "explanation": "Mismatch repair. Mismatch repair corrects some replication errors that escaped proofreading. Accurate repair requires an appropriate template or strand discrimination mechanism.",
+          "hints": [
+            "Base-excision repair removes selected damaged bases before processing the backbone and filling the gap. Nucleotide-excision repair removes a segment containing a bulky lesion.",
+            "Mismatch repair corrects some replication errors that escaped proofreading. Accurate repair requires an appropriate template or strand discrimination mechanism."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc-06-05-workshop-v1",
+      "title": "Recombinant Biotechnology",
+      "asset": "bc06-05",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the procedure that joins compatible DNA ends.",
+          "answer": [
+            "part-2"
+          ],
+          "explanation": "The relevant schematic entity or entities are DNA ligation. In ideal PCR, copies double each cycle, giving N0 times 2 to the cycle number. Real reactions eventually depart from ideal doubling as reagents and efficiency change.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "In ideal PCR, copies double each cycle, giving N0 times 2 to the cycle number. Real reactions eventually depart from ideal doubling as reagents and efficiency change."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "number",
+          "prompt": "Starting with one ideal double-stranded target, how many copies follow four perfect PCR cycles?",
+          "answer": 16,
+          "explanation": "16. Restriction enzymes recognize particular sequences and cleave DNA. Compatible ends can be joined by ligase, but successful insertion does not guarantee correct orientation or expression.",
+          "hints": [
+            "PCR amplifies a bounded DNA region using primers, thermal strand separation and a thermostable polymerase. Primers define the region and supply extendable 3′ ends.",
+            "Restriction enzymes recognize particular sequences and cleave DNA. Compatible ends can be joined by ligase, but successful insertion does not guarantee correct orientation or expression."
+          ],
+          "unit": "copies",
+          "tolerance": 0
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "A PCR product has the expected gel length. What remains unproven?",
+          "answer": 0,
+          "options": [
+            "Its exact base sequence",
+            "That material entered the gel",
+            "That a band was detected",
+            "That primers were used in the stated PCR"
+          ],
+          "explanation": "Its exact base sequence. In ideal PCR, copies double each cycle, giving N0 times 2 to the cycle number. Real reactions eventually depart from ideal doubling as reagents and efficiency change.",
+          "hints": [
+            "Restriction enzymes recognize particular sequences and cleave DNA. Compatible ends can be joined by ligase, but successful insertion does not guarantee correct orientation or expression.",
+            "In ideal PCR, copies double each cycle, giving N0 times 2 to the cycle number. Real reactions eventually depart from ideal doubling as reagents and efficiency change."
+          ]
+        }
+      ]
+    }
+  ]
+}
