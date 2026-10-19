@@ -1,0 +1,2187 @@
+BIOCHEMISTRY chapter-09: Carbohydrate Metabolism I: Glycolysis, Glycogen, Gluconeogenesis, and the Pentose Phosphate Pathway
+Text/content review only; browser execution is not established by this packet.
+PASS 1: Independently solve every supplied blind case. Record case ID, answer, reasoning, confidence and ambiguity. Do not skip stages.
+[
+  {
+    "id": "bc-09-01-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the carrier that supports passive glucose movement.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "GLUT carrier",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "SGLT carrier",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Sodium gradient",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Insulin signal",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "transport"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">GLUT carrier</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">SGLT carrier</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Sodium gradient</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Insulin signal</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-09-01-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "Which uptake mechanism uses a sodium gradient directly?",
+    "type": "choice",
+    "options": [
+      "GLUT facilitated diffusion",
+      "Simple diffusion through pure lipid",
+      "SGLT cotransport",
+      "DNA polymerization"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "GLUT carrier",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "SGLT carrier",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Sodium gradient",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Insulin signal",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "transport"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">GLUT carrier</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">SGLT carrier</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Sodium gradient</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Insulin signal</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-09-01-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "Insulin increases muscle glucose uptake partly by what mechanism?",
+    "type": "choice",
+    "options": [
+      "Turning GLUT4 into an ATP synthase",
+      "Opening every membrane to all sugars",
+      "Removing hexokinase from all tissues",
+      "Recruiting GLUT4 to the cell surface"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "GLUT carrier",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "SGLT carrier",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Sodium gradient",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Insulin signal",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "transport"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">GLUT carrier</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">SGLT carrier</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Sodium gradient</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-40 -12 H-12 M12 -12 H40 M-40 12 H-12 M12 12 H40 M-12 -22 V22 M12 -22 V22\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Insulin signal</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-09-02-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the phase in which ATP is consumed before the payoff steps.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Glucose entry",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "ATP investment",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "ATP payoff",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Pyruvate fate",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M235 295 Q320 295 405 295\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Glucose entry</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">ATP investment</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">ATP payoff</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Pyruvate fate</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-09-02-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "What is the net direct ATP yield of glycolysis per glucose?",
+    "type": "number",
+    "unit": "ATP",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Glucose entry",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "ATP investment",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "ATP payoff",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Pyruvate fate",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M235 295 Q320 295 405 295\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Glucose entry</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">ATP investment</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">ATP payoff</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Pyruvate fate</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-09-02-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "Why does lactate formation support sustained glycolysis?",
+    "type": "choice",
+    "options": [
+      "It regenerates NAD+",
+      "It produces oxygen",
+      "It directly adds four ATP",
+      "It runs the citric acid cycle"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Glucose entry",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "ATP investment",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "ATP payoff",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Pyruvate fate",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M235 295 Q320 295 405 295\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Glucose entry</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">ATP investment</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">ATP payoff</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Pyruvate fate</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-09-03-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the shared destination connecting different sugar inputs.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Fructose input",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Galactose input",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Shared intermediates",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Glycolytic pathway",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Fructose input</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Galactose input</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Shared intermediates</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Glycolytic pathway</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-09-03-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "In the standard hepatic pathway, fructose carbon can enter glycolysis at which level?",
+    "type": "choice",
+    "options": [
+      "Triose intermediates",
+      "Only intact glycogen branches",
+      "Only acetyl-CoA without any intermediates",
+      "Directly as oxygen"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Fructose input",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Galactose input",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Shared intermediates",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Glycolytic pathway",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Fructose input</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Galactose input</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Shared intermediates</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Glycolytic pathway</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-09-03-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "An enzyme converting X to Y is blocked with no alternative route. What is an initial expectation?",
+    "type": "choice",
+    "options": [
+      "Y production must increase",
+      "X tends to accumulate and Y production falls",
+      "X must disappear faster",
+      "All unrelated pathways stop"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Fructose input",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Galactose input",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Shared intermediates",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Glycolytic pathway",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Fructose input</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Galactose input</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Shared intermediates</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Glycolytic pathway</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-09-04-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the two-carbon carrier produced by PDH.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Pyruvate",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "PDH complex",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Acetyl-CoA",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "NADH and CO2",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-1",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M485 171 Q485 200 485 229\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Pyruvate</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">PDH complex</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Acetyl-CoA</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">NADH and CO2</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-09-04-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "What carbon product is released by PDH in addition to acetyl-CoA?",
+    "type": "choice",
+    "options": [
+      "Glucose",
+      "CO2",
+      "Glycogen",
+      "Lactose"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Pyruvate",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "PDH complex",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Acetyl-CoA",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "NADH and CO2",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-1",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M485 171 Q485 200 485 229\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Pyruvate</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">PDH complex</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Acetyl-CoA</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">NADH and CO2</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-09-04-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "Why can acetyl-CoA not simply become pyruvate by reversing PDH in humans?",
+    "type": "choice",
+    "options": [
+      "Acetyl-CoA contains no carbon",
+      "All enzymes are irreversible",
+      "PDH is effectively irreversible",
+      "Pyruvate is only a protein"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Pyruvate",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "PDH complex",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Acetyl-CoA",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "NADH and CO2",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-1",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M485 171 Q485 200 485 229\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Pyruvate</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">PDH complex</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Acetyl-CoA</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">NADH and CO2</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-09-05-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the enzyme responsible for alpha(1→6) branch creation.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Glycogen synthase",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Branching enzyme",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Glycogen phosphorylase",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Debranching enzyme",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Glycogen synthase</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Branching enzyme</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Glycogen phosphorylase</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Debranching enzyme</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-09-05-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "What is the main product directly released by glycogen phosphorylase?",
+    "type": "choice",
+    "options": [
+      "Free glucose only",
+      "Acetyl-CoA",
+      "Glucose-1-phosphate",
+      "Fructose-1,6-bisphosphate"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Glycogen synthase",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Branching enzyme",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Glycogen phosphorylase",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Debranching enzyme",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Glycogen synthase</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Branching enzyme</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Glycogen phosphorylase</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Debranching enzyme</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-09-05-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "Why does muscle glycogen mainly support local use?",
+    "type": "choice",
+    "options": [
+      "Muscle has no glycolysis",
+      "Muscle glycogen contains no glucose",
+      "Only liver has ATP",
+      "Muscle lacks appreciable glucose-6-phosphatase for glucose export"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Glycogen synthase",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Branching enzyme",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Glycogen phosphorylase",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Debranching enzyme",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Glycogen synthase</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Branching enzyme</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Glycogen phosphorylase</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Debranching enzyme</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-09-06-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the enzyme that bypasses PFK-1 rather than pyruvate kinase.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Pyruvate carboxylase",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "PEP carboxykinase",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Fructose bisphosphatase",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Glucose phosphatase",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Pyruvate carboxylase</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">PEP carboxykinase</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Fructose bisphosphatase</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Glucose phosphatase</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-09-06-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "Which precursor can supply net glucose carbon in humans?",
+    "type": "choice",
+    "options": [
+      "Even-chain fatty-acid acetyl-CoA alone",
+      "Oxygen",
+      "Ketone bodies as the only carbon source",
+      "Glycerol"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Pyruvate carboxylase",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "PEP carboxykinase",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Fructose bisphosphatase",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Glucose phosphatase",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Pyruvate carboxylase</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">PEP carboxykinase</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Fructose bisphosphatase</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Glucose phosphatase</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-09-06-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "How many ATP plus GTP molecules are consumed per glucose made from two pyruvates?",
+    "type": "number",
+    "unit": "molecules",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Pyruvate carboxylase",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "PEP carboxykinase",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Fructose bisphosphatase",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Glucose phosphatase",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Pyruvate carboxylase</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">PEP carboxykinase</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Fructose bisphosphatase</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Glucose phosphatase</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-09-07-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the product supporting reduced-glutathione regeneration.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Glucose-6-phosphate",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Oxidative branch",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "NADPH",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Ribose phosphates",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-1",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M485 171 Q485 200 485 229\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Glucose-6-phosphate</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Oxidative branch</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">NADPH</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Ribose phosphates</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-09-07-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "Which reduced carrier is produced by the oxidative PPP?",
+    "type": "choice",
+    "options": [
+      "NADPH",
+      "NADH only",
+      "FADH2 only",
+      "ATP as its primary reduced carrier"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Glucose-6-phosphate",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Oxidative branch",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "NADPH",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Ribose phosphates",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-1",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M485 171 Q485 200 485 229\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Glucose-6-phosphate</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Oxidative branch</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">NADPH</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Ribose phosphates</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-09-07-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "A cell needs ribose and reductive power. Which pathway serves both needs?",
+    "type": "choice",
+    "options": [
+      "Glycogen phosphorylysis alone",
+      "Pentose phosphate pathway",
+      "Beta oxidation alone",
+      "Urea cycle alone"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Glucose-6-phosphate",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Oxidative branch",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "NADPH",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Ribose phosphates",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-1",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Qualitative process relationships</text><path class=\"flow\" d=\"M235 105 Q320 105 405 105\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M415.67020345006654 137.93165336121842 Q320 200 224.3297965499335 262.0683466387816\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><path class=\"flow\" d=\"M485 171 Q485 200 485 229\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" marker-end=\"url(#bio-flow-arrow)\"/><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Glucose-6-phosphate</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Oxidative branch</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">NADPH</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Ribose phosphates</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  }
+]
+PASS 2: Audit every lesson step, rule, cue, trap, application, diagram, prompt, option, key, hint and explanation below. Compare your independently recorded answers; do not assume the encoded key is correct.
+{
+  "chapter": {
+    "version": 1,
+    "id": "chapter-09",
+    "title": "Carbohydrate Metabolism I: Glycolysis, Glycogen, Gluconeogenesis, and the Pentose Phosphate Pathway",
+    "status": "implemented",
+    "scopeNote": "Original condensed MCAT biochemistry lessons covering the declared outline sections. This release is implemented, not independently scientifically verified; it is not exhaustive textbook coverage.",
+    "lessons": [
+      {
+        "id": "concept-9-1",
+        "title": "Glucose Transport",
+        "section": "9.1",
+        "asset": "bc09-01",
+        "steps": [
+          {
+            "text": "GLUT transporters mediate facilitated diffusion of glucose. Transport direction depends on the gradient and cellular context rather than an intrinsic one-way pump.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "SGLT carriers couple glucose entry to sodium movement, using the sodium electrochemical gradient. The sodium–potassium ATPase helps maintain that driving gradient.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Insulin promotes GLUT4 recruitment to the surface of skeletal muscle and adipose cells. Many other glucose transporters are not acutely recruited in this way.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Glucose phosphorylation lowers free intracellular glucose and supports continued uptake. Transport and intracellular trapping are different steps.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "9.1 · Organize: GLUT carrier",
+          "paragraphs": [
+            "GLUT transporters mediate facilitated diffusion of glucose. Transport direction depends on the gradient and cellular context rather than an intrinsic one-way pump.",
+            "SGLT carriers couple glucose entry to sodium movement, using the sodium electrochemical gradient. The sodium–potassium ATPase helps maintain that driving gradient."
+          ]
+        },
+        "memoryCue": {
+          "title": "9.1 · GLUT follows glucose; SGLT couples glucose to sodium.",
+          "paragraphs": [
+            "GLUT follows glucose; SGLT couples glucose to sodium.",
+            "SGLT carriers couple glucose entry to sodium movement, using the sodium electrochemical gradient. The sodium–potassium ATPase helps maintain that driving gradient."
+          ]
+        },
+        "traps": {
+          "title": "9.1 · Check: Sodium gradient",
+          "paragraphs": [
+            "Insulin promotes GLUT4 recruitment to the surface of skeletal muscle and adipose cells. Many other glucose transporters are not acutely recruited in this way.",
+            "Glucose phosphorylation lowers free intracellular glucose and supports continued uptake. Transport and intracellular trapping are different steps."
+          ]
+        },
+        "application": {
+          "title": "9.1 · Apply: Insulin signal",
+          "paragraphs": [
+            "Glucose phosphorylation lowers free intracellular glucose and supports continued uptake. Transport and intracellular trapping are different steps.",
+            "GLUT transporters mediate facilitated diffusion of glucose. Transport direction depends on the gradient and cellular context rather than an intrinsic one-way pump."
+          ]
+        }
+      },
+      {
+        "id": "concept-9-2",
+        "title": "Glycolysis",
+        "section": "9.2",
+        "asset": "bc09-02",
+        "steps": [
+          {
+            "text": "Glycolysis converts one glucose into two pyruvates in the cytosol. Two ATP are invested and four are produced, giving a net of two ATP plus two NADH per glucose.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Hexokinase or glucokinase, PFK-1 and pyruvate kinase catalyze strongly regulated steps. PFK-1 commits carbon to glycolysis under typical cellular conditions.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Reduction of pyruvate to lactate regenerates NAD+ so glycolysis can continue when respiratory reoxidation of cytosolic NADH is limited. Lactate formation adds no ATP directly.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Oxygen is not a direct glycolytic substrate. Glycolysis can occur in cells lacking mitochondria, including mature human red blood cells.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "9.2 · Organize: Glucose entry",
+          "paragraphs": [
+            "Glycolysis converts one glucose into two pyruvates in the cytosol. Two ATP are invested and four are produced, giving a net of two ATP plus two NADH per glucose.",
+            "Hexokinase or glucokinase, PFK-1 and pyruvate kinase catalyze strongly regulated steps. PFK-1 commits carbon to glycolysis under typical cellular conditions."
+          ]
+        },
+        "memoryCue": {
+          "title": "9.2 · Spend two, make four: net two ATP per glucose.",
+          "paragraphs": [
+            "Spend two, make four: net two ATP per glucose.",
+            "Hexokinase or glucokinase, PFK-1 and pyruvate kinase catalyze strongly regulated steps. PFK-1 commits carbon to glycolysis under typical cellular conditions."
+          ]
+        },
+        "traps": {
+          "title": "9.2 · Check: ATP payoff",
+          "paragraphs": [
+            "Reduction of pyruvate to lactate regenerates NAD+ so glycolysis can continue when respiratory reoxidation of cytosolic NADH is limited. Lactate formation adds no ATP directly.",
+            "Oxygen is not a direct glycolytic substrate. Glycolysis can occur in cells lacking mitochondria, including mature human red blood cells."
+          ]
+        },
+        "application": {
+          "title": "9.2 · Apply: Pyruvate fate",
+          "paragraphs": [
+            "Oxygen is not a direct glycolytic substrate. Glycolysis can occur in cells lacking mitochondria, including mature human red blood cells.",
+            "Glycolysis converts one glucose into two pyruvates in the cytosol. Two ATP are invested and four are produced, giving a net of two ATP plus two NADH per glucose."
+          ]
+        }
+      },
+      {
+        "id": "concept-9-3",
+        "title": "Other Monosaccharides",
+        "section": "9.3",
+        "asset": "bc09-03",
+        "steps": [
+          {
+            "text": "Dietary fructose and galactose can feed central carbohydrate metabolism after specific enzyme steps. They do not all enter through the same initial reaction.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "In liver, fructokinase and aldolase B route fructose carbon toward triose intermediates, bypassing the PFK-1 entry step. This does not abolish every form of metabolic regulation.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Galactose is converted through the Leloir pathway toward glucose-derived intermediates. Blocking a pathway enzyme can accumulate upstream compounds.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "For a pathway block, identify the affected step before predicting upstream accumulation and downstream shortage. A metabolite’s name alone does not determine its cellular toxicity.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "9.3 · Organize: Fructose input",
+          "paragraphs": [
+            "Dietary fructose and galactose can feed central carbohydrate metabolism after specific enzyme steps. They do not all enter through the same initial reaction.",
+            "In liver, fructokinase and aldolase B route fructose carbon toward triose intermediates, bypassing the PFK-1 entry step. This does not abolish every form of metabolic regulation."
+          ]
+        },
+        "memoryCue": {
+          "title": "9.3 · Different sugars enter through different enzyme gates.",
+          "paragraphs": [
+            "Different sugars enter through different enzyme gates.",
+            "In liver, fructokinase and aldolase B route fructose carbon toward triose intermediates, bypassing the PFK-1 entry step. This does not abolish every form of metabolic regulation."
+          ]
+        },
+        "traps": {
+          "title": "9.3 · Check: Shared intermediates",
+          "paragraphs": [
+            "Galactose is converted through the Leloir pathway toward glucose-derived intermediates. Blocking a pathway enzyme can accumulate upstream compounds.",
+            "For a pathway block, identify the affected step before predicting upstream accumulation and downstream shortage. A metabolite’s name alone does not determine its cellular toxicity."
+          ]
+        },
+        "application": {
+          "title": "9.3 · Apply: Glycolytic pathway",
+          "paragraphs": [
+            "For a pathway block, identify the affected step before predicting upstream accumulation and downstream shortage. A metabolite’s name alone does not determine its cellular toxicity.",
+            "Dietary fructose and galactose can feed central carbohydrate metabolism after specific enzyme steps. They do not all enter through the same initial reaction."
+          ]
+        }
+      },
+      {
+        "id": "concept-9-4",
+        "title": "Pyruvate Dehydrogenase",
+        "section": "9.4",
+        "asset": "bc09-04",
+        "steps": [
+          {
+            "text": "The mitochondrial pyruvate dehydrogenase complex converts pyruvate to acetyl-CoA with CO2 release and NAD+ reduction. The reaction links glycolysis to acetyl-unit oxidation.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Its cofactors include TPP, lipoamide, CoA, FAD and NAD+. These helpers support decarboxylation, acyl transfer and electron transfer in the complex.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Phosphorylation by PDH kinase inhibits PDH in the standard mammalian model; dephosphorylation activates it. Energy-rich signals tend to restrain pyruvate oxidation.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "PDH is effectively irreversible in human metabolism. Acetyl-CoA cannot simply reverse PDH to supply net pyruvate for glucose synthesis.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "9.4 · Organize: Pyruvate",
+          "paragraphs": [
+            "The mitochondrial pyruvate dehydrogenase complex converts pyruvate to acetyl-CoA with CO2 release and NAD+ reduction. The reaction links glycolysis to acetyl-unit oxidation.",
+            "Its cofactors include TPP, lipoamide, CoA, FAD and NAD+. These helpers support decarboxylation, acyl transfer and electron transfer in the complex."
+          ]
+        },
+        "memoryCue": {
+          "title": "9.4 · PDH links pyruvate to acetyl-CoA with carbon and electron release.",
+          "paragraphs": [
+            "PDH links pyruvate to acetyl-CoA with carbon and electron release.",
+            "Its cofactors include TPP, lipoamide, CoA, FAD and NAD+. These helpers support decarboxylation, acyl transfer and electron transfer in the complex."
+          ]
+        },
+        "traps": {
+          "title": "9.4 · Check: Acetyl-CoA",
+          "paragraphs": [
+            "Phosphorylation by PDH kinase inhibits PDH in the standard mammalian model; dephosphorylation activates it. Energy-rich signals tend to restrain pyruvate oxidation.",
+            "PDH is effectively irreversible in human metabolism. Acetyl-CoA cannot simply reverse PDH to supply net pyruvate for glucose synthesis."
+          ]
+        },
+        "application": {
+          "title": "9.4 · Apply: NADH and CO2",
+          "paragraphs": [
+            "PDH is effectively irreversible in human metabolism. Acetyl-CoA cannot simply reverse PDH to supply net pyruvate for glucose synthesis.",
+            "The mitochondrial pyruvate dehydrogenase complex converts pyruvate to acetyl-CoA with CO2 release and NAD+ reduction. The reaction links glycolysis to acetyl-unit oxidation."
+          ]
+        }
+      },
+      {
+        "id": "concept-9-5",
+        "title": "Glycogenesis and Glycogenolysis",
+        "section": "9.5",
+        "asset": "bc09-05",
+        "steps": [
+          {
+            "text": "Glycogenesis extends glycogen using activated glucose donors. Glycogen synthase makes alpha(1→4) linkages and branching enzyme introduces alpha(1→6) branches.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Glycogen phosphorylase releases glucose-1-phosphate from nonreducing ends. A debranching enzyme handles branch regions that phosphorylase cannot fully resolve.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Liver glycogen supports blood glucose because liver can release free glucose. Skeletal muscle generally uses its glycogen locally and lacks appreciable glucose-6-phosphatase activity.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Insulin favors glycogen storage, while glucagon stimulates hepatic mobilization. Epinephrine can promote mobilization in muscle; glucagon does not directly play the same muscle role.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "9.5 · Organize: Glycogen synthase",
+          "paragraphs": [
+            "Glycogenesis extends glycogen using activated glucose donors. Glycogen synthase makes alpha(1→4) linkages and branching enzyme introduces alpha(1→6) branches.",
+            "Glycogen phosphorylase releases glucose-1-phosphate from nonreducing ends. A debranching enzyme handles branch regions that phosphorylase cannot fully resolve."
+          ]
+        },
+        "memoryCue": {
+          "title": "9.5 · Liver can share glucose; muscle glycogen supports muscle.",
+          "paragraphs": [
+            "Liver can share glucose; muscle glycogen supports muscle.",
+            "Glycogen phosphorylase releases glucose-1-phosphate from nonreducing ends. A debranching enzyme handles branch regions that phosphorylase cannot fully resolve."
+          ]
+        },
+        "traps": {
+          "title": "9.5 · Check: Glycogen phosphorylase",
+          "paragraphs": [
+            "Liver glycogen supports blood glucose because liver can release free glucose. Skeletal muscle generally uses its glycogen locally and lacks appreciable glucose-6-phosphatase activity.",
+            "Insulin favors glycogen storage, while glucagon stimulates hepatic mobilization. Epinephrine can promote mobilization in muscle; glucagon does not directly play the same muscle role."
+          ]
+        },
+        "application": {
+          "title": "9.5 · Apply: Debranching enzyme",
+          "paragraphs": [
+            "Insulin favors glycogen storage, while glucagon stimulates hepatic mobilization. Epinephrine can promote mobilization in muscle; glucagon does not directly play the same muscle role.",
+            "Glycogenesis extends glycogen using activated glucose donors. Glycogen synthase makes alpha(1→4) linkages and branching enzyme introduces alpha(1→6) branches."
+          ]
+        }
+      },
+      {
+        "id": "concept-9-6",
+        "title": "Gluconeogenesis",
+        "section": "9.6",
+        "asset": "bc09-06",
+        "steps": [
+          {
+            "text": "Gluconeogenesis makes glucose from precursors such as lactate, glycerol and glucogenic amino acids. It is not a simple reversal of every glycolytic enzyme step.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Pyruvate carboxylase and PEP carboxykinase bypass pyruvate kinase through oxaloacetate. Fructose-1,6-bisphosphatase and glucose-6-phosphatase bypass other strongly favorable glycolytic steps.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Synthesis of one glucose from two pyruvates uses four ATP, two GTP and two NADH. Carbon source changes can alter the accounting required.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Humans cannot obtain net glucose carbon from even-chain fatty-acid acetyl-CoA. Glycerol from triacylglycerol and propionyl-CoA from odd chains are different cases.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "9.6 · Organize: Pyruvate carboxylase",
+          "paragraphs": [
+            "Gluconeogenesis makes glucose from precursors such as lactate, glycerol and glucogenic amino acids. It is not a simple reversal of every glycolytic enzyme step.",
+            "Pyruvate carboxylase and PEP carboxykinase bypass pyruvate kinase through oxaloacetate. Fructose-1,6-bisphosphatase and glucose-6-phosphatase bypass other strongly favorable glycolytic steps."
+          ]
+        },
+        "memoryCue": {
+          "title": "9.6 · Bypass the irreversible steps; pay six nucleotide triphosphates.",
+          "paragraphs": [
+            "Bypass the irreversible steps; pay six nucleotide triphosphates.",
+            "Pyruvate carboxylase and PEP carboxykinase bypass pyruvate kinase through oxaloacetate. Fructose-1,6-bisphosphatase and glucose-6-phosphatase bypass other strongly favorable glycolytic steps."
+          ]
+        },
+        "traps": {
+          "title": "9.6 · Check: Fructose bisphosphatase",
+          "paragraphs": [
+            "Synthesis of one glucose from two pyruvates uses four ATP, two GTP and two NADH. Carbon source changes can alter the accounting required.",
+            "Humans cannot obtain net glucose carbon from even-chain fatty-acid acetyl-CoA. Glycerol from triacylglycerol and propionyl-CoA from odd chains are different cases."
+          ]
+        },
+        "application": {
+          "title": "9.6 · Apply: Glucose phosphatase",
+          "paragraphs": [
+            "Humans cannot obtain net glucose carbon from even-chain fatty-acid acetyl-CoA. Glycerol from triacylglycerol and propionyl-CoA from odd chains are different cases.",
+            "Gluconeogenesis makes glucose from precursors such as lactate, glycerol and glucogenic amino acids. It is not a simple reversal of every glycolytic enzyme step."
+          ]
+        }
+      },
+      {
+        "id": "concept-9-7",
+        "title": "The Pentose Phosphate Pathway",
+        "section": "9.7",
+        "asset": "bc09-07",
+        "steps": [
+          {
+            "text": "The pentose phosphate pathway branches from glucose-6-phosphate. Its oxidative phase generates NADPH and releases CO2; its nonoxidative phase rearranges sugar phosphates.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "NADPH supports reductive biosynthesis and regeneration of reduced glutathione. NADH more commonly supplies electrons for respiratory ATP production; the pools are functionally distinct.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Ribose-5-phosphate supplies nucleotide synthesis. Depending on cellular needs, nonoxidative reactions can connect pentoses with glycolytic intermediates.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Red blood cells rely on NADPH-dependent antioxidant defense. A pathway defect can increase oxidative vulnerability without implying that PPP directly produces ATP.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "9.7 · Organize: Glucose-6-phosphate",
+          "paragraphs": [
+            "The pentose phosphate pathway branches from glucose-6-phosphate. Its oxidative phase generates NADPH and releases CO2; its nonoxidative phase rearranges sugar phosphates.",
+            "NADPH supports reductive biosynthesis and regeneration of reduced glutathione. NADH more commonly supplies electrons for respiratory ATP production; the pools are functionally distinct."
+          ]
+        },
+        "memoryCue": {
+          "title": "9.7 · PPP supplies pentoses and NADPH, not direct ATP.",
+          "paragraphs": [
+            "PPP supplies pentoses and NADPH, not direct ATP.",
+            "NADPH supports reductive biosynthesis and regeneration of reduced glutathione. NADH more commonly supplies electrons for respiratory ATP production; the pools are functionally distinct."
+          ]
+        },
+        "traps": {
+          "title": "9.7 · Check: NADPH",
+          "paragraphs": [
+            "Ribose-5-phosphate supplies nucleotide synthesis. Depending on cellular needs, nonoxidative reactions can connect pentoses with glycolytic intermediates.",
+            "Red blood cells rely on NADPH-dependent antioxidant defense. A pathway defect can increase oxidative vulnerability without implying that PPP directly produces ATP."
+          ]
+        },
+        "application": {
+          "title": "9.7 · Apply: Ribose phosphates",
+          "paragraphs": [
+            "Red blood cells rely on NADPH-dependent antioxidant defense. A pathway defect can increase oxidative vulnerability without implying that PPP directly produces ATP.",
+            "The pentose phosphate pathway branches from glucose-6-phosphate. Its oxidative phase generates NADPH and releases CO2; its nonoxidative phase rearranges sugar phosphates."
+          ]
+        }
+      }
+    ],
+    "exercises": [
+      {
+        "id": "bc-09-01-workshop-v1",
+        "title": "Glucose Transport",
+        "asset": "bc09-01",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the carrier that supports passive glucose movement.",
+            "answer": [
+              "part-0"
+            ],
+            "explanation": "The relevant schematic entity or entities are GLUT carrier. GLUT transporters mediate facilitated diffusion of glucose. Transport direction depends on the gradient and cellular context rather than an intrinsic one-way pump.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "GLUT transporters mediate facilitated diffusion of glucose. Transport direction depends on the gradient and cellular context rather than an intrinsic one-way pump."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "Which uptake mechanism uses a sodium gradient directly?",
+            "answer": 2,
+            "options": [
+              "GLUT facilitated diffusion",
+              "Simple diffusion through pure lipid",
+              "SGLT cotransport",
+              "DNA polymerization"
+            ],
+            "explanation": "SGLT cotransport. SGLT carriers couple glucose entry to sodium movement, using the sodium electrochemical gradient. The sodium–potassium ATPase helps maintain that driving gradient.",
+            "hints": [
+              "GLUT transporters mediate facilitated diffusion of glucose. Transport direction depends on the gradient and cellular context rather than an intrinsic one-way pump.",
+              "SGLT carriers couple glucose entry to sodium movement, using the sodium electrochemical gradient. The sodium–potassium ATPase helps maintain that driving gradient."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "Insulin increases muscle glucose uptake partly by what mechanism?",
+            "answer": 3,
+            "options": [
+              "Turning GLUT4 into an ATP synthase",
+              "Opening every membrane to all sugars",
+              "Removing hexokinase from all tissues",
+              "Recruiting GLUT4 to the cell surface"
+            ],
+            "explanation": "Recruiting GLUT4 to the cell surface. Insulin promotes GLUT4 recruitment to the surface of skeletal muscle and adipose cells. Many other glucose transporters are not acutely recruited in this way.",
+            "hints": [
+              "SGLT carriers couple glucose entry to sodium movement, using the sodium electrochemical gradient. The sodium–potassium ATPase helps maintain that driving gradient.",
+              "Insulin promotes GLUT4 recruitment to the surface of skeletal muscle and adipose cells. Many other glucose transporters are not acutely recruited in this way."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-09-02-workshop-v1",
+        "title": "Glycolysis",
+        "asset": "bc09-02",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the phase in which ATP is consumed before the payoff steps.",
+            "answer": [
+              "part-1"
+            ],
+            "explanation": "The relevant schematic entity or entities are ATP investment. Hexokinase or glucokinase, PFK-1 and pyruvate kinase catalyze strongly regulated steps. PFK-1 commits carbon to glycolysis under typical cellular conditions.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Hexokinase or glucokinase, PFK-1 and pyruvate kinase catalyze strongly regulated steps. PFK-1 commits carbon to glycolysis under typical cellular conditions."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "number",
+            "prompt": "What is the net direct ATP yield of glycolysis per glucose?",
+            "answer": 2,
+            "explanation": "2 ATP. Hexokinase or glucokinase, PFK-1 and pyruvate kinase catalyze strongly regulated steps. PFK-1 commits carbon to glycolysis under typical cellular conditions.",
+            "hints": [
+              "Glycolysis converts one glucose into two pyruvates in the cytosol. Two ATP are invested and four are produced, giving a net of two ATP plus two NADH per glucose.",
+              "Hexokinase or glucokinase, PFK-1 and pyruvate kinase catalyze strongly regulated steps. PFK-1 commits carbon to glycolysis under typical cellular conditions."
+            ],
+            "unit": "ATP",
+            "tolerance": 0
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "Why does lactate formation support sustained glycolysis?",
+            "answer": 0,
+            "options": [
+              "It regenerates NAD+",
+              "It produces oxygen",
+              "It directly adds four ATP",
+              "It runs the citric acid cycle"
+            ],
+            "explanation": "It regenerates NAD+. Reduction of pyruvate to lactate regenerates NAD+ so glycolysis can continue when respiratory reoxidation of cytosolic NADH is limited. Lactate formation adds no ATP directly.",
+            "hints": [
+              "Hexokinase or glucokinase, PFK-1 and pyruvate kinase catalyze strongly regulated steps. PFK-1 commits carbon to glycolysis under typical cellular conditions.",
+              "Reduction of pyruvate to lactate regenerates NAD+ so glycolysis can continue when respiratory reoxidation of cytosolic NADH is limited. Lactate formation adds no ATP directly."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-09-03-workshop-v1",
+        "title": "Other Monosaccharides",
+        "asset": "bc09-03",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the shared destination connecting different sugar inputs.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant schematic entity or entities are Shared intermediates. Galactose is converted through the Leloir pathway toward glucose-derived intermediates. Blocking a pathway enzyme can accumulate upstream compounds.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Galactose is converted through the Leloir pathway toward glucose-derived intermediates. Blocking a pathway enzyme can accumulate upstream compounds."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "In the standard hepatic pathway, fructose carbon can enter glycolysis at which level?",
+            "answer": 0,
+            "options": [
+              "Triose intermediates",
+              "Only intact glycogen branches",
+              "Only acetyl-CoA without any intermediates",
+              "Directly as oxygen"
+            ],
+            "explanation": "Triose intermediates. In liver, fructokinase and aldolase B route fructose carbon toward triose intermediates, bypassing the PFK-1 entry step. This does not abolish every form of metabolic regulation.",
+            "hints": [
+              "Dietary fructose and galactose can feed central carbohydrate metabolism after specific enzyme steps. They do not all enter through the same initial reaction.",
+              "In liver, fructokinase and aldolase B route fructose carbon toward triose intermediates, bypassing the PFK-1 entry step. This does not abolish every form of metabolic regulation."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "An enzyme converting X to Y is blocked with no alternative route. What is an initial expectation?",
+            "answer": 1,
+            "options": [
+              "Y production must increase",
+              "X tends to accumulate and Y production falls",
+              "X must disappear faster",
+              "All unrelated pathways stop"
+            ],
+            "explanation": "X tends to accumulate and Y production falls. Galactose is converted through the Leloir pathway toward glucose-derived intermediates. Blocking a pathway enzyme can accumulate upstream compounds.",
+            "hints": [
+              "In liver, fructokinase and aldolase B route fructose carbon toward triose intermediates, bypassing the PFK-1 entry step. This does not abolish every form of metabolic regulation.",
+              "Galactose is converted through the Leloir pathway toward glucose-derived intermediates. Blocking a pathway enzyme can accumulate upstream compounds."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-09-04-workshop-v1",
+        "title": "Pyruvate Dehydrogenase",
+        "asset": "bc09-04",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the two-carbon carrier produced by PDH.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant schematic entity or entities are Acetyl-CoA. Phosphorylation by PDH kinase inhibits PDH in the standard mammalian model; dephosphorylation activates it. Energy-rich signals tend to restrain pyruvate oxidation.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Phosphorylation by PDH kinase inhibits PDH in the standard mammalian model; dephosphorylation activates it. Energy-rich signals tend to restrain pyruvate oxidation."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "What carbon product is released by PDH in addition to acetyl-CoA?",
+            "answer": 1,
+            "options": [
+              "Glucose",
+              "CO2",
+              "Glycogen",
+              "Lactose"
+            ],
+            "explanation": "CO2. Its cofactors include TPP, lipoamide, CoA, FAD and NAD+. These helpers support decarboxylation, acyl transfer and electron transfer in the complex.",
+            "hints": [
+              "The mitochondrial pyruvate dehydrogenase complex converts pyruvate to acetyl-CoA with CO2 release and NAD+ reduction. The reaction links glycolysis to acetyl-unit oxidation.",
+              "Its cofactors include TPP, lipoamide, CoA, FAD and NAD+. These helpers support decarboxylation, acyl transfer and electron transfer in the complex."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "Why can acetyl-CoA not simply become pyruvate by reversing PDH in humans?",
+            "answer": 2,
+            "options": [
+              "Acetyl-CoA contains no carbon",
+              "All enzymes are irreversible",
+              "PDH is effectively irreversible",
+              "Pyruvate is only a protein"
+            ],
+            "explanation": "PDH is effectively irreversible. Phosphorylation by PDH kinase inhibits PDH in the standard mammalian model; dephosphorylation activates it. Energy-rich signals tend to restrain pyruvate oxidation.",
+            "hints": [
+              "Its cofactors include TPP, lipoamide, CoA, FAD and NAD+. These helpers support decarboxylation, acyl transfer and electron transfer in the complex.",
+              "Phosphorylation by PDH kinase inhibits PDH in the standard mammalian model; dephosphorylation activates it. Energy-rich signals tend to restrain pyruvate oxidation."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-09-05-workshop-v1",
+        "title": "Glycogenesis and Glycogenolysis",
+        "asset": "bc09-05",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the enzyme responsible for alpha(1→6) branch creation.",
+            "answer": [
+              "part-1"
+            ],
+            "explanation": "The relevant schematic entity or entities are Branching enzyme. Glycogen phosphorylase releases glucose-1-phosphate from nonreducing ends. A debranching enzyme handles branch regions that phosphorylase cannot fully resolve.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Glycogen phosphorylase releases glucose-1-phosphate from nonreducing ends. A debranching enzyme handles branch regions that phosphorylase cannot fully resolve."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "What is the main product directly released by glycogen phosphorylase?",
+            "answer": 2,
+            "options": [
+              "Free glucose only",
+              "Acetyl-CoA",
+              "Glucose-1-phosphate",
+              "Fructose-1,6-bisphosphate"
+            ],
+            "explanation": "Glucose-1-phosphate. Glycogen phosphorylase releases glucose-1-phosphate from nonreducing ends. A debranching enzyme handles branch regions that phosphorylase cannot fully resolve.",
+            "hints": [
+              "Glycogenesis extends glycogen using activated glucose donors. Glycogen synthase makes alpha(1→4) linkages and branching enzyme introduces alpha(1→6) branches.",
+              "Glycogen phosphorylase releases glucose-1-phosphate from nonreducing ends. A debranching enzyme handles branch regions that phosphorylase cannot fully resolve."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "Why does muscle glycogen mainly support local use?",
+            "answer": 3,
+            "options": [
+              "Muscle has no glycolysis",
+              "Muscle glycogen contains no glucose",
+              "Only liver has ATP",
+              "Muscle lacks appreciable glucose-6-phosphatase for glucose export"
+            ],
+            "explanation": "Muscle lacks appreciable glucose-6-phosphatase for glucose export. Liver glycogen supports blood glucose because liver can release free glucose. Skeletal muscle generally uses its glycogen locally and lacks appreciable glucose-6-phosphatase activity.",
+            "hints": [
+              "Glycogen phosphorylase releases glucose-1-phosphate from nonreducing ends. A debranching enzyme handles branch regions that phosphorylase cannot fully resolve.",
+              "Liver glycogen supports blood glucose because liver can release free glucose. Skeletal muscle generally uses its glycogen locally and lacks appreciable glucose-6-phosphatase activity."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-09-06-workshop-v1",
+        "title": "Gluconeogenesis",
+        "asset": "bc09-06",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the enzyme that bypasses PFK-1 rather than pyruvate kinase.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant schematic entity or entities are Fructose bisphosphatase. Synthesis of one glucose from two pyruvates uses four ATP, two GTP and two NADH. Carbon source changes can alter the accounting required.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Synthesis of one glucose from two pyruvates uses four ATP, two GTP and two NADH. Carbon source changes can alter the accounting required."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "Which precursor can supply net glucose carbon in humans?",
+            "answer": 3,
+            "options": [
+              "Even-chain fatty-acid acetyl-CoA alone",
+              "Oxygen",
+              "Ketone bodies as the only carbon source",
+              "Glycerol"
+            ],
+            "explanation": "Glycerol. Pyruvate carboxylase and PEP carboxykinase bypass pyruvate kinase through oxaloacetate. Fructose-1,6-bisphosphatase and glucose-6-phosphatase bypass other strongly favorable glycolytic steps.",
+            "hints": [
+              "Gluconeogenesis makes glucose from precursors such as lactate, glycerol and glucogenic amino acids. It is not a simple reversal of every glycolytic enzyme step.",
+              "Pyruvate carboxylase and PEP carboxykinase bypass pyruvate kinase through oxaloacetate. Fructose-1,6-bisphosphatase and glucose-6-phosphatase bypass other strongly favorable glycolytic steps."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "number",
+            "prompt": "How many ATP plus GTP molecules are consumed per glucose made from two pyruvates?",
+            "answer": 6,
+            "explanation": "6. Synthesis of one glucose from two pyruvates uses four ATP, two GTP and two NADH. Carbon source changes can alter the accounting required.",
+            "hints": [
+              "Pyruvate carboxylase and PEP carboxykinase bypass pyruvate kinase through oxaloacetate. Fructose-1,6-bisphosphatase and glucose-6-phosphatase bypass other strongly favorable glycolytic steps.",
+              "Synthesis of one glucose from two pyruvates uses four ATP, two GTP and two NADH. Carbon source changes can alter the accounting required."
+            ],
+            "unit": "molecules",
+            "tolerance": 0
+          }
+        ]
+      },
+      {
+        "id": "bc-09-07-workshop-v1",
+        "title": "The Pentose Phosphate Pathway",
+        "asset": "bc09-07",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the product supporting reduced-glutathione regeneration.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant schematic entity or entities are NADPH. Ribose-5-phosphate supplies nucleotide synthesis. Depending on cellular needs, nonoxidative reactions can connect pentoses with glycolytic intermediates.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Ribose-5-phosphate supplies nucleotide synthesis. Depending on cellular needs, nonoxidative reactions can connect pentoses with glycolytic intermediates."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "Which reduced carrier is produced by the oxidative PPP?",
+            "answer": 0,
+            "options": [
+              "NADPH",
+              "NADH only",
+              "FADH2 only",
+              "ATP as its primary reduced carrier"
+            ],
+            "explanation": "NADPH. NADPH supports reductive biosynthesis and regeneration of reduced glutathione. NADH more commonly supplies electrons for respiratory ATP production; the pools are functionally distinct.",
+            "hints": [
+              "The pentose phosphate pathway branches from glucose-6-phosphate. Its oxidative phase generates NADPH and releases CO2; its nonoxidative phase rearranges sugar phosphates.",
+              "NADPH supports reductive biosynthesis and regeneration of reduced glutathione. NADH more commonly supplies electrons for respiratory ATP production; the pools are functionally distinct."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "A cell needs ribose and reductive power. Which pathway serves both needs?",
+            "answer": 1,
+            "options": [
+              "Glycogen phosphorylysis alone",
+              "Pentose phosphate pathway",
+              "Beta oxidation alone",
+              "Urea cycle alone"
+            ],
+            "explanation": "Pentose phosphate pathway. Ribose-5-phosphate supplies nucleotide synthesis. Depending on cellular needs, nonoxidative reactions can connect pentoses with glycolytic intermediates.",
+            "hints": [
+              "NADPH supports reductive biosynthesis and regeneration of reduced glutathione. NADH more commonly supplies electrons for respiratory ATP production; the pools are functionally distinct.",
+              "Ribose-5-phosphate supplies nucleotide synthesis. Depending on cellular needs, nonoxidative reactions can connect pentoses with glycolytic intermediates."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "version": 1,
+    "assets": [
+      {
+        "id": "bc09-01",
+        "kind": "concept-schematic",
+        "title": "Glucose Transport",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "GLUT carrier",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "SGLT carrier",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Sodium gradient",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Insulin signal",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "transport"
+        }
+      },
+      {
+        "id": "bc09-02",
+        "kind": "concept-schematic",
+        "title": "Glycolysis",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Glucose entry",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "ATP investment",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "ATP payoff",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Pyruvate fate",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [
+          {
+            "from": "part-0",
+            "to": "part-1"
+          },
+          {
+            "from": "part-1",
+            "to": "part-2"
+          },
+          {
+            "from": "part-2",
+            "to": "part-3"
+          }
+        ],
+        "visual": {
+          "type": "pathway"
+        }
+      },
+      {
+        "id": "bc09-03",
+        "kind": "concept-schematic",
+        "title": "Other Monosaccharides",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Fructose input",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Galactose input",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Shared intermediates",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Glycolytic pathway",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "pathway"
+        }
+      },
+      {
+        "id": "bc09-04",
+        "kind": "concept-schematic",
+        "title": "Pyruvate Dehydrogenase",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Pyruvate",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "PDH complex",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Acetyl-CoA",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "NADH and CO2",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [
+          {
+            "from": "part-0",
+            "to": "part-1"
+          },
+          {
+            "from": "part-1",
+            "to": "part-2"
+          },
+          {
+            "from": "part-1",
+            "to": "part-3"
+          }
+        ],
+        "visual": {
+          "type": "pathway"
+        }
+      },
+      {
+        "id": "bc09-05",
+        "kind": "concept-schematic",
+        "title": "Glycogenesis and Glycogenolysis",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Glycogen synthase",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Branching enzyme",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Glycogen phosphorylase",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Debranching enzyme",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "pathway"
+        }
+      },
+      {
+        "id": "bc09-06",
+        "kind": "concept-schematic",
+        "title": "Gluconeogenesis",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Pyruvate carboxylase",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "PEP carboxykinase",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Fructose bisphosphatase",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Glucose phosphatase",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "pathway"
+        }
+      },
+      {
+        "id": "bc09-07",
+        "kind": "concept-schematic",
+        "title": "The Pentose Phosphate Pathway",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Glucose-6-phosphate",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Oxidative branch",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "NADPH",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Ribose phosphates",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [
+          {
+            "from": "part-0",
+            "to": "part-1"
+          },
+          {
+            "from": "part-1",
+            "to": "part-2"
+          },
+          {
+            "from": "part-1",
+            "to": "part-3"
+          }
+        ],
+        "visual": {
+          "type": "pathway"
+        }
+      }
+    ]
+  }
+}
+REPORT BY CHAPTER: item ID, severity (critical/major/minor), exact claim, independent answer, encoded key, evidence, correction, uncertainty. Include coverage counts, unresolved questions and a verdict. Cite only inspected sources. Label any incomplete coverage PARTIAL with exact remaining IDs. Do not execute commands or modify curriculum. Model review is candidate evidence, not expert sign-off.
+For strictly blind evidence use a fresh conversation with blind.json only; freeze its response before supplying keyed-audit.json in a separate pass. This combined file contains keys and cannot guarantee blindness.
