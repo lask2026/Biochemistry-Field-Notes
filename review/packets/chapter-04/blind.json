@@ -1,0 +1,557 @@
+{
+  "chapter": "chapter-04",
+  "cases": [
+    {
+      "id": "bc-04-01-workshop-v1/map",
+      "subject": "biochemistry",
+      "prompt": "Select both entities that classify open-chain carbonyl position.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Aldose",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Ketose",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "D configuration",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "L configuration",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "carbohydrate"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Aldose</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Ketose</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">D configuration</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">L configuration</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-04-01-workshop-v1/reason",
+      "subject": "biochemistry",
+      "prompt": "What does D indicate for a sugar?",
+      "type": "choice",
+      "options": [
+        "Positive optical rotation in every case",
+        "A relative configuration convention",
+        "The number of carbons",
+        "An aldehyde group in every case"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Aldose",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Ketose",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "D configuration",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "L configuration",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "carbohydrate"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Aldose</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Ketose</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">D configuration</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">L configuration</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-04-01-workshop-v1/transfer",
+      "subject": "biochemistry",
+      "prompt": "Two sugars differ at one non-anomeric stereocenter and are not mirror images. They are what?",
+      "type": "choice",
+      "options": [
+        "Identical molecules",
+        "Constitutional isomers necessarily",
+        "Epimers",
+        "Anomers necessarily"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Aldose",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Ketose",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "D configuration",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "L configuration",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "carbohydrate"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Aldose</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Ketose</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">D configuration</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">L configuration</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-04-02-workshop-v1/map",
+      "subject": "biochemistry",
+      "prompt": "Select the two configurations that interconvert through an open-chain intermediate when the anomeric group is free.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Open chain",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Ring closure",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Alpha anomer",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Beta anomer",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "carbohydrate"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Open chain</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Ring closure</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Alpha anomer</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Beta anomer</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-04-02-workshop-v1/reason",
+      "subject": "biochemistry",
+      "prompt": "What becomes the anomeric carbon during cyclization?",
+      "type": "choice",
+      "options": [
+        "Any terminal methyl carbon",
+        "The ring oxygen",
+        "The former carbonyl carbon",
+        "Every carbon simultaneously"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Open chain",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Ring closure",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Alpha anomer",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Beta anomer",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "carbohydrate"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Open chain</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Ring closure</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Alpha anomer</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Beta anomer</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-04-02-workshop-v1/transfer",
+      "subject": "biochemistry",
+      "prompt": "A sugar’s anomeric carbon is locked as a glycosidic acetal. What is restricted at that center?",
+      "type": "choice",
+      "options": [
+        "Every bond rotation in the molecule",
+        "All hydrolysis under any conditions",
+        "All chirality",
+        "Free ring opening and mutarotation"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Open chain",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Ring closure",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Alpha anomer",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Beta anomer",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "carbohydrate"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Open chain</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Ring closure</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Alpha anomer</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Beta anomer</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-04-03-workshop-v1/map",
+      "subject": "biochemistry",
+      "prompt": "Select the C2 epimer of glucose.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Glucose",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Galactose",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Mannose",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Fructose",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "carbohydrate"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Glucose</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Galactose</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Mannose</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Fructose</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-04-03-workshop-v1/reason",
+      "subject": "biochemistry",
+      "prompt": "Which common sugar is a ketohexose?",
+      "type": "choice",
+      "options": [
+        "Glucose",
+        "Galactose",
+        "Mannose",
+        "Fructose"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Glucose",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Galactose",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Mannose",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Fructose",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "carbohydrate"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Glucose</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Galactose</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Mannose</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Fructose</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-04-03-workshop-v1/transfer",
+      "subject": "biochemistry",
+      "prompt": "Galactose and glucose differ at which open-chain stereocenter?",
+      "type": "choice",
+      "options": [
+        "C4",
+        "C2",
+        "Every stereocenter",
+        "Neither; they are identical"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Glucose",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Galactose",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Mannose",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Fructose",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "carbohydrate"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Glucose</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Galactose</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Mannose</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Fructose</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-04-04-workshop-v1/map",
+      "subject": "biochemistry",
+      "prompt": "Select the polymer containing beta(1→4) glucose linkages.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Glycogen",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Cellulose",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Sucrose",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Reducing end",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "carbohydrate"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Glycogen</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Cellulose</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Sucrose</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Reducing end</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-04-04-workshop-v1/reason",
+      "subject": "biochemistry",
+      "prompt": "Why is sucrose nonreducing?",
+      "type": "choice",
+      "options": [
+        "Both anomeric carbons participate in its glycosidic bond",
+        "It contains no oxygen",
+        "Every disaccharide is nonreducing",
+        "It has no glycosidic bond"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Glycogen",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Cellulose",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Sucrose",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Reducing end",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "carbohydrate"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Glycogen</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Cellulose</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Sucrose</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Reducing end</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-04-04-workshop-v1/transfer",
+      "subject": "biochemistry",
+      "prompt": "What is an important consequence of glycogen branching?",
+      "type": "choice",
+      "options": [
+        "Every branch is a separate glucose molecule",
+        "Many nonreducing ends allow parallel processing",
+        "It converts alpha linkages to cellulose",
+        "It removes all glycosidic bonds"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Glycogen",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Cellulose",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Sucrose",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Reducing end",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "carbohydrate"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Glycogen</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Cellulose</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Sucrose</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -15 L0 -32 L30 -15 V18 L0 34 L-30 18Z\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Reducing end</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    }
+  ]
+}
