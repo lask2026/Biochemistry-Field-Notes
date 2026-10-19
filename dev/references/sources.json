@@ -1,0 +1,27 @@
+{
+  "status": "independent-scientific-review-pending",
+  "outlineSource": "Local private biochemistry/OEBPS/toc.xhtml; headings inspected 2026-10-19; no chapter prose or figures copied.",
+  "inspected": [
+    {
+      "title": "Enzymes",
+      "url": "https://openstax.org/books/biology-2e/pages/6-5-enzymes",
+      "accessed": "2026-10-19"
+    },
+    {
+      "title": "Glycolysis",
+      "url": "https://openstax.org/books/biology-2e/pages/7-2-glycolysis",
+      "accessed": "2026-10-19"
+    },
+    {
+      "title": "Oxidative Phosphorylation",
+      "url": "https://openstax.org/books/biology-2e/pages/7-4-oxidative-phosphorylation",
+      "accessed": "2026-10-19"
+    },
+    {
+      "title": "Proteins",
+      "url": "https://openstax.org/books/biology-2e/pages/3-4-proteins",
+      "accessed": "2026-10-19"
+    }
+  ],
+  "limits": "These introductory references support selected foundations only. They do not independently verify every lesson, structure, calculation, key or diagram. No model review or human expert sign-off has been performed."
+}

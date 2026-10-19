@@ -1,0 +1,2415 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "bc01-01",
+      "kind": "concept-schematic",
+      "title": "Amino Acids Found in Proteins",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Backbone",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Side chain",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Glycine",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Cysteine",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "protein"
+      }
+    },
+    {
+      "id": "bc01-02",
+      "kind": "concept-schematic",
+      "title": "Acid–Base Chemistry of Amino Acids",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Low pH",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Isoelectric point",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "High pH",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Buffer region",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "balance"
+      }
+    },
+    {
+      "id": "bc01-03",
+      "kind": "concept-schematic",
+      "title": "Peptide Bond Formation and Hydrolysis",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Free amino acids",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Peptide bond",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "N terminus",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "C terminus",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "pathway"
+      }
+    },
+    {
+      "id": "bc01-04",
+      "kind": "concept-schematic",
+      "title": "Primary and Secondary Protein Structure",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Sequence",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Alpha helix",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Beta sheet",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Backbone H bonds",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "protein"
+      }
+    },
+    {
+      "id": "bc01-05",
+      "kind": "concept-schematic",
+      "title": "Tertiary and Quaternary Protein Structure",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Hydrophobic core",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Surface groups",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Single-chain fold",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Subunit assembly",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "protein"
+      }
+    },
+    {
+      "id": "bc01-06",
+      "kind": "concept-schematic",
+      "title": "Denaturation",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Native fold",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Heat or solvent",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Unfolded chain",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Possible recovery",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "protein"
+      }
+    },
+    {
+      "id": "bc02-01",
+      "kind": "concept-schematic",
+      "title": "Enzymes as Biological Catalysts",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Reactants",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Activation barrier",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Products",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Catalyzed route",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "energy"
+      }
+    },
+    {
+      "id": "bc02-02",
+      "kind": "concept-schematic",
+      "title": "Mechanisms of Enzyme Activity",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Substrate binding",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Active site",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Transition state",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Product release",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "enzyme"
+      }
+    },
+    {
+      "id": "bc02-03",
+      "kind": "concept-schematic",
+      "title": "Enzyme Kinetics",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Low substrate",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Half-maximal rate",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Saturation",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Inhibition",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "kinetics"
+      }
+    },
+    {
+      "id": "bc02-04",
+      "kind": "concept-schematic",
+      "title": "Effects of Local Conditions on Enzyme Activity",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Low temperature",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Suitable pH",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "High temperature",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Altered ionization",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "balance"
+      }
+    },
+    {
+      "id": "bc02-05",
+      "kind": "concept-schematic",
+      "title": "Regulation of Enzyme Activity",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Allosteric site",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Covalent switch",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Feedback signal",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Enzyme abundance",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "enzyme"
+      }
+    },
+    {
+      "id": "bc03-01",
+      "kind": "concept-schematic",
+      "title": "Cellular Functions",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Mechanical support",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Molecular transport",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Motor activity",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Ligand binding",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "protein"
+      }
+    },
+    {
+      "id": "bc03-02",
+      "kind": "concept-schematic",
+      "title": "Biosignaling",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Ligand",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Receptor",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Signal relay",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Cell response",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "signal"
+      }
+    },
+    {
+      "id": "bc03-03",
+      "kind": "concept-schematic",
+      "title": "Protein Isolation",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Size exclusion",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Ion exchange",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Affinity column",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Collected fractions",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "experiment"
+      }
+    },
+    {
+      "id": "bc03-04",
+      "kind": "concept-schematic",
+      "title": "Protein Analysis",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "SDS-PAGE",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Native separation",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Isoelectric focusing",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Activity assay",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "experiment"
+      }
+    },
+    {
+      "id": "bc04-01",
+      "kind": "concept-schematic",
+      "title": "Carbohydrate Classification",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Aldose",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Ketose",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "D configuration",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "L configuration",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "carbohydrate"
+      }
+    },
+    {
+      "id": "bc04-02",
+      "kind": "concept-schematic",
+      "title": "Cyclic Sugar Molecules",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Open chain",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Ring closure",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Alpha anomer",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Beta anomer",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "carbohydrate"
+      }
+    },
+    {
+      "id": "bc04-03",
+      "kind": "concept-schematic",
+      "title": "Monosaccharides",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Glucose",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Galactose",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Mannose",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Fructose",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "carbohydrate"
+      }
+    },
+    {
+      "id": "bc04-04",
+      "kind": "concept-schematic",
+      "title": "Complex Carbohydrates",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Glycogen",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Cellulose",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Sucrose",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Reducing end",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "carbohydrate"
+      }
+    },
+    {
+      "id": "bc05-01",
+      "kind": "concept-schematic",
+      "title": "Structural Lipids",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Polar heads",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Hydrophobic tails",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Bilayer",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Cholesterol",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "membrane"
+      }
+    },
+    {
+      "id": "bc05-02",
+      "kind": "concept-schematic",
+      "title": "Signaling Lipids",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Steroid signal",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Eicosanoid",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Phosphoinositide",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Receptor",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "signal"
+      }
+    },
+    {
+      "id": "bc05-03",
+      "kind": "concept-schematic",
+      "title": "Energy Storage",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Triacylglycerol",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Fatty-acid chains",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Adipose storage",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Oxidation",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "lipid"
+      }
+    },
+    {
+      "id": "bc06-01",
+      "kind": "concept-schematic",
+      "title": "DNA Structure",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Antiparallel strands",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Base pairs",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Sugar-phosphate chain",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Complementarity",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "dna"
+      }
+    },
+    {
+      "id": "bc06-02",
+      "kind": "concept-schematic",
+      "title": "Eukaryotic Chromosome Organization",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Histone core",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Nucleosome",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Accessible region",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Condensed region",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "dna"
+      }
+    },
+    {
+      "id": "bc06-03",
+      "kind": "concept-schematic",
+      "title": "DNA Replication",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Replication fork",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Leading strand",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Lagging strand",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Primer",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "dna"
+      }
+    },
+    {
+      "id": "bc06-04",
+      "kind": "concept-schematic",
+      "title": "DNA Repair",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Mismatch",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Damaged base",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Bulky lesion",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Repair synthesis",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "dna"
+      }
+    },
+    {
+      "id": "bc06-05",
+      "kind": "concept-schematic",
+      "title": "Recombinant Biotechnology",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "PCR amplification",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Restriction digest",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "DNA ligation",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Sequence readout",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-1",
+          "to": "part-2"
+        }
+      ],
+      "visual": {
+        "type": "experiment"
+      }
+    },
+    {
+      "id": "bc07-01",
+      "kind": "concept-schematic",
+      "title": "The Genetic Code",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Codon",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Reading frame",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Start signal",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Stop signal",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "rna"
+      }
+    },
+    {
+      "id": "bc07-02",
+      "kind": "concept-schematic",
+      "title": "Transcription",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "DNA template",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "RNA polymerase",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "RNA transcript",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Processing",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "rna"
+      }
+    },
+    {
+      "id": "bc07-03",
+      "kind": "concept-schematic",
+      "title": "Translation",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Aminoacyl tRNA",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Ribosome",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Growing chain",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Release factor",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "rna"
+      }
+    },
+    {
+      "id": "bc07-04",
+      "kind": "concept-schematic",
+      "title": "Control of Gene expression in Prokaryotes",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Operator",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Repressor",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Inducer",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "RNA polymerase",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "signal"
+      }
+    },
+    {
+      "id": "bc07-05",
+      "kind": "concept-schematic",
+      "title": "Control of Gene Expression in Eukaryotes",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Chromatin access",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Transcription factor",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "RNA stability",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Translation control",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "signal"
+      }
+    },
+    {
+      "id": "bc08-01",
+      "kind": "concept-schematic",
+      "title": "Fluid Mosaic Model",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Lipid bilayer",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Lateral movement",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Embedded proteins",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Asymmetry",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "membrane"
+      }
+    },
+    {
+      "id": "bc08-02",
+      "kind": "concept-schematic",
+      "title": "Membrane Components",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Integral protein",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Peripheral protein",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Surface carbohydrate",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Cholesterol",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "membrane"
+      }
+    },
+    {
+      "id": "bc08-03",
+      "kind": "concept-schematic",
+      "title": "Membrane Transport",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Simple diffusion",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Facilitated diffusion",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Primary pump",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Secondary cotransport",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "transport"
+      }
+    },
+    {
+      "id": "bc08-04",
+      "kind": "concept-schematic",
+      "title": "Specialized Membranes",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Inner mitochondrial",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Outer mitochondrial",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Myelin",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Epithelial polarity",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "membrane"
+      }
+    },
+    {
+      "id": "bc09-01",
+      "kind": "concept-schematic",
+      "title": "Glucose Transport",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "GLUT carrier",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "SGLT carrier",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Sodium gradient",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Insulin signal",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "transport"
+      }
+    },
+    {
+      "id": "bc09-02",
+      "kind": "concept-schematic",
+      "title": "Glycolysis",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Glucose entry",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "ATP investment",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "ATP payoff",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Pyruvate fate",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "pathway"
+      }
+    },
+    {
+      "id": "bc09-03",
+      "kind": "concept-schematic",
+      "title": "Other Monosaccharides",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Fructose input",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Galactose input",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Shared intermediates",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Glycolytic pathway",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "pathway"
+      }
+    },
+    {
+      "id": "bc09-04",
+      "kind": "concept-schematic",
+      "title": "Pyruvate Dehydrogenase",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Pyruvate",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "PDH complex",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Acetyl-CoA",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "NADH and CO2",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-1",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "pathway"
+      }
+    },
+    {
+      "id": "bc09-05",
+      "kind": "concept-schematic",
+      "title": "Glycogenesis and Glycogenolysis",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Glycogen synthase",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Branching enzyme",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Glycogen phosphorylase",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Debranching enzyme",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "pathway"
+      }
+    },
+    {
+      "id": "bc09-06",
+      "kind": "concept-schematic",
+      "title": "Gluconeogenesis",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Pyruvate carboxylase",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "PEP carboxykinase",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Fructose bisphosphatase",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Glucose phosphatase",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "pathway"
+      }
+    },
+    {
+      "id": "bc09-07",
+      "kind": "concept-schematic",
+      "title": "The Pentose Phosphate Pathway",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Glucose-6-phosphate",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Oxidative branch",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "NADPH",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Ribose phosphates",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-1",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "pathway"
+      }
+    },
+    {
+      "id": "bc10-01",
+      "kind": "concept-schematic",
+      "title": "Acetyl-CoA",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Acetyl-CoA input",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Oxaloacetate",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Citrate formation",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Carbon routing",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "pathway"
+      }
+    },
+    {
+      "id": "bc10-02",
+      "kind": "concept-schematic",
+      "title": "Reactions of the Citric Acid Cycle",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Citrate",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Oxidative steps",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Succinate oxidation",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Oxaloacetate regeneration",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "cycle"
+      }
+    },
+    {
+      "id": "bc10-03",
+      "kind": "concept-schematic",
+      "title": "The Electron Transport Chain",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Complex I",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Complex II",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Complex III",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Complex IV",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-2"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "respiration"
+      }
+    },
+    {
+      "id": "bc10-04",
+      "kind": "concept-schematic",
+      "title": "Oxidative Phosphorylation",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Proton gradient",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "ATP synthase",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Uncoupler",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "ATP output",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "respiration"
+      }
+    },
+    {
+      "id": "bc11-01",
+      "kind": "concept-schematic",
+      "title": "Lipid Digestion and Absorption",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Bile-assisted dispersion",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Lipase action",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Mixed micelle",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Chylomicron export",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "lipid"
+      }
+    },
+    {
+      "id": "bc11-02",
+      "kind": "concept-schematic",
+      "title": "Lipid Mobilization",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Adipose droplet",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Lipase cascade",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Albumin carrier",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Tissue uptake",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "lipid"
+      }
+    },
+    {
+      "id": "bc11-03",
+      "kind": "concept-schematic",
+      "title": "Lipid Transport",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Chylomicron",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "VLDL",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "LDL",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "HDL",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "lipid"
+      }
+    },
+    {
+      "id": "bc11-04",
+      "kind": "concept-schematic",
+      "title": "Cholesterol Metabolism",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "HMG-CoA reductase",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Cholesterol pool",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Bile acids",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Steroid products",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "lipid"
+      }
+    },
+    {
+      "id": "bc11-05",
+      "kind": "concept-schematic",
+      "title": "Fatty Acids and Triacylglycerols",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Fatty-acid synthesis",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Carnitine shuttle",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Beta oxidation",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Malonyl-CoA signal",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "lipid"
+      }
+    },
+    {
+      "id": "bc11-06",
+      "kind": "concept-schematic",
+      "title": "Ketone Bodies",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Hepatic ketogenesis",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Ketone export",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Extrahepatic use",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Acetyl-CoA recovery",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        },
+        {
+          "from": "part-2",
+          "to": "part-3"
+        }
+      ],
+      "visual": {
+        "type": "lipid"
+      }
+    },
+    {
+      "id": "bc11-07",
+      "kind": "concept-schematic",
+      "title": "Protein Catabolism",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Transamination",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Nitrogen collection",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Urea synthesis",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Carbon skeleton",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-2"
+        }
+      ],
+      "visual": {
+        "type": "pathway"
+      }
+    },
+    {
+      "id": "bc12-01",
+      "kind": "concept-schematic",
+      "title": "Thermodynamics and Bioenergetics",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Standard free energy",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Reaction quotient",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Actual free energy",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Equilibrium",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "energy"
+      }
+    },
+    {
+      "id": "bc12-02",
+      "kind": "concept-schematic",
+      "title": "The Role of ATP",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "ATP hydrolysis",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Coupled reaction",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Phosphoryl transfer",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Cellular work",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "energy"
+      }
+    },
+    {
+      "id": "bc12-03",
+      "kind": "concept-schematic",
+      "title": "Biological Oxidation and Reduction",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Electron donor",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Electron acceptor",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "NADH pool",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "NADPH pool",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "balance"
+      }
+    },
+    {
+      "id": "bc12-04",
+      "kind": "concept-schematic",
+      "title": "Metabolic States",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Fed state",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Early fasting",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Long fasting",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Fuel adaptation",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "signal"
+      }
+    },
+    {
+      "id": "bc12-05",
+      "kind": "concept-schematic",
+      "title": "Hormonal Regulation of Metabolism",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Insulin",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Glucagon",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Epinephrine",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Target enzymes",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "signal"
+      }
+    },
+    {
+      "id": "bc12-06",
+      "kind": "concept-schematic",
+      "title": "Tissue-Specific Metabolism",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Liver",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Skeletal muscle",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Brain",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Red blood cell",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "transport"
+      }
+    },
+    {
+      "id": "bc12-07",
+      "kind": "concept-schematic",
+      "title": "Integrative Metabolism",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Muscle lactate",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Liver glucose",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Adipose fatty acids",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Whole-body balance",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [
+        {
+          "from": "part-0",
+          "to": "part-1"
+        },
+        {
+          "from": "part-1",
+          "to": "part-0"
+        }
+      ],
+      "visual": {
+        "type": "cycle"
+      }
+    }
+  ]
+}

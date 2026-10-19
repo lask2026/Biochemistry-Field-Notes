@@ -1,0 +1,346 @@
+{
+  "subject": "biochemistry",
+  "title": "Biochemistry Field Notes",
+  "chapters": [
+    {
+      "id": "chapter-01",
+      "number": 1,
+      "title": "Amino Acids, Peptides, and Proteins",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "1.1",
+          "title": "Amino Acids Found in Proteins"
+        },
+        {
+          "id": "1.2",
+          "title": "Acid–Base Chemistry of Amino Acids"
+        },
+        {
+          "id": "1.3",
+          "title": "Peptide Bond Formation and Hydrolysis"
+        },
+        {
+          "id": "1.4",
+          "title": "Primary and Secondary Protein Structure"
+        },
+        {
+          "id": "1.5",
+          "title": "Tertiary and Quaternary Protein Structure"
+        },
+        {
+          "id": "1.6",
+          "title": "Denaturation"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02",
+      "number": 2,
+      "title": "Enzymes",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "2.1",
+          "title": "Enzymes as Biological Catalysts"
+        },
+        {
+          "id": "2.2",
+          "title": "Mechanisms of Enzyme Activity"
+        },
+        {
+          "id": "2.3",
+          "title": "Enzyme Kinetics"
+        },
+        {
+          "id": "2.4",
+          "title": "Effects of Local Conditions on Enzyme Activity"
+        },
+        {
+          "id": "2.5",
+          "title": "Regulation of Enzyme Activity"
+        }
+      ]
+    },
+    {
+      "id": "chapter-03",
+      "number": 3,
+      "title": "Nonenzymatic Protein Function and Protein Analysis",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "3.1",
+          "title": "Cellular Functions"
+        },
+        {
+          "id": "3.2",
+          "title": "Biosignaling"
+        },
+        {
+          "id": "3.3",
+          "title": "Protein Isolation"
+        },
+        {
+          "id": "3.4",
+          "title": "Protein Analysis"
+        }
+      ]
+    },
+    {
+      "id": "chapter-04",
+      "number": 4,
+      "title": "Carbohydrate Structure and Function",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "4.1",
+          "title": "Carbohydrate Classification"
+        },
+        {
+          "id": "4.2",
+          "title": "Cyclic Sugar Molecules"
+        },
+        {
+          "id": "4.3",
+          "title": "Monosaccharides"
+        },
+        {
+          "id": "4.4",
+          "title": "Complex Carbohydrates"
+        }
+      ]
+    },
+    {
+      "id": "chapter-05",
+      "number": 5,
+      "title": "Lipid Structure and Function",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "5.1",
+          "title": "Structural Lipids"
+        },
+        {
+          "id": "5.2",
+          "title": "Signaling Lipids"
+        },
+        {
+          "id": "5.3",
+          "title": "Energy Storage"
+        }
+      ]
+    },
+    {
+      "id": "chapter-06",
+      "number": 6,
+      "title": "DNA and Biotechnology",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "6.1",
+          "title": "DNA Structure"
+        },
+        {
+          "id": "6.2",
+          "title": "Eukaryotic Chromosome Organization"
+        },
+        {
+          "id": "6.3",
+          "title": "DNA Replication"
+        },
+        {
+          "id": "6.4",
+          "title": "DNA Repair"
+        },
+        {
+          "id": "6.5",
+          "title": "Recombinant Biotechnology"
+        }
+      ]
+    },
+    {
+      "id": "chapter-07",
+      "number": 7,
+      "title": "RNA and the Genetic Code",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "7.1",
+          "title": "The Genetic Code"
+        },
+        {
+          "id": "7.2",
+          "title": "Transcription"
+        },
+        {
+          "id": "7.3",
+          "title": "Translation"
+        },
+        {
+          "id": "7.4",
+          "title": "Control of Gene expression in Prokaryotes"
+        },
+        {
+          "id": "7.5",
+          "title": "Control of Gene Expression in Eukaryotes"
+        }
+      ]
+    },
+    {
+      "id": "chapter-08",
+      "number": 8,
+      "title": "Biological Membranes",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "8.1",
+          "title": "Fluid Mosaic Model"
+        },
+        {
+          "id": "8.2",
+          "title": "Membrane Components"
+        },
+        {
+          "id": "8.3",
+          "title": "Membrane Transport"
+        },
+        {
+          "id": "8.4",
+          "title": "Specialized Membranes"
+        }
+      ]
+    },
+    {
+      "id": "chapter-09",
+      "number": 9,
+      "title": "Carbohydrate Metabolism I: Glycolysis, Glycogen, Gluconeogenesis, and the Pentose Phosphate Pathway",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "9.1",
+          "title": "Glucose Transport"
+        },
+        {
+          "id": "9.2",
+          "title": "Glycolysis"
+        },
+        {
+          "id": "9.3",
+          "title": "Other Monosaccharides"
+        },
+        {
+          "id": "9.4",
+          "title": "Pyruvate Dehydrogenase"
+        },
+        {
+          "id": "9.5",
+          "title": "Glycogenesis and Glycogenolysis"
+        },
+        {
+          "id": "9.6",
+          "title": "Gluconeogenesis"
+        },
+        {
+          "id": "9.7",
+          "title": "The Pentose Phosphate Pathway"
+        }
+      ]
+    },
+    {
+      "id": "chapter-10",
+      "number": 10,
+      "title": "Carbohydrate Metabolism II: Aerobic Respiration",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "10.1",
+          "title": "Acetyl-CoA"
+        },
+        {
+          "id": "10.2",
+          "title": "Reactions of the Citric Acid Cycle"
+        },
+        {
+          "id": "10.3",
+          "title": "The Electron Transport Chain"
+        },
+        {
+          "id": "10.4",
+          "title": "Oxidative Phosphorylation"
+        }
+      ]
+    },
+    {
+      "id": "chapter-11",
+      "number": 11,
+      "title": "Lipid and Amino Acid Metabolism",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "11.1",
+          "title": "Lipid Digestion and Absorption"
+        },
+        {
+          "id": "11.2",
+          "title": "Lipid Mobilization"
+        },
+        {
+          "id": "11.3",
+          "title": "Lipid Transport"
+        },
+        {
+          "id": "11.4",
+          "title": "Cholesterol Metabolism"
+        },
+        {
+          "id": "11.5",
+          "title": "Fatty Acids and Triacylglycerols"
+        },
+        {
+          "id": "11.6",
+          "title": "Ketone Bodies"
+        },
+        {
+          "id": "11.7",
+          "title": "Protein Catabolism"
+        }
+      ]
+    },
+    {
+      "id": "chapter-12",
+      "number": 12,
+      "title": "Bioenergetics and Regulation of Metabolism",
+      "status": "implemented",
+      "sections": [
+        {
+          "id": "12.1",
+          "title": "Thermodynamics and Bioenergetics"
+        },
+        {
+          "id": "12.2",
+          "title": "The Role of ATP"
+        },
+        {
+          "id": "12.3",
+          "title": "Biological Oxidation and Reduction"
+        },
+        {
+          "id": "12.4",
+          "title": "Metabolic States"
+        },
+        {
+          "id": "12.5",
+          "title": "Hormonal Regulation of Metabolism"
+        },
+        {
+          "id": "12.6",
+          "title": "Tissue-Specific Metabolism"
+        },
+        {
+          "id": "12.7",
+          "title": "Integrative Metabolism"
+        }
+      ]
+    }
+  ]
+}
