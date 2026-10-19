@@ -1,0 +1,463 @@
+{
+  "version": 1,
+  "id": "chapter-10",
+  "title": "Carbohydrate Metabolism II: Aerobic Respiration",
+  "status": "implemented",
+  "scopeNote": "Original condensed MCAT biochemistry lessons covering the declared outline sections. This release is implemented, not independently scientifically verified; it is not exhaustive textbook coverage.",
+  "lessons": [
+    {
+      "id": "concept-10-1",
+      "title": "Acetyl-CoA",
+      "section": "10.1",
+      "asset": "bc10-01",
+      "steps": [
+        {
+          "text": "Acetyl-CoA carries an activated two-carbon acetyl unit. It can arise from pyruvate oxidation, fatty-acid oxidation and some amino-acid pathways.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "Citrate synthase combines acetyl-CoA with oxaloacetate to form citrate. Oxaloacetate is regenerated during the cycle, so its availability affects acetyl-unit oxidation.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Acetyl-CoA is also a precursor for fatty-acid synthesis and ketone production in appropriate compartments and metabolic states. A branch-point metabolite has several possible fates.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Human metabolism has no net conversion of acetyl-CoA carbon to glucose through the ordinary citric acid cycle. Regenerating oxaloacetate is not net synthesis of glucose carbon from acetyl units.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "10.1 · Organize: Acetyl-CoA input",
+        "paragraphs": [
+          "Acetyl-CoA carries an activated two-carbon acetyl unit. It can arise from pyruvate oxidation, fatty-acid oxidation and some amino-acid pathways.",
+          "Citrate synthase combines acetyl-CoA with oxaloacetate to form citrate. Oxaloacetate is regenerated during the cycle, so its availability affects acetyl-unit oxidation."
+        ]
+      },
+      "memoryCue": {
+        "title": "10.1 · Acetyl input needs an oxaloacetate acceptor.",
+        "paragraphs": [
+          "Acetyl input needs an oxaloacetate acceptor.",
+          "Citrate synthase combines acetyl-CoA with oxaloacetate to form citrate. Oxaloacetate is regenerated during the cycle, so its availability affects acetyl-unit oxidation."
+        ]
+      },
+      "traps": {
+        "title": "10.1 · Check: Citrate formation",
+        "paragraphs": [
+          "Acetyl-CoA is also a precursor for fatty-acid synthesis and ketone production in appropriate compartments and metabolic states. A branch-point metabolite has several possible fates.",
+          "Human metabolism has no net conversion of acetyl-CoA carbon to glucose through the ordinary citric acid cycle. Regenerating oxaloacetate is not net synthesis of glucose carbon from acetyl units."
+        ]
+      },
+      "application": {
+        "title": "10.1 · Apply: Carbon routing",
+        "paragraphs": [
+          "Human metabolism has no net conversion of acetyl-CoA carbon to glucose through the ordinary citric acid cycle. Regenerating oxaloacetate is not net synthesis of glucose carbon from acetyl units.",
+          "Acetyl-CoA carries an activated two-carbon acetyl unit. It can arise from pyruvate oxidation, fatty-acid oxidation and some amino-acid pathways."
+        ]
+      }
+    },
+    {
+      "id": "concept-10-2",
+      "title": "Reactions of the Citric Acid Cycle",
+      "section": "10.2",
+      "asset": "bc10-02",
+      "steps": [
+        {
+          "text": "One cycle turn per acetyl-CoA produces three NADH, one FADH2 equivalent, one GTP or ATP and two CO2 while regenerating oxaloacetate.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "Oxidative decarboxylations occur at isocitrate dehydrogenase and alpha-ketoglutarate dehydrogenase. Incoming acetyl carbons are not necessarily the first carbons released as CO2.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Succinate dehydrogenase is also respiratory complex II in the inner mitochondrial membrane. Most other cycle enzymes are in the mitochondrial matrix.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "The cycle supplies biosynthetic intermediates as well as reducing equivalents. Anaplerotic reactions replenish intermediates withdrawn for other uses.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "10.2 · Organize: Citrate",
+        "paragraphs": [
+          "One cycle turn per acetyl-CoA produces three NADH, one FADH2 equivalent, one GTP or ATP and two CO2 while regenerating oxaloacetate.",
+          "Oxidative decarboxylations occur at isocitrate dehydrogenase and alpha-ketoglutarate dehydrogenase. Incoming acetyl carbons are not necessarily the first carbons released as CO2."
+        ]
+      },
+      "memoryCue": {
+        "title": "10.2 · Per turn: three NADH, one FADH2 equivalent, one GTP, two CO2.",
+        "paragraphs": [
+          "Per turn: three NADH, one FADH2 equivalent, one GTP, two CO2.",
+          "Oxidative decarboxylations occur at isocitrate dehydrogenase and alpha-ketoglutarate dehydrogenase. Incoming acetyl carbons are not necessarily the first carbons released as CO2."
+        ]
+      },
+      "traps": {
+        "title": "10.2 · Check: Succinate oxidation",
+        "paragraphs": [
+          "Succinate dehydrogenase is also respiratory complex II in the inner mitochondrial membrane. Most other cycle enzymes are in the mitochondrial matrix.",
+          "The cycle supplies biosynthetic intermediates as well as reducing equivalents. Anaplerotic reactions replenish intermediates withdrawn for other uses."
+        ]
+      },
+      "application": {
+        "title": "10.2 · Apply: Oxaloacetate regeneration",
+        "paragraphs": [
+          "The cycle supplies biosynthetic intermediates as well as reducing equivalents. Anaplerotic reactions replenish intermediates withdrawn for other uses.",
+          "One cycle turn per acetyl-CoA produces three NADH, one FADH2 equivalent, one GTP or ATP and two CO2 while regenerating oxaloacetate."
+        ]
+      }
+    },
+    {
+      "id": "concept-10-3",
+      "title": "The Electron Transport Chain",
+      "section": "10.3",
+      "asset": "bc10-03",
+      "steps": [
+        {
+          "text": "Electrons from NADH enter at complex I; electrons associated with succinate oxidation enter at complex II. Ubiquinone and cytochrome c carry electrons between complexes.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "Complexes I, III and IV contribute to proton pumping from matrix to intermembrane space. Complex II transfers electrons without directly pumping protons.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Oxygen is the terminal electron acceptor at complex IV and is reduced to water. Blocking electron transfer can limit NADH reoxidation and upstream oxidative metabolism.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "The diagram is a qualitative electron-transfer organization, not measured current or molecular structure. Electron motion and proton movement are distinct linked events.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "10.3 · Organize: Complex I",
+        "paragraphs": [
+          "Electrons from NADH enter at complex I; electrons associated with succinate oxidation enter at complex II. Ubiquinone and cytochrome c carry electrons between complexes.",
+          "Complexes I, III and IV contribute to proton pumping from matrix to intermembrane space. Complex II transfers electrons without directly pumping protons."
+        ]
+      },
+      "memoryCue": {
+        "title": "10.3 · One, three and four pump; two transfers without pumping.",
+        "paragraphs": [
+          "One, three and four pump; two transfers without pumping.",
+          "Complexes I, III and IV contribute to proton pumping from matrix to intermembrane space. Complex II transfers electrons without directly pumping protons."
+        ]
+      },
+      "traps": {
+        "title": "10.3 · Check: Complex III",
+        "paragraphs": [
+          "Oxygen is the terminal electron acceptor at complex IV and is reduced to water. Blocking electron transfer can limit NADH reoxidation and upstream oxidative metabolism.",
+          "The diagram is a qualitative electron-transfer organization, not measured current or molecular structure. Electron motion and proton movement are distinct linked events."
+        ]
+      },
+      "application": {
+        "title": "10.3 · Apply: Complex IV",
+        "paragraphs": [
+          "The diagram is a qualitative electron-transfer organization, not measured current or molecular structure. Electron motion and proton movement are distinct linked events.",
+          "Electrons from NADH enter at complex I; electrons associated with succinate oxidation enter at complex II. Ubiquinone and cytochrome c carry electrons between complexes."
+        ]
+      }
+    },
+    {
+      "id": "concept-10-4",
+      "title": "Oxidative Phosphorylation",
+      "section": "10.4",
+      "asset": "bc10-04",
+      "steps": [
+        {
+          "text": "Electron transfer establishes a proton-motive force across the inner mitochondrial membrane. Protons return toward the matrix through ATP synthase to support ATP production.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "An uncoupler dissipates the proton gradient without directly making ATP. When substrates and oxygen are available, respiration can increase even while ATP yield falls.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "An ATP-synthase inhibitor blocks productive proton return; respiratory electron flow often slows as the gradient builds. This differs from proton leakage through an uncoupler.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Common ATP estimates use about 2.5 ATP per mitochondrial NADH and 1.5 per FADH2 equivalent, with assumptions. Whole-glucose yields vary with shuttles, transport costs and coupling.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "10.4 · Organize: Proton gradient",
+        "paragraphs": [
+          "Electron transfer establishes a proton-motive force across the inner mitochondrial membrane. Protons return toward the matrix through ATP synthase to support ATP production.",
+          "An uncoupler dissipates the proton gradient without directly making ATP. When substrates and oxygen are available, respiration can increase even while ATP yield falls."
+        ]
+      },
+      "memoryCue": {
+        "title": "10.4 · Leak the gradient: respiration can rise while ATP yield falls.",
+        "paragraphs": [
+          "Leak the gradient: respiration can rise while ATP yield falls.",
+          "An uncoupler dissipates the proton gradient without directly making ATP. When substrates and oxygen are available, respiration can increase even while ATP yield falls."
+        ]
+      },
+      "traps": {
+        "title": "10.4 · Check: Uncoupler",
+        "paragraphs": [
+          "An ATP-synthase inhibitor blocks productive proton return; respiratory electron flow often slows as the gradient builds. This differs from proton leakage through an uncoupler.",
+          "Common ATP estimates use about 2.5 ATP per mitochondrial NADH and 1.5 per FADH2 equivalent, with assumptions. Whole-glucose yields vary with shuttles, transport costs and coupling."
+        ]
+      },
+      "application": {
+        "title": "10.4 · Apply: ATP output",
+        "paragraphs": [
+          "Common ATP estimates use about 2.5 ATP per mitochondrial NADH and 1.5 per FADH2 equivalent, with assumptions. Whole-glucose yields vary with shuttles, transport costs and coupling.",
+          "Electron transfer establishes a proton-motive force across the inner mitochondrial membrane. Protons return toward the matrix through ATP synthase to support ATP production."
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "bc-10-01-workshop-v1",
+      "title": "Acetyl-CoA",
+      "asset": "bc10-01",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the step forming the first six-carbon cycle intermediate.",
+          "answer": [
+            "part-2"
+          ],
+          "explanation": "The relevant schematic entity or entities are Citrate formation. Acetyl-CoA is also a precursor for fatty-acid synthesis and ketone production in appropriate compartments and metabolic states. A branch-point metabolite has several possible fates.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "Acetyl-CoA is also a precursor for fatty-acid synthesis and ketone production in appropriate compartments and metabolic states. A branch-point metabolite has several possible fates."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "What combines with acetyl-CoA to form citrate?",
+          "answer": 3,
+          "options": [
+            "Lactate only",
+            "Urea",
+            "Ribose-5-phosphate",
+            "Oxaloacetate"
+          ],
+          "explanation": "Oxaloacetate. Citrate synthase combines acetyl-CoA with oxaloacetate to form citrate. Oxaloacetate is regenerated during the cycle, so its availability affects acetyl-unit oxidation.",
+          "hints": [
+            "Acetyl-CoA carries an activated two-carbon acetyl unit. It can arise from pyruvate oxidation, fatty-acid oxidation and some amino-acid pathways.",
+            "Citrate synthase combines acetyl-CoA with oxaloacetate to form citrate. Oxaloacetate is regenerated during the cycle, so its availability affects acetyl-unit oxidation."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "A decrease in available oxaloacetate can do what?",
+          "answer": 0,
+          "options": [
+            "Limit acetyl-CoA entry into the cycle",
+            "Guarantee faster citrate formation",
+            "Reverse PDH automatically",
+            "Convert all acetyl units to net glucose"
+          ],
+          "explanation": "Limit acetyl-CoA entry into the cycle. Acetyl-CoA is also a precursor for fatty-acid synthesis and ketone production in appropriate compartments and metabolic states. A branch-point metabolite has several possible fates.",
+          "hints": [
+            "Citrate synthase combines acetyl-CoA with oxaloacetate to form citrate. Oxaloacetate is regenerated during the cycle, so its availability affects acetyl-unit oxidation.",
+            "Acetyl-CoA is also a precursor for fatty-acid synthesis and ketone production in appropriate compartments and metabolic states. A branch-point metabolite has several possible fates."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc-10-02-workshop-v1",
+      "title": "Reactions of the Citric Acid Cycle",
+      "asset": "bc10-02",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the part of the cycle that restores the four-carbon acceptor.",
+          "answer": [
+            "part-3"
+          ],
+          "explanation": "The relevant schematic entity or entities are Oxaloacetate regeneration. The cycle supplies biosynthetic intermediates as well as reducing equivalents. Anaplerotic reactions replenish intermediates withdrawn for other uses.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "The cycle supplies biosynthetic intermediates as well as reducing equivalents. Anaplerotic reactions replenish intermediates withdrawn for other uses."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "number",
+          "prompt": "How many NADH are produced per acetyl-CoA in one full turn?",
+          "answer": 3,
+          "explanation": "3. Oxidative decarboxylations occur at isocitrate dehydrogenase and alpha-ketoglutarate dehydrogenase. Incoming acetyl carbons are not necessarily the first carbons released as CO2.",
+          "hints": [
+            "One cycle turn per acetyl-CoA produces three NADH, one FADH2 equivalent, one GTP or ATP and two CO2 while regenerating oxaloacetate.",
+            "Oxidative decarboxylations occur at isocitrate dehydrogenase and alpha-ketoglutarate dehydrogenase. Incoming acetyl carbons are not necessarily the first carbons released as CO2."
+          ],
+          "unit": "NADH",
+          "tolerance": 0
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "Which enzyme participates in both the cycle and electron transport?",
+          "answer": 1,
+          "options": [
+            "Citrate synthase",
+            "Succinate dehydrogenase",
+            "Hexokinase",
+            "Lactate dehydrogenase"
+          ],
+          "explanation": "Succinate dehydrogenase. Succinate dehydrogenase is also respiratory complex II in the inner mitochondrial membrane. Most other cycle enzymes are in the mitochondrial matrix.",
+          "hints": [
+            "Oxidative decarboxylations occur at isocitrate dehydrogenase and alpha-ketoglutarate dehydrogenase. Incoming acetyl carbons are not necessarily the first carbons released as CO2.",
+            "Succinate dehydrogenase is also respiratory complex II in the inner mitochondrial membrane. Most other cycle enzymes are in the mitochondrial matrix."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc-10-03-workshop-v1",
+      "title": "The Electron Transport Chain",
+      "asset": "bc10-03",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the complex that reduces oxygen to water.",
+          "answer": [
+            "part-3"
+          ],
+          "explanation": "The relevant schematic entity or entities are Complex IV. The diagram is a qualitative electron-transfer organization, not measured current or molecular structure. Electron motion and proton movement are distinct linked events.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "The diagram is a qualitative electron-transfer organization, not measured current or molecular structure. Electron motion and proton movement are distinct linked events."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "Which respiratory complex does not directly pump protons?",
+          "answer": 1,
+          "options": [
+            "Complex I",
+            "Complex II",
+            "Complex III",
+            "Complex IV"
+          ],
+          "explanation": "Complex II. Complexes I, III and IV contribute to proton pumping from matrix to intermembrane space. Complex II transfers electrons without directly pumping protons.",
+          "hints": [
+            "Electrons from NADH enter at complex I; electrons associated with succinate oxidation enter at complex II. Ubiquinone and cytochrome c carry electrons between complexes.",
+            "Complexes I, III and IV contribute to proton pumping from matrix to intermembrane space. Complex II transfers electrons without directly pumping protons."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "What is the terminal electron acceptor in the human respiratory chain?",
+          "answer": 2,
+          "options": [
+            "Glucose",
+            "ATP",
+            "Oxygen",
+            "Carbon dioxide"
+          ],
+          "explanation": "Oxygen. Oxygen is the terminal electron acceptor at complex IV and is reduced to water. Blocking electron transfer can limit NADH reoxidation and upstream oxidative metabolism.",
+          "hints": [
+            "Complexes I, III and IV contribute to proton pumping from matrix to intermembrane space. Complex II transfers electrons without directly pumping protons.",
+            "Oxygen is the terminal electron acceptor at complex IV and is reduced to water. Blocking electron transfer can limit NADH reoxidation and upstream oxidative metabolism."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc-10-04-workshop-v1",
+      "title": "Oxidative Phosphorylation",
+      "asset": "bc10-04",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the component that converts proton-motive force into ATP synthesis.",
+          "answer": [
+            "part-1"
+          ],
+          "explanation": "The relevant schematic entity or entities are ATP synthase. An uncoupler dissipates the proton gradient without directly making ATP. When substrates and oxygen are available, respiration can increase even while ATP yield falls.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "An uncoupler dissipates the proton gradient without directly making ATP. When substrates and oxygen are available, respiration can increase even while ATP yield falls."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "What pattern is plausible after adding an uncoupler with adequate substrate and oxygen?",
+          "answer": 2,
+          "options": [
+            "More ATP per oxygen without heat",
+            "No proton leak",
+            "Less ATP per fuel and increased oxygen use",
+            "Obligatory immediate cessation of every electron transfer"
+          ],
+          "explanation": "Less ATP per fuel and increased oxygen use. An uncoupler dissipates the proton gradient without directly making ATP. When substrates and oxygen are available, respiration can increase even while ATP yield falls.",
+          "hints": [
+            "Electron transfer establishes a proton-motive force across the inner mitochondrial membrane. Protons return toward the matrix through ATP synthase to support ATP production.",
+            "An uncoupler dissipates the proton gradient without directly making ATP. When substrates and oxygen are available, respiration can increase even while ATP yield falls."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "Which direction of proton flow through ATP synthase supports mitochondrial ATP synthesis?",
+          "answer": 3,
+          "options": [
+            "Matrix to intermembrane space",
+            "Cytosol to nucleus",
+            "No proton movement",
+            "Intermembrane space to matrix"
+          ],
+          "explanation": "Intermembrane space to matrix. An ATP-synthase inhibitor blocks productive proton return; respiratory electron flow often slows as the gradient builds. This differs from proton leakage through an uncoupler.",
+          "hints": [
+            "An uncoupler dissipates the proton gradient without directly making ATP. When substrates and oxygen are available, respiration can increase even while ATP yield falls.",
+            "An ATP-synthase inhibitor blocks productive proton return; respiratory electron flow often slows as the gradient builds. This differs from proton leakage through an uncoupler."
+          ]
+        }
+      ]
+    }
+  ]
+}
