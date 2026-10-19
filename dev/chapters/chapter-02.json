@@ -1,0 +1,577 @@
+{
+  "version": 1,
+  "id": "chapter-02",
+  "title": "Enzymes",
+  "status": "implemented",
+  "scopeNote": "Original condensed MCAT biochemistry lessons covering the declared outline sections. This release is implemented, not independently scientifically verified; it is not exhaustive textbook coverage.",
+  "lessons": [
+    {
+      "id": "concept-2-1",
+      "title": "Enzymes as Biological Catalysts",
+      "section": "2.1",
+      "asset": "bc02-01",
+      "steps": [
+        {
+          "text": "Enzymes accelerate reactions by lowering the activation free-energy barrier. They are regenerated during a catalytic cycle rather than consumed stoichiometrically.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "A catalyst does not change the free-energy difference between reactants and products, the equilibrium constant, or the equilibrium composition at fixed conditions.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Both forward and reverse reactions can accelerate. An enzyme cannot make an isolated thermodynamically unfavorable conversion favorable merely by binding substrate.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Coupling to a favorable reaction can drive a net process. Separate this change in the overall reaction from catalysis of an unchanged reaction.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "2.1 · Organize: Reactants",
+        "paragraphs": [
+          "Enzymes accelerate reactions by lowering the activation free-energy barrier. They are regenerated during a catalytic cycle rather than consumed stoichiometrically.",
+          "A catalyst does not change the free-energy difference between reactants and products, the equilibrium constant, or the equilibrium composition at fixed conditions."
+        ]
+      },
+      "memoryCue": {
+        "title": "2.1 · Lower the hill; keep the valley difference.",
+        "paragraphs": [
+          "Lower the hill; keep the valley difference.",
+          "A catalyst does not change the free-energy difference between reactants and products, the equilibrium constant, or the equilibrium composition at fixed conditions."
+        ]
+      },
+      "traps": {
+        "title": "2.1 · Check: Products",
+        "paragraphs": [
+          "Both forward and reverse reactions can accelerate. An enzyme cannot make an isolated thermodynamically unfavorable conversion favorable merely by binding substrate.",
+          "Coupling to a favorable reaction can drive a net process. Separate this change in the overall reaction from catalysis of an unchanged reaction."
+        ]
+      },
+      "application": {
+        "title": "2.1 · Apply: Catalyzed route",
+        "paragraphs": [
+          "Coupling to a favorable reaction can drive a net process. Separate this change in the overall reaction from catalysis of an unchanged reaction.",
+          "Enzymes accelerate reactions by lowering the activation free-energy barrier. They are regenerated during a catalytic cycle rather than consumed stoichiometrically."
+        ]
+      }
+    },
+    {
+      "id": "concept-2-2",
+      "title": "Mechanisms of Enzyme Activity",
+      "section": "2.2",
+      "asset": "bc02-02",
+      "steps": [
+        {
+          "text": "Active sites bring reactants into useful orientations and provide a local chemical environment. Induced fit means binding and conformation influence one another.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "General acid/base catalysis transfers protons. Covalent catalysis temporarily links enzyme and substrate; metal ions may stabilize charge or organize reacting groups.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Preferential stabilization of a transition state lowers the barrier. Binding the ground-state substrate extremely tightly without transition-state stabilization can impede turnover.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Organic coenzymes and inorganic cofactors can participate in catalysis. A missing required cofactor can limit activity even when the protein sequence is normal.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "2.2 · Organize: Substrate binding",
+        "paragraphs": [
+          "Active sites bring reactants into useful orientations and provide a local chemical environment. Induced fit means binding and conformation influence one another.",
+          "General acid/base catalysis transfers protons. Covalent catalysis temporarily links enzyme and substrate; metal ions may stabilize charge or organize reacting groups."
+        ]
+      },
+      "memoryCue": {
+        "title": "2.2 · Fit the transition state, not just the resting substrate.",
+        "paragraphs": [
+          "Fit the transition state, not just the resting substrate.",
+          "General acid/base catalysis transfers protons. Covalent catalysis temporarily links enzyme and substrate; metal ions may stabilize charge or organize reacting groups."
+        ]
+      },
+      "traps": {
+        "title": "2.2 · Check: Transition state",
+        "paragraphs": [
+          "Preferential stabilization of a transition state lowers the barrier. Binding the ground-state substrate extremely tightly without transition-state stabilization can impede turnover.",
+          "Organic coenzymes and inorganic cofactors can participate in catalysis. A missing required cofactor can limit activity even when the protein sequence is normal."
+        ]
+      },
+      "application": {
+        "title": "2.2 · Apply: Product release",
+        "paragraphs": [
+          "Organic coenzymes and inorganic cofactors can participate in catalysis. A missing required cofactor can limit activity even when the protein sequence is normal.",
+          "Active sites bring reactants into useful orientations and provide a local chemical environment. Induced fit means binding and conformation influence one another."
+        ]
+      }
+    },
+    {
+      "id": "concept-2-3",
+      "title": "Enzyme Kinetics",
+      "section": "2.3",
+      "asset": "bc02-03",
+      "steps": [
+        {
+          "text": "For a simple Michaelis–Menten enzyme measured at initial rate, v = Vmax[S]/(Km + [S]). At [S] = Km, v equals half of Vmax.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "At saturating substrate, v approaches Vmax. With all else fixed, increasing active enzyme concentration increases Vmax; kcat is Vmax divided by total active enzyme concentration.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Ideal competitive inhibition increases apparent Km without changing Vmax. Pure noncompetitive inhibition decreases Vmax without changing Km; mixed inhibition need not preserve Km.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Cooperative enzymes may show sigmoidal rather than Michaelis–Menten behavior. Km is not universally a direct dissociation constant or a universal measure of affinity.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "2.3 · Organize: Low substrate",
+        "paragraphs": [
+          "For a simple Michaelis–Menten enzyme measured at initial rate, v = Vmax[S]/(Km + [S]). At [S] = Km, v equals half of Vmax.",
+          "At saturating substrate, v approaches Vmax. With all else fixed, increasing active enzyme concentration increases Vmax; kcat is Vmax divided by total active enzyme concentration."
+        ]
+      },
+      "memoryCue": {
+        "title": "2.3 · Km marks half Vmax in the simple model.",
+        "paragraphs": [
+          "Km marks half Vmax in the simple model.",
+          "At saturating substrate, v approaches Vmax. With all else fixed, increasing active enzyme concentration increases Vmax; kcat is Vmax divided by total active enzyme concentration."
+        ]
+      },
+      "traps": {
+        "title": "2.3 · Check: Saturation",
+        "paragraphs": [
+          "Ideal competitive inhibition increases apparent Km without changing Vmax. Pure noncompetitive inhibition decreases Vmax without changing Km; mixed inhibition need not preserve Km.",
+          "Cooperative enzymes may show sigmoidal rather than Michaelis–Menten behavior. Km is not universally a direct dissociation constant or a universal measure of affinity."
+        ]
+      },
+      "application": {
+        "title": "2.3 · Apply: Inhibition",
+        "paragraphs": [
+          "Cooperative enzymes may show sigmoidal rather than Michaelis–Menten behavior. Km is not universally a direct dissociation constant or a universal measure of affinity.",
+          "For a simple Michaelis–Menten enzyme measured at initial rate, v = Vmax[S]/(Km + [S]). At [S] = Km, v equals half of Vmax."
+        ]
+      }
+    },
+    {
+      "id": "concept-2-4",
+      "title": "Effects of Local Conditions on Enzyme Activity",
+      "section": "2.4",
+      "asset": "bc02-04",
+      "steps": [
+        {
+          "text": "Temperature affects collision rates and conformational stability. Warming can increase rate over one range but reduce activity when unfolding becomes important.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "pH changes the protonation of catalytic and binding groups. A suitable pH for one enzyme is not a universal optimum for all enzymes.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "A pH-dependent activity change can occur without global unfolding. Distinguish altered active-site ionization from irreversible structural damage.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "To compare conditions, hold substrate, enzyme amount and assay time constant. A measured endpoint after prolonged incubation is not automatically an initial rate.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "2.4 · Organize: Low temperature",
+        "paragraphs": [
+          "Temperature affects collision rates and conformational stability. Warming can increase rate over one range but reduce activity when unfolding becomes important.",
+          "pH changes the protonation of catalytic and binding groups. A suitable pH for one enzyme is not a universal optimum for all enzymes."
+        ]
+      },
+      "memoryCue": {
+        "title": "2.4 · Warmth can speed collisions before it destabilizes the fold.",
+        "paragraphs": [
+          "Warmth can speed collisions before it destabilizes the fold.",
+          "pH changes the protonation of catalytic and binding groups. A suitable pH for one enzyme is not a universal optimum for all enzymes."
+        ]
+      },
+      "traps": {
+        "title": "2.4 · Check: High temperature",
+        "paragraphs": [
+          "A pH-dependent activity change can occur without global unfolding. Distinguish altered active-site ionization from irreversible structural damage.",
+          "To compare conditions, hold substrate, enzyme amount and assay time constant. A measured endpoint after prolonged incubation is not automatically an initial rate."
+        ]
+      },
+      "application": {
+        "title": "2.4 · Apply: Altered ionization",
+        "paragraphs": [
+          "To compare conditions, hold substrate, enzyme amount and assay time constant. A measured endpoint after prolonged incubation is not automatically an initial rate.",
+          "Temperature affects collision rates and conformational stability. Warming can increase rate over one range but reduce activity when unfolding becomes important."
+        ]
+      }
+    },
+    {
+      "id": "concept-2-5",
+      "title": "Regulation of Enzyme Activity",
+      "section": "2.5",
+      "asset": "bc02-05",
+      "steps": [
+        {
+          "text": "Allosteric regulators bind at sites distinct from the active site and alter function through conformational effects. Allosteric regulation can activate or inhibit.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "Reversible phosphorylation changes some enzymes’ activities; its effect depends on the particular enzyme. Phosphorylation is not a universal on switch.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "An end product can inhibit an earlier pathway step, limiting excess production. This feedback mechanism is distinct from merely exhausting the initial substrate.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Proteolytic activation of a zymogen is often effectively irreversible. Changes in transcription or degradation change enzyme abundance on a different timescale.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "2.5 · Organize: Allosteric site",
+        "paragraphs": [
+          "Allosteric regulators bind at sites distinct from the active site and alter function through conformational effects. Allosteric regulation can activate or inhibit.",
+          "Reversible phosphorylation changes some enzymes’ activities; its effect depends on the particular enzyme. Phosphorylation is not a universal on switch."
+        ]
+      },
+      "memoryCue": {
+        "title": "2.5 · Phosphate changes a target; the target determines the effect.",
+        "paragraphs": [
+          "Phosphate changes a target; the target determines the effect.",
+          "Reversible phosphorylation changes some enzymes’ activities; its effect depends on the particular enzyme. Phosphorylation is not a universal on switch."
+        ]
+      },
+      "traps": {
+        "title": "2.5 · Check: Feedback signal",
+        "paragraphs": [
+          "An end product can inhibit an earlier pathway step, limiting excess production. This feedback mechanism is distinct from merely exhausting the initial substrate.",
+          "Proteolytic activation of a zymogen is often effectively irreversible. Changes in transcription or degradation change enzyme abundance on a different timescale."
+        ]
+      },
+      "application": {
+        "title": "2.5 · Apply: Enzyme abundance",
+        "paragraphs": [
+          "Proteolytic activation of a zymogen is often effectively irreversible. Changes in transcription or degradation change enzyme abundance on a different timescale.",
+          "Allosteric regulators bind at sites distinct from the active site and alter function through conformational effects. Allosteric regulation can activate or inhibit."
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "bc-02-01-workshop-v1",
+      "title": "Enzymes as Biological Catalysts",
+      "asset": "bc02-01",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the barrier-related entity rather than an endpoint state.",
+          "answer": [
+            "part-1"
+          ],
+          "explanation": "The relevant schematic entity or entities are Activation barrier. A catalyst does not change the free-energy difference between reactants and products, the equilibrium constant, or the equilibrium composition at fixed conditions.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "A catalyst does not change the free-energy difference between reactants and products, the equilibrium constant, or the equilibrium composition at fixed conditions."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "Which quantity can an enzyme lower?",
+          "answer": 3,
+          "options": [
+            "Equilibrium product free energy only",
+            "Equilibrium constant",
+            "Standard reaction free energy",
+            "Activation free energy"
+          ],
+          "explanation": "Activation free energy. A catalyst does not change the free-energy difference between reactants and products, the equilibrium constant, or the equilibrium composition at fixed conditions.",
+          "hints": [
+            "Enzymes accelerate reactions by lowering the activation free-energy barrier. They are regenerated during a catalytic cycle rather than consumed stoichiometrically.",
+            "A catalyst does not change the free-energy difference between reactants and products, the equilibrium constant, or the equilibrium composition at fixed conditions."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "A catalyst is added to a mixture already at equilibrium. What happens to equilibrium composition?",
+          "answer": 0,
+          "options": [
+            "It remains unchanged at fixed conditions",
+            "All reactants disappear",
+            "Only products react",
+            "The equilibrium constant doubles"
+          ],
+          "explanation": "It remains unchanged at fixed conditions. Both forward and reverse reactions can accelerate. An enzyme cannot make an isolated thermodynamically unfavorable conversion favorable merely by binding substrate.",
+          "hints": [
+            "A catalyst does not change the free-energy difference between reactants and products, the equilibrium constant, or the equilibrium composition at fixed conditions.",
+            "Both forward and reverse reactions can accelerate. An enzyme cannot make an isolated thermodynamically unfavorable conversion favorable merely by binding substrate."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc-02-02-workshop-v1",
+      "title": "Mechanisms of Enzyme Activity",
+      "asset": "bc02-02",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the state whose preferential stabilization lowers the activation barrier.",
+          "answer": [
+            "part-2"
+          ],
+          "explanation": "The relevant schematic entity or entities are Transition state. Preferential stabilization of a transition state lowers the barrier. Binding the ground-state substrate extremely tightly without transition-state stabilization can impede turnover.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "Preferential stabilization of a transition state lowers the barrier. Binding the ground-state substrate extremely tightly without transition-state stabilization can impede turnover."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "Which description matches covalent catalysis?",
+          "answer": 0,
+          "options": [
+            "A transient enzyme–substrate covalent intermediate",
+            "Permanent consumption of the enzyme",
+            "Only hydrophobic association",
+            "Changing the reaction equilibrium constant"
+          ],
+          "explanation": "A transient enzyme–substrate covalent intermediate. General acid/base catalysis transfers protons. Covalent catalysis temporarily links enzyme and substrate; metal ions may stabilize charge or organize reacting groups.",
+          "hints": [
+            "Active sites bring reactants into useful orientations and provide a local chemical environment. Induced fit means binding and conformation influence one another.",
+            "General acid/base catalysis transfers protons. Covalent catalysis temporarily links enzyme and substrate; metal ions may stabilize charge or organize reacting groups."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "An enzyme lacks a required metal ion. Which inference is most justified?",
+          "answer": 1,
+          "options": [
+            "The gene must be deleted",
+            "Activity may fall despite intact protein",
+            "The equilibrium constant must change",
+            "All substrate binding becomes irreversible"
+          ],
+          "explanation": "Activity may fall despite intact protein. Preferential stabilization of a transition state lowers the barrier. Binding the ground-state substrate extremely tightly without transition-state stabilization can impede turnover.",
+          "hints": [
+            "General acid/base catalysis transfers protons. Covalent catalysis temporarily links enzyme and substrate; metal ions may stabilize charge or organize reacting groups.",
+            "Preferential stabilization of a transition state lowers the barrier. Binding the ground-state substrate extremely tightly without transition-state stabilization can impede turnover."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc-02-03-workshop-v1",
+      "title": "Enzyme Kinetics",
+      "asset": "bc02-03",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the region where adding substrate has little further effect on rate.",
+          "answer": [
+            "part-2"
+          ],
+          "explanation": "The relevant schematic entity or entities are Saturation. Ideal competitive inhibition increases apparent Km without changing Vmax. Pure noncompetitive inhibition decreases Vmax without changing Km; mixed inhibition need not preserve Km.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "Ideal competitive inhibition increases apparent Km without changing Vmax. Pure noncompetitive inhibition decreases Vmax without changing Km; mixed inhibition need not preserve Km."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "number",
+          "prompt": "For Vmax = 80 micromol/min and [S] = Km, what is v?",
+          "answer": 40,
+          "explanation": "40 micromol/min. At saturating substrate, v approaches Vmax. With all else fixed, increasing active enzyme concentration increases Vmax; kcat is Vmax divided by total active enzyme concentration.",
+          "hints": [
+            "For a simple Michaelis–Menten enzyme measured at initial rate, v = Vmax[S]/(Km + [S]). At [S] = Km, v equals half of Vmax.",
+            "At saturating substrate, v approaches Vmax. With all else fixed, increasing active enzyme concentration increases Vmax; kcat is Vmax divided by total active enzyme concentration."
+          ],
+          "unit": "micromol/min",
+          "tolerance": 0
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "An ideal competitive inhibitor is added. What changes?",
+          "answer": 2,
+          "options": [
+            "Km and Vmax both vanish",
+            "Vmax rises; Km stays the same",
+            "Apparent Km increases; Vmax stays the same",
+            "Vmax falls; Km stays the same"
+          ],
+          "explanation": "Apparent Km increases; Vmax stays the same. Ideal competitive inhibition increases apparent Km without changing Vmax. Pure noncompetitive inhibition decreases Vmax without changing Km; mixed inhibition need not preserve Km.",
+          "hints": [
+            "At saturating substrate, v approaches Vmax. With all else fixed, increasing active enzyme concentration increases Vmax; kcat is Vmax divided by total active enzyme concentration.",
+            "Ideal competitive inhibition increases apparent Km without changing Vmax. Pure noncompetitive inhibition decreases Vmax without changing Km; mixed inhibition need not preserve Km."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc-02-04-workshop-v1",
+      "title": "Effects of Local Conditions on Enzyme Activity",
+      "asset": "bc02-04",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the entity that describes a direct chemical effect of pH.",
+          "answer": [
+            "part-3"
+          ],
+          "explanation": "The relevant schematic entity or entities are Altered ionization. To compare conditions, hold substrate, enzyme amount and assay time constant. A measured endpoint after prolonged incubation is not automatically an initial rate.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "To compare conditions, hold substrate, enzyme amount and assay time constant. A measured endpoint after prolonged incubation is not automatically an initial rate."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "Why can a modest pH shift lower activity without unfolding the enzyme?",
+          "answer": 2,
+          "options": [
+            "Peptide bonds must all break",
+            "The genetic code changes",
+            "Catalytic groups change protonation",
+            "Temperature necessarily increases"
+          ],
+          "explanation": "Catalytic groups change protonation. pH changes the protonation of catalytic and binding groups. A suitable pH for one enzyme is not a universal optimum for all enzymes.",
+          "hints": [
+            "Temperature affects collision rates and conformational stability. Warming can increase rate over one range but reduce activity when unfolding becomes important.",
+            "pH changes the protonation of catalytic and binding groups. A suitable pH for one enzyme is not a universal optimum for all enzymes."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "Activity rises from 15 to 30 degrees C but falls at 70 degrees C. What is a plausible explanation?",
+          "answer": 3,
+          "options": [
+            "All enzymes work best at 70 degrees C",
+            "Equilibrium becomes enzyme-dependent",
+            "Substrate becomes a coenzyme",
+            "Rate acceleration followed by structural destabilization"
+          ],
+          "explanation": "Rate acceleration followed by structural destabilization. A pH-dependent activity change can occur without global unfolding. Distinguish altered active-site ionization from irreversible structural damage.",
+          "hints": [
+            "pH changes the protonation of catalytic and binding groups. A suitable pH for one enzyme is not a universal optimum for all enzymes.",
+            "A pH-dependent activity change can occur without global unfolding. Distinguish altered active-site ionization from irreversible structural damage."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc-02-05-workshop-v1",
+      "title": "Regulation of Enzyme Activity",
+      "asset": "bc02-05",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the mechanism that directly changes the amount of enzyme present.",
+          "answer": [
+            "part-3"
+          ],
+          "explanation": "The relevant schematic entity or entities are Enzyme abundance. Proteolytic activation of a zymogen is often effectively irreversible. Changes in transcription or degradation change enzyme abundance on a different timescale.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "Proteolytic activation of a zymogen is often effectively irreversible. Changes in transcription or degradation change enzyme abundance on a different timescale."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "An end product inhibits an early enzyme in its own pathway. What is this?",
+          "answer": 3,
+          "options": [
+            "Competitive activation",
+            "DNA replication",
+            "Substrate exhaustion by definition",
+            "Feedback inhibition"
+          ],
+          "explanation": "Feedback inhibition. Reversible phosphorylation changes some enzymes’ activities; its effect depends on the particular enzyme. Phosphorylation is not a universal on switch.",
+          "hints": [
+            "Allosteric regulators bind at sites distinct from the active site and alter function through conformational effects. Allosteric regulation can activate or inhibit.",
+            "Reversible phosphorylation changes some enzymes’ activities; its effect depends on the particular enzyme. Phosphorylation is not a universal on switch."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "Which statement about phosphorylation is most accurate?",
+          "answer": 0,
+          "options": [
+            "Its effect depends on the target enzyme",
+            "It always activates every enzyme",
+            "It always cleaves the chain",
+            "It cannot be reversed"
+          ],
+          "explanation": "Its effect depends on the target enzyme. An end product can inhibit an earlier pathway step, limiting excess production. This feedback mechanism is distinct from merely exhausting the initial substrate.",
+          "hints": [
+            "Reversible phosphorylation changes some enzymes’ activities; its effect depends on the particular enzyme. Phosphorylation is not a universal on switch.",
+            "An end product can inhibit an earlier pathway step, limiting excess production. This feedback mechanism is distinct from merely exhausting the initial substrate."
+          ]
+        }
+      ]
+    }
+  ]
+}
