@@ -1,0 +1,1744 @@
+BIOCHEMISTRY chapter-01: Amino Acids, Peptides, and Proteins
+Text/content review only; browser execution is not established by this packet.
+PASS 1: Independently solve every supplied blind case. Record case ID, answer, reasoning, confidence and ambiguity. Do not skip stages.
+[
+  {
+    "id": "bc-01-01-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the entity whose oxidation can link two protein chains.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Backbone",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Side chain",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Glycine",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Cysteine",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "protein"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Backbone</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 20 q12 -70 24 0 t24 0 t24 0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Side chain</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Glycine</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"-20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Cysteine</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-01-01-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "Which free amino acid has an achiral alpha carbon?",
+    "type": "choice",
+    "options": [
+      "Alanine",
+      "Valine",
+      "Glycine",
+      "Threonine"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Backbone",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Side chain",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Glycine",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Cysteine",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "protein"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Backbone</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 20 q12 -70 24 0 t24 0 t24 0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Side chain</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Glycine</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"-20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Cysteine</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-01-01-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "Which pair can form a disulfide cross-link?",
+    "type": "choice",
+    "options": [
+      "Two methionine residues",
+      "Glycine and alanine",
+      "Two leucine residues",
+      "Two cysteine residues"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Backbone",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Side chain",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Glycine",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Cysteine",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "protein"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Backbone</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 20 q12 -70 24 0 t24 0 t24 0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Side chain</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Glycine</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"-20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Cysteine</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-01-02-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the region in which a conjugate acid/base pair most effectively resists pH change.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Low pH",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Isoelectric point",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "High pH",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Buffer region",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "balance"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Low pH</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Isoelectric point</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">High pH</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Buffer region</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-01-02-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "A group has pKa 6.0. At pH 8.0 which form predominates?",
+    "type": "choice",
+    "options": [
+      "Protonated",
+      "Exactly equal forms",
+      "Cannot compare pH and pKa",
+      "Deprotonated"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Low pH",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Isoelectric point",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "High pH",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Buffer region",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "balance"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Low pH</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Isoelectric point</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">High pH</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Buffer region</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-01-02-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "A neutral-side-chain amino acid has pKa values 2.0 and 10.0. What is its approximate pI?",
+    "type": "number",
+    "unit": "dimensionless",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Low pH",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Isoelectric point",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "High pH",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Buffer region",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "balance"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Low pH</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Isoelectric point</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">High pH</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M0 -28 V30 M-40 30 H40 M-40 -12 H40 M-30 -12 l-14 22 h28Z M30 -12 l-14 22 h28Z\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Buffer region</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-01-03-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select both ends used to specify the conventional sequence direction.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Free amino acids",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Peptide bond",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "N terminus",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "C terminus",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Free amino acids</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Peptide bond</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">N terminus</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">C terminus</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-01-03-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "How many peptide bonds are in a linear pentapeptide?",
+    "type": "number",
+    "unit": "dimensionless",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Free amino acids",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Peptide bond",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "N terminus",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "C terminus",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Free amino acids</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Peptide bond</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">N terminus</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">C terminus</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-01-03-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "Which statement best explains peptide-unit planarity?",
+    "type": "choice",
+    "options": [
+      "Every backbone bond is a double bond",
+      "Amide resonance restricts C–N rotation",
+      "Side chains are identical",
+      "Hydrolysis is impossible"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Free amino acids",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Peptide bond",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "N terminus",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "C terminus",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "pathway"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Free amino acids</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Peptide bond</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">N terminus</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"29\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 0 H18 M0 -18 V18\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">C terminus</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-01-04-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select both common secondary-structure motifs.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Sequence",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Alpha helix",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Beta sheet",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Backbone H bonds",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "protein"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Sequence</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 20 q12 -70 24 0 t24 0 t24 0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Alpha helix</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Beta sheet</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"-20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Backbone H bonds</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-01-04-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "Which interaction chiefly stabilizes a typical alpha helix?",
+    "type": "choice",
+    "options": [
+      "Disulfides at every turn",
+      "Backbone hydrogen bonding",
+      "Peptide hydrolysis",
+      "Base pairing"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Sequence",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Alpha helix",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Beta sheet",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Backbone H bonds",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "protein"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Sequence</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 20 q12 -70 24 0 t24 0 t24 0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Alpha helix</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Beta sheet</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"-20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Backbone H bonds</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-01-04-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "A mutation changes one residue but preserves chain length. Which level necessarily changes?",
+    "type": "choice",
+    "options": [
+      "Quaternary structure",
+      "Number of subunits",
+      "Primary structure",
+      "Peptide-bond count"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Sequence",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Alpha helix",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Beta sheet",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Backbone H bonds",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "protein"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Sequence</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 20 q12 -70 24 0 t24 0 t24 0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Alpha helix</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Beta sheet</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"-20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Backbone H bonds</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-01-05-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the entity that represents quaternary organization.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Hydrophobic core",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Surface groups",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Single-chain fold",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Subunit assembly",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "protein"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Hydrophobic core</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 20 q12 -70 24 0 t24 0 t24 0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Surface groups</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Single-chain fold</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"-20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Subunit assembly</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-01-05-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "Which level specifically describes several associated polypeptides?",
+    "type": "choice",
+    "options": [
+      "Primary",
+      "Secondary only",
+      "Quaternary",
+      "Amino-acid composition"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Hydrophobic core",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Surface groups",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Single-chain fold",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Subunit assembly",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "protein"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Hydrophobic core</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 20 q12 -70 24 0 t24 0 t24 0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Surface groups</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Single-chain fold</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"-20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Subunit assembly</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-01-05-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "For a soluble protein in water, where is leucine often favored?",
+    "type": "choice",
+    "options": [
+      "Only at a charged surface",
+      "Covalently bound to water",
+      "Only at the N terminus",
+      "In a hydrophobic interior"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Hydrophobic core",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Surface groups",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Single-chain fold",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Subunit assembly",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "protein"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Hydrophobic core</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 20 q12 -70 24 0 t24 0 t24 0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Surface groups</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Single-chain fold</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"-20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Subunit assembly</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-01-06-workshop-v1/map",
+    "subject": "biochemistry",
+    "prompt": "Select the state most directly associated with loss of native tertiary organization.",
+    "type": "selection",
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Native fold",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Heat or solvent",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Unfolded chain",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Possible recovery",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "protein"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Native fold</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 20 q12 -70 24 0 t24 0 t24 0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Heat or solvent</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Unfolded chain</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"-20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Possible recovery</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-01-06-workshop-v1/reason",
+    "subject": "biochemistry",
+    "prompt": "Which event is not required for denaturation?",
+    "type": "choice",
+    "options": [
+      "Loss of native folding",
+      "Disruption of some noncovalent interactions",
+      "Change in functional conformation",
+      "Cleavage of the primary peptide chain"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Native fold",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Heat or solvent",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Unfolded chain",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Possible recovery",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "protein"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Native fold</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 20 q12 -70 24 0 t24 0 t24 0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Heat or solvent</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Unfolded chain</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"-20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Possible recovery</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  },
+  {
+    "id": "bc-01-06-workshop-v1/transfer",
+    "subject": "biochemistry",
+    "prompt": "An unfolded protein aggregates after cooling. What follows?",
+    "type": "choice",
+    "options": [
+      "Refolding was not guaranteed",
+      "Its sequence must be intact and active",
+      "All denaturation is reversible",
+      "Aggregation proves peptide hydrolysis"
+    ],
+    "diagram": {
+      "kind": "concept-schematic",
+      "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+      "nodes": [
+        {
+          "id": "part-0",
+          "label": "Native fold",
+          "x": 110,
+          "y": 55
+        },
+        {
+          "id": "part-1",
+          "label": "Heat or solvent",
+          "x": 290,
+          "y": 55
+        },
+        {
+          "id": "part-2",
+          "label": "Unfolded chain",
+          "x": 110,
+          "y": 175
+        },
+        {
+          "id": "part-3",
+          "label": "Possible recovery",
+          "x": 290,
+          "y": 175
+        }
+      ],
+      "edges": [],
+      "visual": {
+        "type": "protein"
+      },
+      "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Native fold</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 20 q12 -70 24 0 t24 0 t24 0\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Heat or solvent</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-48 0 Q-25 -42 0 0 T48 0\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-40\" cy=\"0\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-20\" cy=\"18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"2.204364238465236e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"-18\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"40\" cy=\"-4.408728476930472e-15\" r=\"6\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Unfolded chain</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"-20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"20\" cy=\"0\" r=\"22\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Possible recovery</text></g></svg>"
+    },
+    "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+  }
+]
+PASS 2: Audit every lesson step, rule, cue, trap, application, diagram, prompt, option, key, hint and explanation below. Compare your independently recorded answers; do not assume the encoded key is correct.
+{
+  "chapter": {
+    "version": 1,
+    "id": "chapter-01",
+    "title": "Amino Acids, Peptides, and Proteins",
+    "status": "implemented",
+    "scopeNote": "Original condensed MCAT biochemistry lessons covering the declared outline sections. This release is implemented, not independently scientifically verified; it is not exhaustive textbook coverage.",
+    "lessons": [
+      {
+        "id": "concept-1-1",
+        "title": "Amino Acids Found in Proteins",
+        "section": "1.1",
+        "asset": "bc01-01",
+        "steps": [
+          {
+            "text": "Protein amino acids share an alpha carbon attached to an amino group, a carboxyl group, hydrogen and a side chain. Side-chain chemistry changes polarity, charge and packing.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "At near-neutral pH, free amino acids usually have ammonium and carboxylate groups. Aspartate and glutamate tend to be negative; lysine and arginine tend to be positive. Histidine protonation depends strongly on its environment.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Glycine has two hydrogens at its alpha carbon and is achiral. Protein amino acids are predominantly L; L does not mean that every alpha center has an S configuration.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Two cysteine side chains can form a covalent disulfide on oxidation. Methionine contains sulfur but does not form the same disulfide cross-link.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "1.1 · Organize: Backbone",
+          "paragraphs": [
+            "Protein amino acids share an alpha carbon attached to an amino group, a carboxyl group, hydrogen and a side chain. Side-chain chemistry changes polarity, charge and packing.",
+            "At near-neutral pH, free amino acids usually have ammonium and carboxylate groups. Aspartate and glutamate tend to be negative; lysine and arginine tend to be positive. Histidine protonation depends strongly on its environment."
+          ]
+        },
+        "memoryCue": {
+          "title": "1.1 · Gly is the symmetry exception; Cys can cross-link.",
+          "paragraphs": [
+            "Gly is the symmetry exception; Cys can cross-link.",
+            "At near-neutral pH, free amino acids usually have ammonium and carboxylate groups. Aspartate and glutamate tend to be negative; lysine and arginine tend to be positive. Histidine protonation depends strongly on its environment."
+          ]
+        },
+        "traps": {
+          "title": "1.1 · Check: Glycine",
+          "paragraphs": [
+            "Glycine has two hydrogens at its alpha carbon and is achiral. Protein amino acids are predominantly L; L does not mean that every alpha center has an S configuration.",
+            "Two cysteine side chains can form a covalent disulfide on oxidation. Methionine contains sulfur but does not form the same disulfide cross-link."
+          ]
+        },
+        "application": {
+          "title": "1.1 · Apply: Cysteine",
+          "paragraphs": [
+            "Two cysteine side chains can form a covalent disulfide on oxidation. Methionine contains sulfur but does not form the same disulfide cross-link.",
+            "Protein amino acids share an alpha carbon attached to an amino group, a carboxyl group, hydrogen and a side chain. Side-chain chemistry changes polarity, charge and packing."
+          ]
+        }
+      },
+      {
+        "id": "concept-1-2",
+        "title": "Acid–Base Chemistry of Amino Acids",
+        "section": "1.2",
+        "asset": "bc01-02",
+        "steps": [
+          {
+            "text": "For one ionizable group, pH below its pKa favors the protonated form; pH above its pKa favors the deprotonated form. Count every group before summing net charge.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "The isoelectric point is the pH at which the average net charge is zero. For an amino acid without an ionizable side chain, average the two pKa values that bracket its neutral form.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "An acidic or basic side chain changes which two pKa values bracket zero charge. Averaging the smallest and largest pKa without checking charge states can give the wrong pI.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "A buffer is most effective near a relevant pKa. At pH = pKa, the deprotonated-to-protonated ratio for that group is one; zero net charge does not mean all groups are uncharged.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "1.2 · Organize: Low pH",
+          "paragraphs": [
+            "For one ionizable group, pH below its pKa favors the protonated form; pH above its pKa favors the deprotonated form. Count every group before summing net charge.",
+            "The isoelectric point is the pH at which the average net charge is zero. For an amino acid without an ionizable side chain, average the two pKa values that bracket its neutral form."
+          ]
+        },
+        "memoryCue": {
+          "title": "1.2 · Above pKa, subtract a proton; bracket zero to find pI.",
+          "paragraphs": [
+            "Above pKa, subtract a proton; bracket zero to find pI.",
+            "The isoelectric point is the pH at which the average net charge is zero. For an amino acid without an ionizable side chain, average the two pKa values that bracket its neutral form."
+          ]
+        },
+        "traps": {
+          "title": "1.2 · Check: High pH",
+          "paragraphs": [
+            "An acidic or basic side chain changes which two pKa values bracket zero charge. Averaging the smallest and largest pKa without checking charge states can give the wrong pI.",
+            "A buffer is most effective near a relevant pKa. At pH = pKa, the deprotonated-to-protonated ratio for that group is one; zero net charge does not mean all groups are uncharged."
+          ]
+        },
+        "application": {
+          "title": "1.2 · Apply: Buffer region",
+          "paragraphs": [
+            "A buffer is most effective near a relevant pKa. At pH = pKa, the deprotonated-to-protonated ratio for that group is one; zero net charge does not mean all groups are uncharged.",
+            "For one ionizable group, pH below its pKa favors the protonated form; pH above its pKa favors the deprotonated form. Count every group before summing net charge."
+          ]
+        }
+      },
+      {
+        "id": "concept-1-3",
+        "title": "Peptide Bond Formation and Hydrolysis",
+        "section": "1.3",
+        "asset": "bc01-03",
+        "steps": [
+          {
+            "text": "A peptide bond is an amide linkage between a carboxyl-derived carbon and an amino-derived nitrogen. The chain is conventionally read from its N terminus toward its C terminus.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Resonance gives the peptide C–N bond partial double-bond character, making the peptide unit approximately planar. Rotation around the adjacent backbone bonds still permits conformations.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Hydrolysis cleaves the amide using water. Cellular peptide synthesis uses activated substrates and ribosomal machinery; it is not spontaneous dehydration of free amino acids in water.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "A linear chain of n amino acids has n minus one peptide bonds. Side chains retain their identities, while most internal backbone amino and carboxyl groups are tied up in amides.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "1.3 · Organize: Free amino acids",
+          "paragraphs": [
+            "A peptide bond is an amide linkage between a carboxyl-derived carbon and an amino-derived nitrogen. The chain is conventionally read from its N terminus toward its C terminus.",
+            "Resonance gives the peptide C–N bond partial double-bond character, making the peptide unit approximately planar. Rotation around the adjacent backbone bonds still permits conformations."
+          ]
+        },
+        "memoryCue": {
+          "title": "1.3 · N to C reads the chain; n residues need n minus one links.",
+          "paragraphs": [
+            "N to C reads the chain; n residues need n minus one links.",
+            "Resonance gives the peptide C–N bond partial double-bond character, making the peptide unit approximately planar. Rotation around the adjacent backbone bonds still permits conformations."
+          ]
+        },
+        "traps": {
+          "title": "1.3 · Check: N terminus",
+          "paragraphs": [
+            "Hydrolysis cleaves the amide using water. Cellular peptide synthesis uses activated substrates and ribosomal machinery; it is not spontaneous dehydration of free amino acids in water.",
+            "A linear chain of n amino acids has n minus one peptide bonds. Side chains retain their identities, while most internal backbone amino and carboxyl groups are tied up in amides."
+          ]
+        },
+        "application": {
+          "title": "1.3 · Apply: C terminus",
+          "paragraphs": [
+            "A linear chain of n amino acids has n minus one peptide bonds. Side chains retain their identities, while most internal backbone amino and carboxyl groups are tied up in amides.",
+            "A peptide bond is an amide linkage between a carboxyl-derived carbon and an amino-derived nitrogen. The chain is conventionally read from its N terminus toward its C terminus."
+          ]
+        }
+      },
+      {
+        "id": "concept-1-4",
+        "title": "Primary and Secondary Protein Structure",
+        "section": "1.4",
+        "asset": "bc01-04",
+        "steps": [
+          {
+            "text": "Primary structure is the covalent amino-acid sequence. A sequence substitution can change higher-order folding even when chain length remains constant.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Alpha helices and beta sheets are secondary structures stabilized chiefly by hydrogen bonding between backbone carbonyl oxygens and amide hydrogens.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "In an alpha helix, side chains project outward. Beta sheets contain aligned strands that may be parallel or antiparallel; side chains alternate above and below the sheet.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Proline and glycine affect conformational preferences, but a sequence motif does not guarantee one fold in every context. Secondary structure is not synonymous with side-chain bonding.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "1.4 · Organize: Sequence",
+          "paragraphs": [
+            "Primary structure is the covalent amino-acid sequence. A sequence substitution can change higher-order folding even when chain length remains constant.",
+            "Alpha helices and beta sheets are secondary structures stabilized chiefly by hydrogen bonding between backbone carbonyl oxygens and amide hydrogens."
+          ]
+        },
+        "memoryCue": {
+          "title": "1.4 · Sequence first; backbone hydrogen bonds build helices and sheets.",
+          "paragraphs": [
+            "Sequence first; backbone hydrogen bonds build helices and sheets.",
+            "Alpha helices and beta sheets are secondary structures stabilized chiefly by hydrogen bonding between backbone carbonyl oxygens and amide hydrogens."
+          ]
+        },
+        "traps": {
+          "title": "1.4 · Check: Beta sheet",
+          "paragraphs": [
+            "In an alpha helix, side chains project outward. Beta sheets contain aligned strands that may be parallel or antiparallel; side chains alternate above and below the sheet.",
+            "Proline and glycine affect conformational preferences, but a sequence motif does not guarantee one fold in every context. Secondary structure is not synonymous with side-chain bonding."
+          ]
+        },
+        "application": {
+          "title": "1.4 · Apply: Backbone H bonds",
+          "paragraphs": [
+            "Proline and glycine affect conformational preferences, but a sequence motif does not guarantee one fold in every context. Secondary structure is not synonymous with side-chain bonding.",
+            "Primary structure is the covalent amino-acid sequence. A sequence substitution can change higher-order folding even when chain length remains constant."
+          ]
+        }
+      },
+      {
+        "id": "concept-1-5",
+        "title": "Tertiary and Quaternary Protein Structure",
+        "section": "1.5",
+        "asset": "bc01-05",
+        "steps": [
+          {
+            "text": "Tertiary structure describes the three-dimensional organization of one polypeptide. Hydrophobic burial often favors nonpolar side chains inside soluble proteins.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Hydrogen bonds, ionic interactions, dispersion forces and sometimes disulfides help stabilize a fold. Membrane proteins face a different environment from soluble proteins.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Quaternary structure describes association among multiple polypeptide subunits. A functional monomer has tertiary structure without requiring quaternary structure.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "Changes at a subunit interface can alter cooperativity or assembly without breaking peptide bonds. Always identify whether a question concerns one chain or a multi-chain complex.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "1.5 · Organize: Hydrophobic core",
+          "paragraphs": [
+            "Tertiary structure describes the three-dimensional organization of one polypeptide. Hydrophobic burial often favors nonpolar side chains inside soluble proteins.",
+            "Hydrogen bonds, ionic interactions, dispersion forces and sometimes disulfides help stabilize a fold. Membrane proteins face a different environment from soluble proteins."
+          ]
+        },
+        "memoryCue": {
+          "title": "1.5 · Tertiary is one chain folded; quaternary is chains assembled.",
+          "paragraphs": [
+            "Tertiary is one chain folded; quaternary is chains assembled.",
+            "Hydrogen bonds, ionic interactions, dispersion forces and sometimes disulfides help stabilize a fold. Membrane proteins face a different environment from soluble proteins."
+          ]
+        },
+        "traps": {
+          "title": "1.5 · Check: Single-chain fold",
+          "paragraphs": [
+            "Quaternary structure describes association among multiple polypeptide subunits. A functional monomer has tertiary structure without requiring quaternary structure.",
+            "Changes at a subunit interface can alter cooperativity or assembly without breaking peptide bonds. Always identify whether a question concerns one chain or a multi-chain complex."
+          ]
+        },
+        "application": {
+          "title": "1.5 · Apply: Subunit assembly",
+          "paragraphs": [
+            "Changes at a subunit interface can alter cooperativity or assembly without breaking peptide bonds. Always identify whether a question concerns one chain or a multi-chain complex.",
+            "Tertiary structure describes the three-dimensional organization of one polypeptide. Hydrophobic burial often favors nonpolar side chains inside soluble proteins."
+          ]
+        }
+      },
+      {
+        "id": "concept-1-6",
+        "title": "Denaturation",
+        "section": "1.6",
+        "asset": "bc01-06",
+        "steps": [
+          {
+            "text": "Denaturation disrupts a protein’s native higher-order structure and often its function. Heat, extreme pH and certain solvents can disturb stabilizing interactions.",
+            "focus": [
+              "part-0"
+            ]
+          },
+          {
+            "text": "Ordinary denaturation does not by itself mean peptide-bond hydrolysis. Reducing agents specifically disrupt disulfides, whereas detergents can disrupt noncovalent packing.",
+            "focus": [
+              "part-1"
+            ]
+          },
+          {
+            "text": "Some unfolded proteins refold when native conditions return; others aggregate or require assistance. Reversibility depends on sequence, damage and environment.",
+            "focus": [
+              "part-2"
+            ]
+          },
+          {
+            "text": "A loss of activity does not identify the exact structural lesion. Compare activity, solubility and structural measurements before assigning a mechanism.",
+            "focus": [
+              "part-3"
+            ]
+          }
+        ],
+        "coreRule": {
+          "title": "1.6 · Organize: Native fold",
+          "paragraphs": [
+            "Denaturation disrupts a protein’s native higher-order structure and often its function. Heat, extreme pH and certain solvents can disturb stabilizing interactions.",
+            "Ordinary denaturation does not by itself mean peptide-bond hydrolysis. Reducing agents specifically disrupt disulfides, whereas detergents can disrupt noncovalent packing."
+          ]
+        },
+        "memoryCue": {
+          "title": "1.6 · Unfolding and cutting the chain are different events.",
+          "paragraphs": [
+            "Unfolding and cutting the chain are different events.",
+            "Ordinary denaturation does not by itself mean peptide-bond hydrolysis. Reducing agents specifically disrupt disulfides, whereas detergents can disrupt noncovalent packing."
+          ]
+        },
+        "traps": {
+          "title": "1.6 · Check: Unfolded chain",
+          "paragraphs": [
+            "Some unfolded proteins refold when native conditions return; others aggregate or require assistance. Reversibility depends on sequence, damage and environment.",
+            "A loss of activity does not identify the exact structural lesion. Compare activity, solubility and structural measurements before assigning a mechanism."
+          ]
+        },
+        "application": {
+          "title": "1.6 · Apply: Possible recovery",
+          "paragraphs": [
+            "A loss of activity does not identify the exact structural lesion. Compare activity, solubility and structural measurements before assigning a mechanism.",
+            "Denaturation disrupts a protein’s native higher-order structure and often its function. Heat, extreme pH and certain solvents can disturb stabilizing interactions."
+          ]
+        }
+      }
+    ],
+    "exercises": [
+      {
+        "id": "bc-01-01-workshop-v1",
+        "title": "Amino Acids Found in Proteins",
+        "asset": "bc01-01",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the entity whose oxidation can link two protein chains.",
+            "answer": [
+              "part-3"
+            ],
+            "explanation": "The relevant schematic entity or entities are Cysteine. Two cysteine side chains can form a covalent disulfide on oxidation. Methionine contains sulfur but does not form the same disulfide cross-link.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Two cysteine side chains can form a covalent disulfide on oxidation. Methionine contains sulfur but does not form the same disulfide cross-link."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "Which free amino acid has an achiral alpha carbon?",
+            "answer": 2,
+            "options": [
+              "Alanine",
+              "Valine",
+              "Glycine",
+              "Threonine"
+            ],
+            "explanation": "Glycine. At near-neutral pH, free amino acids usually have ammonium and carboxylate groups. Aspartate and glutamate tend to be negative; lysine and arginine tend to be positive. Histidine protonation depends strongly on its environment.",
+            "hints": [
+              "Protein amino acids share an alpha carbon attached to an amino group, a carboxyl group, hydrogen and a side chain. Side-chain chemistry changes polarity, charge and packing.",
+              "At near-neutral pH, free amino acids usually have ammonium and carboxylate groups. Aspartate and glutamate tend to be negative; lysine and arginine tend to be positive. Histidine protonation depends strongly on its environment."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "Which pair can form a disulfide cross-link?",
+            "answer": 3,
+            "options": [
+              "Two methionine residues",
+              "Glycine and alanine",
+              "Two leucine residues",
+              "Two cysteine residues"
+            ],
+            "explanation": "Two cysteine residues. Glycine has two hydrogens at its alpha carbon and is achiral. Protein amino acids are predominantly L; L does not mean that every alpha center has an S configuration.",
+            "hints": [
+              "At near-neutral pH, free amino acids usually have ammonium and carboxylate groups. Aspartate and glutamate tend to be negative; lysine and arginine tend to be positive. Histidine protonation depends strongly on its environment.",
+              "Glycine has two hydrogens at its alpha carbon and is achiral. Protein amino acids are predominantly L; L does not mean that every alpha center has an S configuration."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-01-02-workshop-v1",
+        "title": "Acid–Base Chemistry of Amino Acids",
+        "asset": "bc01-02",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the region in which a conjugate acid/base pair most effectively resists pH change.",
+            "answer": [
+              "part-3"
+            ],
+            "explanation": "The relevant schematic entity or entities are Buffer region. A buffer is most effective near a relevant pKa. At pH = pKa, the deprotonated-to-protonated ratio for that group is one; zero net charge does not mean all groups are uncharged.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "A buffer is most effective near a relevant pKa. At pH = pKa, the deprotonated-to-protonated ratio for that group is one; zero net charge does not mean all groups are uncharged."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "A group has pKa 6.0. At pH 8.0 which form predominates?",
+            "answer": 3,
+            "options": [
+              "Protonated",
+              "Exactly equal forms",
+              "Cannot compare pH and pKa",
+              "Deprotonated"
+            ],
+            "explanation": "Deprotonated. The isoelectric point is the pH at which the average net charge is zero. For an amino acid without an ionizable side chain, average the two pKa values that bracket its neutral form.",
+            "hints": [
+              "For one ionizable group, pH below its pKa favors the protonated form; pH above its pKa favors the deprotonated form. Count every group before summing net charge.",
+              "The isoelectric point is the pH at which the average net charge is zero. For an amino acid without an ionizable side chain, average the two pKa values that bracket its neutral form."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "number",
+            "prompt": "A neutral-side-chain amino acid has pKa values 2.0 and 10.0. What is its approximate pI?",
+            "answer": 6,
+            "explanation": "6.0. An acidic or basic side chain changes which two pKa values bracket zero charge. Averaging the smallest and largest pKa without checking charge states can give the wrong pI.",
+            "hints": [
+              "The isoelectric point is the pH at which the average net charge is zero. For an amino acid without an ionizable side chain, average the two pKa values that bracket its neutral form.",
+              "An acidic or basic side chain changes which two pKa values bracket zero charge. Averaging the smallest and largest pKa without checking charge states can give the wrong pI."
+            ],
+            "unit": "dimensionless",
+            "tolerance": 0
+          }
+        ]
+      },
+      {
+        "id": "bc-01-03-workshop-v1",
+        "title": "Peptide Bond Formation and Hydrolysis",
+        "asset": "bc01-03",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select both ends used to specify the conventional sequence direction.",
+            "answer": [
+              "part-2",
+              "part-3"
+            ],
+            "explanation": "The relevant schematic entity or entities are N terminus, C terminus. Hydrolysis cleaves the amide using water. Cellular peptide synthesis uses activated substrates and ribosomal machinery; it is not spontaneous dehydration of free amino acids in water.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Hydrolysis cleaves the amide using water. Cellular peptide synthesis uses activated substrates and ribosomal machinery; it is not spontaneous dehydration of free amino acids in water."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "number",
+            "prompt": "How many peptide bonds are in a linear pentapeptide?",
+            "answer": 4,
+            "explanation": "4. Resonance gives the peptide C–N bond partial double-bond character, making the peptide unit approximately planar. Rotation around the adjacent backbone bonds still permits conformations.",
+            "hints": [
+              "A peptide bond is an amide linkage between a carboxyl-derived carbon and an amino-derived nitrogen. The chain is conventionally read from its N terminus toward its C terminus.",
+              "Resonance gives the peptide C–N bond partial double-bond character, making the peptide unit approximately planar. Rotation around the adjacent backbone bonds still permits conformations."
+            ],
+            "unit": "dimensionless",
+            "tolerance": 0
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "Which statement best explains peptide-unit planarity?",
+            "answer": 1,
+            "options": [
+              "Every backbone bond is a double bond",
+              "Amide resonance restricts C–N rotation",
+              "Side chains are identical",
+              "Hydrolysis is impossible"
+            ],
+            "explanation": "Amide resonance restricts C–N rotation. Hydrolysis cleaves the amide using water. Cellular peptide synthesis uses activated substrates and ribosomal machinery; it is not spontaneous dehydration of free amino acids in water.",
+            "hints": [
+              "Resonance gives the peptide C–N bond partial double-bond character, making the peptide unit approximately planar. Rotation around the adjacent backbone bonds still permits conformations.",
+              "Hydrolysis cleaves the amide using water. Cellular peptide synthesis uses activated substrates and ribosomal machinery; it is not spontaneous dehydration of free amino acids in water."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-01-04-workshop-v1",
+        "title": "Primary and Secondary Protein Structure",
+        "asset": "bc01-04",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select both common secondary-structure motifs.",
+            "answer": [
+              "part-1",
+              "part-2"
+            ],
+            "explanation": "The relevant schematic entity or entities are Alpha helix, Beta sheet. Alpha helices and beta sheets are secondary structures stabilized chiefly by hydrogen bonding between backbone carbonyl oxygens and amide hydrogens.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Alpha helices and beta sheets are secondary structures stabilized chiefly by hydrogen bonding between backbone carbonyl oxygens and amide hydrogens."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "Which interaction chiefly stabilizes a typical alpha helix?",
+            "answer": 1,
+            "options": [
+              "Disulfides at every turn",
+              "Backbone hydrogen bonding",
+              "Peptide hydrolysis",
+              "Base pairing"
+            ],
+            "explanation": "Backbone hydrogen bonding. Alpha helices and beta sheets are secondary structures stabilized chiefly by hydrogen bonding between backbone carbonyl oxygens and amide hydrogens.",
+            "hints": [
+              "Primary structure is the covalent amino-acid sequence. A sequence substitution can change higher-order folding even when chain length remains constant.",
+              "Alpha helices and beta sheets are secondary structures stabilized chiefly by hydrogen bonding between backbone carbonyl oxygens and amide hydrogens."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "A mutation changes one residue but preserves chain length. Which level necessarily changes?",
+            "answer": 2,
+            "options": [
+              "Quaternary structure",
+              "Number of subunits",
+              "Primary structure",
+              "Peptide-bond count"
+            ],
+            "explanation": "Primary structure. In an alpha helix, side chains project outward. Beta sheets contain aligned strands that may be parallel or antiparallel; side chains alternate above and below the sheet.",
+            "hints": [
+              "Alpha helices and beta sheets are secondary structures stabilized chiefly by hydrogen bonding between backbone carbonyl oxygens and amide hydrogens.",
+              "In an alpha helix, side chains project outward. Beta sheets contain aligned strands that may be parallel or antiparallel; side chains alternate above and below the sheet."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-01-05-workshop-v1",
+        "title": "Tertiary and Quaternary Protein Structure",
+        "asset": "bc01-05",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the entity that represents quaternary organization.",
+            "answer": [
+              "part-3"
+            ],
+            "explanation": "The relevant schematic entity or entities are Subunit assembly. Changes at a subunit interface can alter cooperativity or assembly without breaking peptide bonds. Always identify whether a question concerns one chain or a multi-chain complex.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Changes at a subunit interface can alter cooperativity or assembly without breaking peptide bonds. Always identify whether a question concerns one chain or a multi-chain complex."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "Which level specifically describes several associated polypeptides?",
+            "answer": 2,
+            "options": [
+              "Primary",
+              "Secondary only",
+              "Quaternary",
+              "Amino-acid composition"
+            ],
+            "explanation": "Quaternary. Hydrogen bonds, ionic interactions, dispersion forces and sometimes disulfides help stabilize a fold. Membrane proteins face a different environment from soluble proteins.",
+            "hints": [
+              "Tertiary structure describes the three-dimensional organization of one polypeptide. Hydrophobic burial often favors nonpolar side chains inside soluble proteins.",
+              "Hydrogen bonds, ionic interactions, dispersion forces and sometimes disulfides help stabilize a fold. Membrane proteins face a different environment from soluble proteins."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "For a soluble protein in water, where is leucine often favored?",
+            "answer": 3,
+            "options": [
+              "Only at a charged surface",
+              "Covalently bound to water",
+              "Only at the N terminus",
+              "In a hydrophobic interior"
+            ],
+            "explanation": "In a hydrophobic interior. Quaternary structure describes association among multiple polypeptide subunits. A functional monomer has tertiary structure without requiring quaternary structure.",
+            "hints": [
+              "Hydrogen bonds, ionic interactions, dispersion forces and sometimes disulfides help stabilize a fold. Membrane proteins face a different environment from soluble proteins.",
+              "Quaternary structure describes association among multiple polypeptide subunits. A functional monomer has tertiary structure without requiring quaternary structure."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc-01-06-workshop-v1",
+        "title": "Denaturation",
+        "asset": "bc01-06",
+        "stages": [
+          {
+            "id": "map",
+            "type": "selection",
+            "prompt": "Select the state most directly associated with loss of native tertiary organization.",
+            "answer": [
+              "part-2"
+            ],
+            "explanation": "The relevant schematic entity or entities are Unfolded chain. Some unfolded proteins refold when native conditions return; others aggregate or require assistance. Reversibility depends on sequence, damage and environment.",
+            "hints": [
+              "Identify the role named in the prompt before selecting a diagram entity.",
+              "Some unfolded proteins refold when native conditions return; others aggregate or require assistance. Reversibility depends on sequence, damage and environment."
+            ]
+          },
+          {
+            "id": "reason",
+            "type": "choice",
+            "prompt": "Which event is not required for denaturation?",
+            "answer": 3,
+            "options": [
+              "Loss of native folding",
+              "Disruption of some noncovalent interactions",
+              "Change in functional conformation",
+              "Cleavage of the primary peptide chain"
+            ],
+            "explanation": "Cleavage of the primary peptide chain. Ordinary denaturation does not by itself mean peptide-bond hydrolysis. Reducing agents specifically disrupt disulfides, whereas detergents can disrupt noncovalent packing.",
+            "hints": [
+              "Denaturation disrupts a protein’s native higher-order structure and often its function. Heat, extreme pH and certain solvents can disturb stabilizing interactions.",
+              "Ordinary denaturation does not by itself mean peptide-bond hydrolysis. Reducing agents specifically disrupt disulfides, whereas detergents can disrupt noncovalent packing."
+            ]
+          },
+          {
+            "id": "transfer",
+            "type": "choice",
+            "prompt": "An unfolded protein aggregates after cooling. What follows?",
+            "answer": 0,
+            "options": [
+              "Refolding was not guaranteed",
+              "Its sequence must be intact and active",
+              "All denaturation is reversible",
+              "Aggregation proves peptide hydrolysis"
+            ],
+            "explanation": "Refolding was not guaranteed. Some unfolded proteins refold when native conditions return; others aggregate or require assistance. Reversibility depends on sequence, damage and environment.",
+            "hints": [
+              "Ordinary denaturation does not by itself mean peptide-bond hydrolysis. Reducing agents specifically disrupt disulfides, whereas detergents can disrupt noncovalent packing.",
+              "Some unfolded proteins refold when native conditions return; others aggregate or require assistance. Reversibility depends on sequence, damage and environment."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "version": 1,
+    "assets": [
+      {
+        "id": "bc01-01",
+        "kind": "concept-schematic",
+        "title": "Amino Acids Found in Proteins",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Backbone",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Side chain",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Glycine",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Cysteine",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "protein"
+        }
+      },
+      {
+        "id": "bc01-02",
+        "kind": "concept-schematic",
+        "title": "Acid–Base Chemistry of Amino Acids",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Low pH",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Isoelectric point",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "High pH",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Buffer region",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "balance"
+        }
+      },
+      {
+        "id": "bc01-03",
+        "kind": "concept-schematic",
+        "title": "Peptide Bond Formation and Hydrolysis",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Free amino acids",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Peptide bond",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "N terminus",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "C terminus",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "pathway"
+        }
+      },
+      {
+        "id": "bc01-04",
+        "kind": "concept-schematic",
+        "title": "Primary and Secondary Protein Structure",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Sequence",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Alpha helix",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Beta sheet",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Backbone H bonds",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "protein"
+        }
+      },
+      {
+        "id": "bc01-05",
+        "kind": "concept-schematic",
+        "title": "Tertiary and Quaternary Protein Structure",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Hydrophobic core",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Surface groups",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Single-chain fold",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Subunit assembly",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "protein"
+        }
+      },
+      {
+        "id": "bc01-06",
+        "kind": "concept-schematic",
+        "title": "Denaturation",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "reviewNote": "Author-created conceptual representation; verify labels, compartment assumptions and process relationships independently. No independent scientific sign-off.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Native fold",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Heat or solvent",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Unfolded chain",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Possible recovery",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "protein"
+        }
+      }
+    ]
+  }
+}
+REPORT BY CHAPTER: item ID, severity (critical/major/minor), exact claim, independent answer, encoded key, evidence, correction, uncertainty. Include coverage counts, unresolved questions and a verdict. Cite only inspected sources. Label any incomplete coverage PARTIAL with exact remaining IDs. Do not execute commands or modify curriculum. Model review is candidate evidence, not expert sign-off.
+For strictly blind evidence use a fresh conversation with blind.json only; freeze its response before supplying keyed-audit.json in a separate pass. This combined file contains keys and cannot guarantee blindness.
