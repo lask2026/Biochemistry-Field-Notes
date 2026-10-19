@@ -1,0 +1,419 @@
+{
+  "chapter": "chapter-05",
+  "cases": [
+    {
+      "id": "bc-05-01-workshop-v1/map",
+      "subject": "biochemistry",
+      "prompt": "Select the component with temperature-dependent effects on lipid packing.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Polar heads",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Hydrophobic tails",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Bilayer",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Cholesterol",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "membrane"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"-32\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-34 -12 v32 M-29 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-16\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 -12 v32 M-13 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-2 -12 v32 M3 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"16\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M14 -12 v32 M19 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"32\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M30 -12 v32 M35 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g transform=\"rotate(180)\"><circle class=\"outline\" cx=\"-32\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-34 -12 v32 M-29 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-16\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 -12 v32 M-13 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-2 -12 v32 M3 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"16\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M14 -12 v32 M19 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"32\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M30 -12 v32 M35 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Polar heads</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"-32\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-34 -12 v32 M-29 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-16\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 -12 v32 M-13 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-2 -12 v32 M3 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"16\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M14 -12 v32 M19 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"32\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M30 -12 v32 M35 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g transform=\"rotate(180)\"><circle class=\"outline\" cx=\"-32\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-34 -12 v32 M-29 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-16\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 -12 v32 M-13 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-2 -12 v32 M3 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"16\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M14 -12 v32 M19 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"32\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M30 -12 v32 M35 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Hydrophobic tails</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"-32\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-34 -12 v32 M-29 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-16\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 -12 v32 M-13 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-2 -12 v32 M3 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"16\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M14 -12 v32 M19 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"32\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M30 -12 v32 M35 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g transform=\"rotate(180)\"><circle class=\"outline\" cx=\"-32\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-34 -12 v32 M-29 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-16\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 -12 v32 M-13 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-2 -12 v32 M3 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"16\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M14 -12 v32 M19 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"32\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M30 -12 v32 M35 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Bilayer</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"28\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-32\" cy=\"-18\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-34 -12 v32 M-29 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-16\" cy=\"-18\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 -12 v32 M-13 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-18\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-2 -12 v32 M3 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"16\" cy=\"-18\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M14 -12 v32 M19 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"32\" cy=\"-18\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M30 -12 v32 M35 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Cholesterol</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-05-01-workshop-v1/reason",
+      "subject": "biochemistry",
+      "prompt": "Which change generally reduces tight tail packing?",
+      "type": "choice",
+      "options": [
+        "Replacing cis bonds with saturated chains",
+        "Lengthening all saturated tails",
+        "Adding cis double bonds",
+        "Removing every polar head"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Polar heads",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Hydrophobic tails",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Bilayer",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Cholesterol",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "membrane"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"-32\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-34 -12 v32 M-29 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-16\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 -12 v32 M-13 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-2 -12 v32 M3 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"16\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M14 -12 v32 M19 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"32\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M30 -12 v32 M35 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g transform=\"rotate(180)\"><circle class=\"outline\" cx=\"-32\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-34 -12 v32 M-29 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-16\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 -12 v32 M-13 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-2 -12 v32 M3 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"16\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M14 -12 v32 M19 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"32\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M30 -12 v32 M35 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Polar heads</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"-32\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-34 -12 v32 M-29 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-16\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 -12 v32 M-13 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-2 -12 v32 M3 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"16\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M14 -12 v32 M19 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"32\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M30 -12 v32 M35 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g transform=\"rotate(180)\"><circle class=\"outline\" cx=\"-32\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-34 -12 v32 M-29 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-16\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 -12 v32 M-13 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-2 -12 v32 M3 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"16\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M14 -12 v32 M19 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"32\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M30 -12 v32 M35 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Hydrophobic tails</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"-32\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-34 -12 v32 M-29 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-16\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 -12 v32 M-13 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-2 -12 v32 M3 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"16\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M14 -12 v32 M19 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"32\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M30 -12 v32 M35 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g transform=\"rotate(180)\"><circle class=\"outline\" cx=\"-32\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-34 -12 v32 M-29 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-16\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 -12 v32 M-13 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-2 -12 v32 M3 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"16\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M14 -12 v32 M19 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"32\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M30 -12 v32 M35 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Bilayer</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"28\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-32\" cy=\"-18\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-34 -12 v32 M-29 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-16\" cy=\"-18\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 -12 v32 M-13 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-18\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-2 -12 v32 M3 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"16\" cy=\"-18\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M14 -12 v32 M19 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"32\" cy=\"-18\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M30 -12 v32 M35 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Cholesterol</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-05-01-workshop-v1/transfer",
+      "subject": "biochemistry",
+      "prompt": "Where do phospholipid tails generally lie in a bilayer?",
+      "type": "choice",
+      "options": [
+        "Only in bulk water",
+        "Covalently attached to DNA",
+        "Outside the membrane as free ions",
+        "In the hydrophobic interior"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Polar heads",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Hydrophobic tails",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Bilayer",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Cholesterol",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "membrane"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"-32\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-34 -12 v32 M-29 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-16\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 -12 v32 M-13 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-2 -12 v32 M3 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"16\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M14 -12 v32 M19 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"32\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M30 -12 v32 M35 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g transform=\"rotate(180)\"><circle class=\"outline\" cx=\"-32\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-34 -12 v32 M-29 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-16\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 -12 v32 M-13 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-2 -12 v32 M3 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"16\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M14 -12 v32 M19 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"32\" cy=\"-18\" r=\"5\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M30 -12 v32 M35 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-blue)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Polar heads</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><circle class=\"outline\" cx=\"-32\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-34 -12 v32 M-29 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-16\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 -12 v32 M-13 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-2 -12 v32 M3 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"16\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M14 -12 v32 M19 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"32\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M30 -12 v32 M35 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g transform=\"rotate(180)\"><circle class=\"outline\" cx=\"-32\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-34 -12 v32 M-29 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-16\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 -12 v32 M-13 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-2 -12 v32 M3 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"16\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M14 -12 v32 M19 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"32\" cy=\"-18\" r=\"5\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M30 -12 v32 M35 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Hydrophobic tails</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><circle class=\"outline\" cx=\"-32\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-34 -12 v32 M-29 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-16\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 -12 v32 M-13 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-2 -12 v32 M3 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"16\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M14 -12 v32 M19 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"32\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M30 -12 v32 M35 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g transform=\"rotate(180)\"><circle class=\"outline\" cx=\"-32\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-34 -12 v32 M-29 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-16\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 -12 v32 M-13 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-2 -12 v32 M3 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"16\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M14 -12 v32 M19 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"32\" cy=\"-18\" r=\"5\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M30 -12 v32 M35 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Bilayer</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"28\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"-32\" cy=\"-18\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-34 -12 v32 M-29 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-16\" cy=\"-18\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-18 -12 v32 M-13 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-18\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M-2 -12 v32 M3 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"16\" cy=\"-18\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M14 -12 v32 M19 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"32\" cy=\"-18\" r=\"5\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><path class=\"outline\" d=\"M30 -12 v32 M35 -12 v10 l5 7 v11\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Cholesterol</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-05-02-workshop-v1/map",
+      "subject": "biochemistry",
+      "prompt": "Select the membrane-associated precursor class that can be cleaved into DAG and an inositol phosphate messenger.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Steroid signal",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Eicosanoid",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Phosphoinositide",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Receptor",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "signal"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"18\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Steroid signal</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 15 H-12 V-10 H12 V15 H40\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-22\" r=\"10\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Eicosanoid</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Phosphoinositide</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Receptor</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-05-02-workshop-v1/reason",
+      "subject": "biochemistry",
+      "prompt": "What is a precursor for steroid hormones?",
+      "type": "choice",
+      "options": [
+        "Glycogen",
+        "DNA",
+        "Cellulose",
+        "Cholesterol"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Steroid signal",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Eicosanoid",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Phosphoinositide",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Receptor",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "signal"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"18\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Steroid signal</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 15 H-12 V-10 H12 V15 H40\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-22\" r=\"10\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Eicosanoid</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Phosphoinositide</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Receptor</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-05-02-workshop-v1/transfer",
+      "subject": "biochemistry",
+      "prompt": "A lipid-derived signal acts through a surface receptor. Which inference is justified?",
+      "type": "choice",
+      "options": [
+        "Lipid origin does not dictate receptor location",
+        "All lipid signals enter the nucleus directly",
+        "The signal cannot be a lipid derivative",
+        "The receptor must be an ion channel"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Steroid signal",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Eicosanoid",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Phosphoinositide",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Receptor",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "signal"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"18\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Steroid signal</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-40 15 H-12 V-10 H12 V15 H40\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"0\" cy=\"-22\" r=\"10\" fill=\"var(--v-purple)\" fill-opacity=\".12\" stroke=\"var(--v-purple)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Eicosanoid</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-green)\" fill-opacity=\".12\" stroke=\"var(--v-green)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Phosphoinositide</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-35 0 H-15 M-5 0 H15 M25 0 H42\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle class=\"outline\" cx=\"-25\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"5\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"35\" cy=\"0\" r=\"8\" fill=\"var(--v-gold)\" fill-opacity=\".12\" stroke=\"var(--v-gold)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Receptor</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-05-03-workshop-v1/map",
+      "subject": "biochemistry",
+      "prompt": "Select the process that extracts energy from reduced fatty-acid carbon.",
+      "type": "selection",
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Triacylglycerol",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Fatty-acid chains",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Adipose storage",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Oxidation",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "lipid"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"32\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Triacylglycerol</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Fatty-acid chains</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Adipose storage</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Oxidation</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-05-03-workshop-v1/reason",
+      "subject": "biochemistry",
+      "prompt": "How many fatty-acid chains are esterified in one triacylglycerol?",
+      "type": "choice",
+      "options": [
+        "Three",
+        "One",
+        "Two",
+        "Four"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Triacylglycerol",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Fatty-acid chains",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Adipose storage",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Oxidation",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "lipid"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"32\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Triacylglycerol</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Fatty-acid chains</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Adipose storage</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Oxidation</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    },
+    {
+      "id": "bc-05-03-workshop-v1/transfer",
+      "subject": "biochemistry",
+      "prompt": "Why is fat a compact long-term fuel store?",
+      "type": "choice",
+      "options": [
+        "It contains no chemical bonds",
+        "Highly reduced carbon and little associated water",
+        "It is a major water-soluble polymer",
+        "Every cell oxidizes it without mitochondria"
+      ],
+      "diagram": {
+        "kind": "concept-schematic",
+        "context": "Original qualitative biochemical schematic. Entities represent concepts or process components, not molecular graphs, measured data or a complete reaction mechanism.",
+        "nodes": [
+          {
+            "id": "part-0",
+            "label": "Triacylglycerol",
+            "x": 110,
+            "y": 55
+          },
+          {
+            "id": "part-1",
+            "label": "Fatty-acid chains",
+            "x": 290,
+            "y": 55
+          },
+          {
+            "id": "part-2",
+            "label": "Adipose storage",
+            "x": 110,
+            "y": 175
+          },
+          {
+            "id": "part-3",
+            "label": "Oxidation",
+            "x": 290,
+            "y": 175
+          }
+        ],
+        "edges": [],
+        "visual": {
+          "type": "lipid"
+        },
+        "originalSvg": "<svg style=\"--v-blue:#2563eb;--v-red:#be123c;--v-gold:#a16207;--v-green:#047857;--v-purple:#7c3aed;--card:#fff;--ink:#0f172a;--sec:#334155;background:#fff\" class=\"biochemistry-illustration\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 420\" role=\"img\" aria-label=\"Original problem diagram — original biochemical concept schematic\"><style>.part-label{font:750 17px system-ui,sans-serif;fill:#0f172a;paint-order:stroke;stroke:#fff;stroke-width:4px}.anatomy-note{font:600 16px system-ui,sans-serif;fill:#334155}.flow{stroke-dasharray:2 19;stroke-linecap:round}</style><defs><marker id=\"bio-flow-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L5,3 L0,6\" fill=\"var(--v-gold)\"/></marker></defs><text class=\"anatomy-note\" x=\"320\" y=\"28\" text-anchor=\"middle\">Concept symbols · not molecular structures</text><g data-part=\"part-0\"  class=\"entity bio-part  \"><g transform=\"translate(155 105)\"><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"32\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/><circle class=\"outline\" cx=\"0\" cy=\"0\" r=\"14\" fill=\"var(--v-blue)\" fill-opacity=\".12\" stroke=\"var(--v-blue)\" stroke-width=\"3\"/></g><text class=\"part-label\" x=\"155\" y=\"169\" text-anchor=\"middle\">Triacylglycerol</text></g><g data-part=\"part-1\"  class=\"entity bio-part  \"><g transform=\"translate(485 105)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-purple)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"169\" text-anchor=\"middle\">Fatty-acid chains</text></g><g data-part=\"part-2\"  class=\"entity bio-part  \"><g transform=\"translate(155 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-green)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"155\" y=\"359\" text-anchor=\"middle\">Adipose storage</text></g><g data-part=\"part-3\"  class=\"entity bio-part  \"><g transform=\"translate(485 295)\"><path class=\"outline\" d=\"M-30 -25 v50 M-30 -20 h15 l10 12 10 -12 10 12 10 -12 M-30 0 h15 l10 12 10 -12 10 12 10 -12 M-30 20 h15 l10 12 10 -12 10 12 10 -12\" fill=\"none\" stroke=\"var(--v-gold)\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></g><text class=\"part-label\" x=\"485\" y=\"359\" text-anchor=\"middle\">Oxidation</text></g></svg>"
+      },
+      "responseFormat": "Return JSON: {caseId, answer, reasoning, confidence, ambiguity}. Choices: zero-based index. Selections: node IDs. Numeric answers: number in the requested unit. Do not execute commands."
+    }
+  ]
+}

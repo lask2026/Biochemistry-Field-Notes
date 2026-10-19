@@ -1,0 +1,353 @@
+{
+  "version": 1,
+  "id": "chapter-05",
+  "title": "Lipid Structure and Function",
+  "status": "implemented",
+  "scopeNote": "Original condensed MCAT biochemistry lessons covering the declared outline sections. This release is implemented, not independently scientifically verified; it is not exhaustive textbook coverage.",
+  "lessons": [
+    {
+      "id": "concept-5-1",
+      "title": "Structural Lipids",
+      "section": "5.1",
+      "asset": "bc05-01",
+      "steps": [
+        {
+          "text": "Amphipathic lipids contain both water-compatible and hydrophobic regions. Many phospholipids form bilayers with head groups facing water and tails packed inward.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "Cis unsaturation introduces bends that hinder close packing. Shorter tails and more cis double bonds generally increase fluidity at otherwise similar conditions.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Cholesterol modulates packing and permeability. Its effect on fluidity depends on temperature and composition; it is not a universal fluidizer or rigidifier.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Sphingolipids and glycerophospholipids have different backbones. A membrane schematic shows organization, not atom-by-atom structure or a universal lipid ratio.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "5.1 · Organize: Polar heads",
+        "paragraphs": [
+          "Amphipathic lipids contain both water-compatible and hydrophobic regions. Many phospholipids form bilayers with head groups facing water and tails packed inward.",
+          "Cis unsaturation introduces bends that hinder close packing. Shorter tails and more cis double bonds generally increase fluidity at otherwise similar conditions."
+        ]
+      },
+      "memoryCue": {
+        "title": "5.1 · Heads meet water; tails meet tails.",
+        "paragraphs": [
+          "Heads meet water; tails meet tails.",
+          "Cis unsaturation introduces bends that hinder close packing. Shorter tails and more cis double bonds generally increase fluidity at otherwise similar conditions."
+        ]
+      },
+      "traps": {
+        "title": "5.1 · Check: Bilayer",
+        "paragraphs": [
+          "Cholesterol modulates packing and permeability. Its effect on fluidity depends on temperature and composition; it is not a universal fluidizer or rigidifier.",
+          "Sphingolipids and glycerophospholipids have different backbones. A membrane schematic shows organization, not atom-by-atom structure or a universal lipid ratio."
+        ]
+      },
+      "application": {
+        "title": "5.1 · Apply: Cholesterol",
+        "paragraphs": [
+          "Sphingolipids and glycerophospholipids have different backbones. A membrane schematic shows organization, not atom-by-atom structure or a universal lipid ratio.",
+          "Amphipathic lipids contain both water-compatible and hydrophobic regions. Many phospholipids form bilayers with head groups facing water and tails packed inward."
+        ]
+      }
+    },
+    {
+      "id": "concept-5-2",
+      "title": "Signaling Lipids",
+      "section": "5.2",
+      "asset": "bc05-02",
+      "steps": [
+        {
+          "text": "Some lipids act as signals or signal precursors. Steroid hormones derive from cholesterol; many eicosanoids derive from polyunsaturated fatty-acid precursors.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "Steroid receptors often act intracellularly to alter gene expression. Lipid derivation alone does not prove that every lipid signal uses an intracellular receptor.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Cleavage of a membrane phosphoinositide can generate diacylglycerol and a soluble inositol phosphate messenger. The two products occupy different cellular regions.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Signaling responses depend on receptor expression and downstream machinery. A circulating hormone can affect different tissues differently.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "5.2 · Organize: Steroid signal",
+        "paragraphs": [
+          "Some lipids act as signals or signal precursors. Steroid hormones derive from cholesterol; many eicosanoids derive from polyunsaturated fatty-acid precursors.",
+          "Steroid receptors often act intracellularly to alter gene expression. Lipid derivation alone does not prove that every lipid signal uses an intracellular receptor."
+        ]
+      },
+      "memoryCue": {
+        "title": "5.2 · Lipid origin does not dictate receptor location.",
+        "paragraphs": [
+          "Lipid origin does not dictate receptor location.",
+          "Steroid receptors often act intracellularly to alter gene expression. Lipid derivation alone does not prove that every lipid signal uses an intracellular receptor."
+        ]
+      },
+      "traps": {
+        "title": "5.2 · Check: Phosphoinositide",
+        "paragraphs": [
+          "Cleavage of a membrane phosphoinositide can generate diacylglycerol and a soluble inositol phosphate messenger. The two products occupy different cellular regions.",
+          "Signaling responses depend on receptor expression and downstream machinery. A circulating hormone can affect different tissues differently."
+        ]
+      },
+      "application": {
+        "title": "5.2 · Apply: Receptor",
+        "paragraphs": [
+          "Signaling responses depend on receptor expression and downstream machinery. A circulating hormone can affect different tissues differently.",
+          "Some lipids act as signals or signal precursors. Steroid hormones derive from cholesterol; many eicosanoids derive from polyunsaturated fatty-acid precursors."
+        ]
+      }
+    },
+    {
+      "id": "concept-5-3",
+      "title": "Energy Storage",
+      "section": "5.3",
+      "asset": "bc05-03",
+      "steps": [
+        {
+          "text": "Triacylglycerol contains glycerol esterified to three fatty acids. It is a neutral storage lipid, distinct from an amphipathic membrane phospholipid.",
+          "focus": [
+            "part-0"
+          ]
+        },
+        {
+          "text": "Fatty-acid carbons are relatively reduced and release substantial energy on oxidation. Lipid droplets store fuel with much less associated water than glycogen.",
+          "focus": [
+            "part-1"
+          ]
+        },
+        {
+          "text": "Hydrolysis releases fatty acids and glycerol for different metabolic routes. Storage lipid does not move through blood as a freely dissolved hydrophobic pool.",
+          "focus": [
+            "part-2"
+          ]
+        },
+        {
+          "text": "Energy density is a comparison per mass, not a claim that every tissue can use every lipid-derived fuel under every condition.",
+          "focus": [
+            "part-3"
+          ]
+        }
+      ],
+      "coreRule": {
+        "title": "5.3 · Organize: Triacylglycerol",
+        "paragraphs": [
+          "Triacylglycerol contains glycerol esterified to three fatty acids. It is a neutral storage lipid, distinct from an amphipathic membrane phospholipid.",
+          "Fatty-acid carbons are relatively reduced and release substantial energy on oxidation. Lipid droplets store fuel with much less associated water than glycogen."
+        ]
+      },
+      "memoryCue": {
+        "title": "5.3 · Three fatty acids on glycerol make storage triacylglycerol.",
+        "paragraphs": [
+          "Three fatty acids on glycerol make storage triacylglycerol.",
+          "Fatty-acid carbons are relatively reduced and release substantial energy on oxidation. Lipid droplets store fuel with much less associated water than glycogen."
+        ]
+      },
+      "traps": {
+        "title": "5.3 · Check: Adipose storage",
+        "paragraphs": [
+          "Hydrolysis releases fatty acids and glycerol for different metabolic routes. Storage lipid does not move through blood as a freely dissolved hydrophobic pool.",
+          "Energy density is a comparison per mass, not a claim that every tissue can use every lipid-derived fuel under every condition."
+        ]
+      },
+      "application": {
+        "title": "5.3 · Apply: Oxidation",
+        "paragraphs": [
+          "Energy density is a comparison per mass, not a claim that every tissue can use every lipid-derived fuel under every condition.",
+          "Triacylglycerol contains glycerol esterified to three fatty acids. It is a neutral storage lipid, distinct from an amphipathic membrane phospholipid."
+        ]
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "bc-05-01-workshop-v1",
+      "title": "Structural Lipids",
+      "asset": "bc05-01",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the component with temperature-dependent effects on lipid packing.",
+          "answer": [
+            "part-3"
+          ],
+          "explanation": "The relevant schematic entity or entities are Cholesterol. Sphingolipids and glycerophospholipids have different backbones. A membrane schematic shows organization, not atom-by-atom structure or a universal lipid ratio.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "Sphingolipids and glycerophospholipids have different backbones. A membrane schematic shows organization, not atom-by-atom structure or a universal lipid ratio."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "Which change generally reduces tight tail packing?",
+          "answer": 2,
+          "options": [
+            "Replacing cis bonds with saturated chains",
+            "Lengthening all saturated tails",
+            "Adding cis double bonds",
+            "Removing every polar head"
+          ],
+          "explanation": "Adding cis double bonds. Cis unsaturation introduces bends that hinder close packing. Shorter tails and more cis double bonds generally increase fluidity at otherwise similar conditions.",
+          "hints": [
+            "Amphipathic lipids contain both water-compatible and hydrophobic regions. Many phospholipids form bilayers with head groups facing water and tails packed inward.",
+            "Cis unsaturation introduces bends that hinder close packing. Shorter tails and more cis double bonds generally increase fluidity at otherwise similar conditions."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "Where do phospholipid tails generally lie in a bilayer?",
+          "answer": 3,
+          "options": [
+            "Only in bulk water",
+            "Covalently attached to DNA",
+            "Outside the membrane as free ions",
+            "In the hydrophobic interior"
+          ],
+          "explanation": "In the hydrophobic interior. Cholesterol modulates packing and permeability. Its effect on fluidity depends on temperature and composition; it is not a universal fluidizer or rigidifier.",
+          "hints": [
+            "Cis unsaturation introduces bends that hinder close packing. Shorter tails and more cis double bonds generally increase fluidity at otherwise similar conditions.",
+            "Cholesterol modulates packing and permeability. Its effect on fluidity depends on temperature and composition; it is not a universal fluidizer or rigidifier."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc-05-02-workshop-v1",
+      "title": "Signaling Lipids",
+      "asset": "bc05-02",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the membrane-associated precursor class that can be cleaved into DAG and an inositol phosphate messenger.",
+          "answer": [
+            "part-2"
+          ],
+          "explanation": "The relevant schematic entity or entities are Phosphoinositide. Cleavage of a membrane phosphoinositide can generate diacylglycerol and a soluble inositol phosphate messenger. The two products occupy different cellular regions.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "Cleavage of a membrane phosphoinositide can generate diacylglycerol and a soluble inositol phosphate messenger. The two products occupy different cellular regions."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "What is a precursor for steroid hormones?",
+          "answer": 3,
+          "options": [
+            "Glycogen",
+            "DNA",
+            "Cellulose",
+            "Cholesterol"
+          ],
+          "explanation": "Cholesterol. Steroid receptors often act intracellularly to alter gene expression. Lipid derivation alone does not prove that every lipid signal uses an intracellular receptor.",
+          "hints": [
+            "Some lipids act as signals or signal precursors. Steroid hormones derive from cholesterol; many eicosanoids derive from polyunsaturated fatty-acid precursors.",
+            "Steroid receptors often act intracellularly to alter gene expression. Lipid derivation alone does not prove that every lipid signal uses an intracellular receptor."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "A lipid-derived signal acts through a surface receptor. Which inference is justified?",
+          "answer": 0,
+          "options": [
+            "Lipid origin does not dictate receptor location",
+            "All lipid signals enter the nucleus directly",
+            "The signal cannot be a lipid derivative",
+            "The receptor must be an ion channel"
+          ],
+          "explanation": "Lipid origin does not dictate receptor location. Cleavage of a membrane phosphoinositide can generate diacylglycerol and a soluble inositol phosphate messenger. The two products occupy different cellular regions.",
+          "hints": [
+            "Steroid receptors often act intracellularly to alter gene expression. Lipid derivation alone does not prove that every lipid signal uses an intracellular receptor.",
+            "Cleavage of a membrane phosphoinositide can generate diacylglycerol and a soluble inositol phosphate messenger. The two products occupy different cellular regions."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc-05-03-workshop-v1",
+      "title": "Energy Storage",
+      "asset": "bc05-03",
+      "stages": [
+        {
+          "id": "map",
+          "type": "selection",
+          "prompt": "Select the process that extracts energy from reduced fatty-acid carbon.",
+          "answer": [
+            "part-3"
+          ],
+          "explanation": "The relevant schematic entity or entities are Oxidation. Energy density is a comparison per mass, not a claim that every tissue can use every lipid-derived fuel under every condition.",
+          "hints": [
+            "Identify the role named in the prompt before selecting a diagram entity.",
+            "Energy density is a comparison per mass, not a claim that every tissue can use every lipid-derived fuel under every condition."
+          ]
+        },
+        {
+          "id": "reason",
+          "type": "choice",
+          "prompt": "How many fatty-acid chains are esterified in one triacylglycerol?",
+          "answer": 0,
+          "options": [
+            "Three",
+            "One",
+            "Two",
+            "Four"
+          ],
+          "explanation": "Three. Fatty-acid carbons are relatively reduced and release substantial energy on oxidation. Lipid droplets store fuel with much less associated water than glycogen.",
+          "hints": [
+            "Triacylglycerol contains glycerol esterified to three fatty acids. It is a neutral storage lipid, distinct from an amphipathic membrane phospholipid.",
+            "Fatty-acid carbons are relatively reduced and release substantial energy on oxidation. Lipid droplets store fuel with much less associated water than glycogen."
+          ]
+        },
+        {
+          "id": "transfer",
+          "type": "choice",
+          "prompt": "Why is fat a compact long-term fuel store?",
+          "answer": 1,
+          "options": [
+            "It contains no chemical bonds",
+            "Highly reduced carbon and little associated water",
+            "It is a major water-soluble polymer",
+            "Every cell oxidizes it without mitochondria"
+          ],
+          "explanation": "Highly reduced carbon and little associated water. Hydrolysis releases fatty acids and glycerol for different metabolic routes. Storage lipid does not move through blood as a freely dissolved hydrophobic pool.",
+          "hints": [
+            "Fatty-acid carbons are relatively reduced and release substantial energy on oxidation. Lipid droplets store fuel with much less associated water than glycogen.",
+            "Hydrolysis releases fatty acids and glycerol for different metabolic routes. Storage lipid does not move through blood as a freely dissolved hydrophobic pool."
+          ]
+        }
+      ]
+    }
+  ]
+}
